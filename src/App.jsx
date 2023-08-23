@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
 
   return (

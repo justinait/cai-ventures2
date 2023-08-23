@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './navbar.css';
 import {  NavLink, Link } from 'react-router-dom';
 import { Container, Row, Image } from 'react-bootstrap';
-// import Logo from '../../Images/logo.png'
+import { ThemeProvider } from "styled-components";
+import Theme from '../../theme/styled-component';
 
 
 const NavBar = () => {
@@ -23,10 +24,11 @@ const NavBar = () => {
 
 
   return (
-    <Container className='containerNav'>
+    <ThemeProvider theme={Theme}>
+    <Container className='containerNav' style={{ backgroundColor: Theme.colors.pink }}>
       <div className="navbar__logo">
             <NavLink to="/">
-              {/* <Image src={Logo} /> */}
+              {/* <Image src={Logo} /> */} lalalal
             </NavLink>
       </div>
       <Row className='log' xxl={12} xl={12} lg={12}>
@@ -103,6 +105,7 @@ const NavBar = () => {
         </nav>
       </Row>
     </Container>
+</ThemeProvider>
   );
 };
 
