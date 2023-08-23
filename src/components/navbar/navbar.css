@@ -1,0 +1,243 @@
+.containerNav {
+    background-color: #9D1B23;
+    display: flex;
+    height: 134px;
+    padding: 0px 100px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar__menu a {
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  
+  .navbar {
+      display: flex !important;
+    }
+  
+    .log {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+  
+  
+  
+  
+  
+  
+  .lista a:hover {
+      color: #b4b417;
+      text-decoration:line-through !important ;
+  }
+  
+  .navbar__logo {
+    width: 0px !important;
+  }
+    
+    .navbar__logo a {
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    
+    .navbar__toggle-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .navbar__toggle-icon {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar__toggle-icon:before,
+    .navbar__toggle-icon:after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .navbar__toggle-icon:before {
+      transform: translateY(-8px);
+    }
+    
+    .navbar__toggle-icon:after {
+      transform: translateY(8px);
+    }
+    
+    .navbar__toggle-btn.open .navbar__toggle-icon {
+      transform: rotate(45deg);
+      background-color: transparent;
+    }
+    
+    .navbar__toggle-btn.open .navbar__toggle-icon:before {
+      transform: translateY(0) rotate(45deg);
+    }
+    
+    .navbar__toggle-btn.open .navbar__toggle-icon:after {
+      transform: translateY(0) rotate(-45deg);
+    }
+  
+    ul {
+      margin-bottom: 0px !important;
+    }
+    
+    .navbar__menu {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+    
+    .navbar__menu li {
+      margin-right: 1rem;
+    }
+    
+  
+    
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+  
+      .log {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap !important;
+      }
+  
+      .navbar__logo {
+        width: 0px !important;
+      }
+    
+      .navbar__toggle-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+      }
+    
+      .navbar__menu {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+      }
+    
+      .navbar__menu.open {
+        display: flex;
+      }
+    }
+    
+    /************* persona y redes *************/
+  
+  .initialPersona {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  .redesOrden {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+  
+  .redes {
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .redes:hover {
+    border: 2px solid #2EE59D !important;
+  }
+  
+  
+  /* 
+  @media (min-width: 300px) and (max-width: 400px) {
+    .lista {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .navbar__menu li {
+      margin: 0px;
+    }
+    .flec {
+      fill: #2EE59D !important;
+      padding-top: 0px;
+    }
+    .log {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+      padding-top: 20px;
+    }
+    .navbar__logo {
+      width: 60% !important;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 111px !important;
+    }
+  }
+  
+  @media (min-width: 401px) and (max-width: 575px) {
+    .lista {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .navbar__menu li {
+      margin: 0px;
+    }
+    .flec {
+      fill: #2EE59D !important;
+      padding-top: 0px;
+    }
+    .log {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-around;
+      padding-top: 20px;
+    }
+    .navbar__logo {
+      width: 70% !important;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 111px !important;
+    }
+  } */
