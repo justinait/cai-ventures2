@@ -9,9 +9,10 @@
   }
 
   .logoNav {
-    width: 162px;
+    width: 140px;
     margin-left: 0px;
   }
+  
   
   .navbar__menu a {
     color: #FFF;
@@ -36,10 +37,12 @@
   
     .nav-link.active {
       color: white;
+      font-weight: 400;
     }
 
     .navbar__menu a:hover {
       color: white;
+      font-weight: 400;
     }
 
     /* Animación navbar sub */
@@ -96,13 +99,14 @@
       background: none;
       border: none;
       cursor: pointer;
+      margin: 0px !important;
     }
     
     .navbar__toggle-icon {
       display: block;
       width: 25px;
       height: 3px;
-      background-color: #333;
+      background-color: white;
       transition: transform 0.3s ease-in-out;
     }
     
@@ -112,7 +116,7 @@
       position: absolute;
       width: 25px;
       height: 3px;
-      background-color: #333;
+      background-color: white;
       transition: transform 0.3s ease-in-out;
     }
     
@@ -163,7 +167,10 @@
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap !important;
+
       }
+
+
   
       .navbar__logo {
         width: 0px !important;
@@ -182,106 +189,39 @@
       }
     
       .navbar__menu.open {
+        right: -48px;
         display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin-top: 2rem;
+        background: #EAEEFF;
+        max-width: 1440px;
+        justify-content: center;
       }
     }
     
-    /************* persona y redes *************/
+
   
-  .initialPersona {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
+ 
   
-  .redesOrden {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 1.5rem;
-  }
-  
-  .redes {
-    border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.00);
-    width: 55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .redes:hover {
-    border: 2px solid #2EE59D !important;
-  }
-  
-  
-  /* 
-  @media (min-width: 300px) and (max-width: 400px) {
-    .lista {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: flex-end;
-      justify-content: center;
+
+  @media (min-width: 300px) and (max-width:768px) {
+    .navbar__menu a {
+      color: black;
+      font-family: "Montserrat";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      text-decoration: none;
+      padding: 10px;
     }
-    .navbar__menu li {
-      margin: 0px;
+
+    .nav-link.active {
+      color: black;
     }
-    .flec {
-      fill: #2EE59D !important;
-      padding-top: 0px;
-    }
-    .log {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: space-around;
-      padding-top: 20px;
-    }
-    .navbar__logo {
-      width: 60% !important;
-    }
-    
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 111px !important;
+  
+    .nav-link::after {
+      background-color: black; 
     }
   }
-  
-  @media (min-width: 401px) and (max-width: 575px) {
-    .lista {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: flex-end;
-      justify-content: center;
-    }
-    .navbar__menu li {
-      margin: 0px;
-    }
-    .flec {
-      fill: #2EE59D !important;
-      padding-top: 0px;
-    }
-    .log {
-      display: flex;
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: space-around;
-      padding-top: 20px;
-    }
-    .navbar__logo {
-      width: 70% !important;
-    }
-    
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 111px !important;
-    }
-  } */
