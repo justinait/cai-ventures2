@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './navbar.css';
 import {  NavLink, Link } from 'react-router-dom';
 import { Container, Row, Image } from 'react-bootstrap';
-// import Logo from '../../Images/logo.png'
+import Logo from '../../assets/logoNav.png';
+
+
 
 
 const NavBar = () => {
@@ -23,15 +25,16 @@ const NavBar = () => {
 
 
   return (
-    <Container className='containerNav'>
+
+    <Container className='containerNav' >
       <div className="navbar__logo">
             <NavLink to="/">
-              {/* <Image src={Logo} /> */}
+              <Image className='logoNav' src={Logo} />
             </NavLink>
       </div>
       <Row className='log' xxl={12} xl={12} lg={12}>
       
-        <nav className={`navbar ${isOpen ? 'open' : ''}`}xxl={12} xl={12} lg={12}>
+        <nav className={`navbar ${isOpen ? 'open' : ''}`} >
           
           <button className={`navbar__toggle-btn`} onClick={toggleNavbar}>
             <span className="navbar__toggle-icon" />
@@ -40,61 +43,67 @@ const NavBar = () => {
           <ul className={`navbar__menu ${isOpen ? 'open' : ''}`}>
 
               <li>
-                <Link
-                  onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
-                  smooth={true}
-                  duration={500}
-                  to="Home"
-                  href="#"
+                <NavLink
+                 onClick={handleClick}
+                 className='nav-link'
+                 activeClassName='active'
+                 smooth={true}
+                 duration={500}
+                 to="/"
+                 exact
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Nosotros"
-                  href="#"
+                  to="/About"
+                  exact
                 >
                     Nosotros
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Servicios"
+                  to="/Services"
+                  exact
                   href="#Servicios"
                 >
               Servicios
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Contacto"
-                  href="#"
+                  to="/Contact"
+                  exact
                 >
                   Contacto
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <Link
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Faq"
-                  href="#"
+                  to="/Faq"
+                  exact
                 >
                   FAQ
                 </Link>
@@ -103,6 +112,7 @@ const NavBar = () => {
         </nav>
       </Row>
     </Container>
+
   );
 };
 
