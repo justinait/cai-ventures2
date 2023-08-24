@@ -64,13 +64,13 @@ function Home() {
             onSwiper={(swiper) => console.log(swiper)}
             >
             <SwiperSlide>
-                <img src='https://img.freepik.com/vector-premium/estudiantes-graduados-estudiantes-sonrientes-amigos-celebrando-graduacion-gracioso-chico-universitario-chica-academia-educacion-decente-diploma-vector-concepto_53562-17063.jpg?w=2000'/>
+                <img src={home4}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src='https://img.freepik.com/vector-premium/estudiantes-graduados-estudiantes-sonrientes-amigos-celebrando-graduacion-gracioso-chico-universitario-chica-academia-educacion-decente-diploma-vector-concepto_53562-17063.jpg?w=2000'/>
+                <img src={home4}/>
             </SwiperSlide>
             <SwiperSlide>
-                <img src='https://img.freepik.com/vector-premium/estudiantes-graduados-estudiantes-sonrientes-amigos-celebrando-graduacion-gracioso-chico-universitario-chica-academia-educacion-decente-diploma-vector-concepto_53562-17063.jpg?w=2000'/>
+                <img src={home4}/>
             </SwiperSlide>
 
         </Swiper>
