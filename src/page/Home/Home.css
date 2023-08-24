@@ -2,6 +2,10 @@
     padding: 7rem 6.5rem 13.6rem;
 }
 
+.homeContainer p {
+    gap: 40px;
+}
+
 .homeContainer2, .homeContainer3 {
     display: flex;
     justify-content: space-around;
@@ -10,6 +14,12 @@
 
 .homePresentation {
     width: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
 }
 .homePresentation h6 {
     font-weight: 500;
@@ -26,6 +36,7 @@
 
 .homePresentationImage img {
     width: 300px;
+    border-radius: 25px;
 }
 
 .specialTextHome {
@@ -36,7 +47,7 @@
 .homeImageWho {
     width: 500px;
     height: 500px;
-    
+    border-radius: 25px;
     object-fit: cover;
     object-position: center;
 }
@@ -53,8 +64,9 @@ h3 {
 }
 
 .carouselHome img {
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: 500px;
     object-fit: cover;
-    object-position: center;
+    object-position: center -630px;
+    border-radius: 25px;
 }
