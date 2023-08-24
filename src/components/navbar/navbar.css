@@ -1,20 +1,27 @@
 .containerNav {
-    background-color: blue;
+  background-color: #3349A1;
     display: flex;
-    height: 134px;
+    height: 96px;
     padding: 0px 100px;
     align-items: center;
     justify-content: space-between;
+    max-width: 1440px;
+  }
+
+  .logoNav {
+    width: 162px;
+    margin-left: 0px;
   }
   
   .navbar__menu a {
     color: #FFF;
     font-family: "Montserrat";
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     line-height: normal;
     text-decoration: none;
+    padding: 10px;
   }
   
   .navbar {
@@ -27,15 +34,52 @@
       flex-direction: row;
     }
   
-  
-  
-  
-  
-  
-  .lista a:hover {
-      color: #b4b417;
-      text-decoration:line-through !important ;
+    .nav-link.active {
+      color: white;
+    }
+
+    .navbar__menu a:hover {
+      color: white;
+    }
+
+    /* Animación navbar sub */
+
+  .nav-link {
+    text-decoration: none;
+    position: relative;
   }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    transform: scaleX(1); 
+  }
+
+
+.nav-link.active::after {
+  transform: scaleX(1); 
+}
+
+/* Fin animación :) */
+
+  
+    .nav-link {
+      text-decoration: none;
+    }
+  
+  
+  
   
   .navbar__logo {
     width: 0px !important;
