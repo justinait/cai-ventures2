@@ -1,0 +1,44 @@
+.homeTesisContainer{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+.homeTesisImage img{
+    object-fit: cover;
+    width: 400px;
+    height: 380px;
+}
+.homeTesisText{
+    display: flex;
+    flex-direction: column;
+}
+.homeTesisText span{
+    width: 25%;
+    background-color:#CD373B;
+    padding:12px 18px;
+    text-align: center;
+    border-radius: 12px;
+}
+.homeTesisText span a{
+    text-decoration: none;
+    color:#fff ;
+    text-transform: uppercase;
+}
+.homeTesisText h3{
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .homeTesisContainer{
+        flex-direction: column;
+    }
+    .homeTesisText{
+        flex-direction: column;
+    }
+    .homeTesisText span{
+        width: 100%;
+    }
+    .homeTesisImage img{
+        visibility: hidden;
+    }
+}
