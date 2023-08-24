@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Hero from './page/Home/Home';
+import Home from './page/Home/Home';
 import Services from './page/Services/Services';
 import Contact from './page/Contact/Contact';
 import About from './page/About/About';
@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter className='app'>
       <NavBar/>
       <Routes>
-        <Route path='/' element={< Hero />} />
+        <Route path='/' element={< Home />} />
         <Route path='/services' element={<Services/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>

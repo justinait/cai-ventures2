@@ -1,42 +1,50 @@
-*{
-    padding: 0;
-    margin: 0;
-}
 .footer{
-    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content:space-around;
-    align-items: flex-start;
+    align-items: center;
     background-color: #090D22;
     color: #fff;
-    padding: 74px 0;
+    padding: 45px 100px;
     width: 100%;
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 .list{
     list-style-type: none;
-    padding: 20px 0;
-}
-.list li{
-    padding: 2px;
+    padding-left: 0px;
 }
 .list li a{
     color: #fff;
     text-decoration: none;
 }
-.footer div h2{
-    display: inline;
-    padding-bottom: 2px;
-    border-bottom: 2px solid #fff;
+.containerLogos {
+    margin-top: -100px;
+    width: 320px;
 }
-.containerLogo {
-    width: 300px;
-    height: 250px;
-
-}
-.containerLogo img{
+.containerLogos img{
     width: 100%;
     height: 100%;
 }
 .listContact{
     display: flex;
+    justify-content: space-evenly;
+    margin-top: -100px;
+}
+.listContact li img{
+    width: 35px;
+    height: 35px;
+}
+.containerHelp{
+    margin-top: -50px;
+}
+.listAnimation li:hover{
+    display: inline-block;
+    transition: all 1s;
+    transform: translateX(8px);
+}
+.listAnimation li a:hover{
+    color: #F54D57;
 }

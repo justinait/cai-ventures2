@@ -1,18 +1,60 @@
-.heroContainer {
-    padding: 14.1rem 9.5rem 39.6rem;
+.homeContainer {
+    padding: 7rem 6.5rem 13.6rem;
 }
 
-.heroContainer2 {
+.homeContainer2, .homeContainer3 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-bottom: 7rem;
 }
 
-.heroPresentation {
-    width: 18.125rem;
+.homePresentation {
+    width: 25rem;
+}
+.homePresentation h6 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.homePresentationImage {
+    width: 16.125rem;
+}
+
+.homePresentationImage p {
+    color: var(--main, var(--colors-main-friendly-blue, #3349A1));
+}
+
+.homePresentationImage img {
+    width: 300px;
+}
+
+.specialTextHome {
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.homeImageWho {
+    width: 500px;
+    height: 500px;
+    
+    object-fit: cover;
+    object-position: center;
+}
+.homeWho {
+    width: 25rem;
+}
+.homeWho li {
     text-align: justify;
 }
 
-.heroPresentationImage {
-    width: 15.125rem;
+h3 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
 
+.carouselHome img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
 }
