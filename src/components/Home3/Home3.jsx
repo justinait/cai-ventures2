@@ -1,5 +1,6 @@
-import React from 'react'
+
 import home4 from '../../assets/home4.jpg';
+import swipperDos from '../../assets/swipperDos.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
@@ -22,7 +23,7 @@ function Home3() {
             <img src={home4}/>
         </SwiperSlide>
         <SwiperSlide>
-            <img src={home4}/>
+            <img src={swipperDos}/>
         </SwiperSlide>
         <SwiperSlide>
             <img src={home4}/>
