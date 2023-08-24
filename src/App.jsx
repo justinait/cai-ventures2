@@ -10,6 +10,7 @@ import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
 
 
+
 function App() {
 
   return (
