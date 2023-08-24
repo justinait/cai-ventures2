@@ -43,61 +43,67 @@ const NavBar = () => {
           <ul className={`navbar__menu ${isOpen ? 'open' : ''}`}>
 
               <li>
-                <Link
-                  onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
-                  smooth={true}
-                  duration={500}
-                  to="/"
-                  href="#"
+                <NavLink
+                 onClick={handleClick}
+                 className='nav-link'
+                 activeClassName='active'
+                 smooth={true}
+                 duration={500}
+                 to="/"
+                 exact
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="About"
-                  href="#"
+                  to="/About"
+                  exact
                 >
                     Nosotros
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Services"
+                  to="/Services"
+                  exact
                   href="#Servicios"
                 >
               Servicios
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Contact"
-                  href="#"
+                  to="/Contact"
+                  exact
                 >
                   Contacto
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <Link
                   onClick={handleClick}
-                  className={clicked ? 'active' : 'inactive'}
+                  className='nav-link'
+                  activeClassName='active'
                   smooth={true}
                   duration={500}
-                  to="Faq"
-                  href="#"
+                  to="/Faq"
+                  exact
                 >
                   FAQ
                 </Link>
