@@ -8,7 +8,7 @@ SwiperCore.use([Pagination]);
 
 const SwiperCarousel = () => {
   return (
-    <Swiper
+    <Swiper className='swiperContainer'
       spaceBetween={30}
       pagination={{ clickable: true }}
     >
