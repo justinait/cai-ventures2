@@ -13,7 +13,7 @@ function Home2() {
                 <p> 2. Te acompañamos hasta que obtengas tu título. Nuestro equipo de asesores e investigadores está preparado para asegurar que obtengas tu título en el primer intento.</p>
                 <p> 3. Recibe una guía fácil y práctica para avanzar. Gracias a la metodología de nuestros expertos y nuestra plataforma, llevarás un proceso práctico en cada una de las etapas de la asesoría.</p>
             </div>
-            <Button variant="danger">VER MÁS</Button>{' '}
+            <Button className='homeButtons' variant="danger">VER MÁS</Button>{' '}
 
         </div>
     </div>
