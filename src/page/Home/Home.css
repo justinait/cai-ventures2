@@ -2,6 +2,19 @@
     padding: 3.5rem 6.5rem 13.6rem;
 }
 
+.homeButtons {
+    border-radius: 16px !important;
+    background: var(--coral-red, #CD373B);
+    background: var(--colors-main-coral-red, #CD373B);
+    border: none !important;    
+    padding: 10px 28px !important;
+}
+.homeButtons:hover {
+    background: var(--colors-light-coral-red, #FF5963) !important;
+    border: none !important;
+    transition: all 0.5s;
+}
+
 .homeContainer2{
     display: flex;
     justify-content: space-evenly;
