@@ -12,7 +12,7 @@ function Hero() {
               áreas de investigación está aquí para guiarte y resolver 
               todas tus dudas durante tu proceso de titulación.
             </p>
-            <Button variant="danger">EMPEZÁ AHORA</Button>{' '}
+            <Button className='homeButtons' variant="danger">EMPEZÁ AHORA</Button>
         </div>
         <div className='homePresentationImage'>
             <img src={home1} />
