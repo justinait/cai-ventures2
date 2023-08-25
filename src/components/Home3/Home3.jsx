@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import home4 from '../../assets/home4.jpg';
 import swipperDos from '../../assets/swipperDos.png';
 import swipperTres from '../../assets/swipperTres.png';
+
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
@@ -10,6 +11,7 @@ import './Home3.css';
 
 import React, { useRef, useState } from 'react';
 import {Autoplay, Pagination, Navigation} from 'swiper/modules';
+import { Image } from 'react-bootstrap';
 
 const Home3 = () => {
   return (
@@ -27,11 +29,11 @@ const Home3 = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
 
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         >
     <SwiperSlide>
-        <img src={home4} />
+        <img  src={home4} />
     </SwiperSlide>
     <SwiperSlide>
         <img src={swipperDos} />
