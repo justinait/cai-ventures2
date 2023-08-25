@@ -1,5 +1,5 @@
 import React from 'react'
-import cai1 from '../../assets/images/cai1.jpeg'
+import cai from "../../assets/images/cai1.png"
 import './services.css'
 
 function Services() {
@@ -25,7 +25,7 @@ function Services() {
         </section>
         <section className="carreras">
             <div>
-                <img src={cai1.jpeg} alt="Mujer Estudiando" className="img-ciencas-sociales"/> 
+                <img src={cai} alt="Mujer Estudiando" className="img-ciencas-sociales"/> 
             </div>
             <div>
             <div className="container">
@@ -73,8 +73,8 @@ function Services() {
                     </div>
                     
                 </div>
-                </div>
                <a>AGENDAR REUNION</a>
+                </div>
             
         </section>
 
