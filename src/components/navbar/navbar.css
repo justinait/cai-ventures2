@@ -1,5 +1,7 @@
 .containerNav {
-  background-color: #3349A1;
+    background-color: #3349A1;
+    position: fixed;
+    z-index: 2 !important;
     display: flex;
     height: 96px;
     padding: 0px 100px;
