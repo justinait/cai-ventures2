@@ -69,7 +69,7 @@ const NavBar = () => {
                   className='nav-link'
                   smooth="true"
                   duration={500}
-                  to="/Services"
+                  to="/servicios"
                   exact="true"
 
                 >
