@@ -1,10 +1,14 @@
-import { Container, Row } from 'react-bootstrap';
-
+import { Container, Row, Col } from 'react-bootstrap';
+import './Service2.css';
 
 const ServiceDos = () => {
     return (
         <Container>
-            <Row>hola</Row>
+            <Row className='ServiceContainerRow'>
+                <Col>
+                    <h2 className='tituloSecDos'>¿Qué incluyen las categorías?</h2>
+                </Col>
+            </Row>
         </Container>
     )
 }
