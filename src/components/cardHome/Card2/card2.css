@@ -1,0 +1,28 @@
+.homeServicesContainer{
+    display: flex;
+    padding: 50px 20px;
+    background-color:#fff;
+    gap: 50px;
+    box-shadow: 8px 8px 40px 3px #688eb666;
+}
+.homeServicesImage img{
+    width: 250px;
+    height: 250px;
+}
+.homeServicesInfo h3{
+    color: #3349A1;
+    text-align: left;
+}
+@media screen and (max-width: 768px) {
+    .homeServicesContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .homeServicesInfo h3{
+        text-align: center;
+    }
+    .homeServicesImage img{
+        width: 150px;
+        height: 150px;
+    }
+}

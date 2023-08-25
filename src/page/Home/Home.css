@@ -72,3 +72,9 @@ h3 {
     object-position: center -750px;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 768px) {
+    .homeContainer{
+        padding: 2rem 1rem;        
+    }
+}
