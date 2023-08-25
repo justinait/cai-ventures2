@@ -1,31 +1,19 @@
 import React from 'react'
 import './Home.css'
-import Button from 'react-bootstrap/Button';
+import Hero from '../../components/Hero/Hero';
+import Home2 from '../../components/Home2/Home2';
+import Home3 from '../../components/Home3/Home3';
 
-function Hero() {
+function Home() {
   return (
-    <div className='heroContainer'>
-        <div className='heroContainer2'>
-            <div className='heroPresentation'>
-                <h6>Asesorías en servicios de tesis</h6>
-                <h3>CAI Ventures</h3>
-                <p>Te guiamos en tu proceso de titulación, 
-                    despejando tus dudas metodológicas o 
-                    especializadas de acuerdo a tu línea 
-                    de investigación y/o requerimientos 
-                    con un asesor.
-                </p>
-                <Button variant="danger">EMPEZÁ AHORA</Button>{' '}
-            </div>
-            <div className='heroPresentationImage'>
-                <img src='https://cdn-icons-png.flaticon.com/512/1760/1760560.png' width={150}/>
-                <p>“El momento para empezar a 
-                <strong> cumplir tu sueño</strong> es ahora”</p>
-            </div>
-        </div>
+    <div className='homeContainer'>
+        
+        <Hero/>
+        <Home2 />
+        <Home3 />
         
     </div>
   )
 }
 
-export default Hero
+export default Home

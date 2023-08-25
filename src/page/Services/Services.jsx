@@ -1,5 +1,5 @@
 import React from 'react'
-import cai from "../../assets/images/cai1.jpeg"
+import cai from "../../assets/images/cai1.png"
 import './services.css'
 
 function Services() {
