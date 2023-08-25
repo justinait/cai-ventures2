@@ -77,7 +77,7 @@ const NavBar = () => {
                   // activeClassName='active'
                   smooth="true"
                   duration={500}
-                  to="/Services"
+                  to="/servicios"
                   exact="true"
                   href="#Servicios"
                 >

@@ -7,7 +7,7 @@
     padding: 0px 100px;
     align-items: center;
     justify-content: space-between;
-    max-width: 1440px;
+    width:  100%;
   }
 
   .logoNav {
