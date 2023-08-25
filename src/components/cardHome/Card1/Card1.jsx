@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './card1.css';
 import cardImage1 from '../../../assets/cardHome1.jpeg';
 
@@ -12,7 +12,7 @@ const Card1 = () => {
                 -Borrador de Tesis <br />
                 -Sustentación
                 </p>
-                <span><a href="">ver más</a></span>
+                <span><a href="/services">ver más</a></span>
             </div>
             <div className='homeTesisImage'>
                 <img src={cardImage1} alt="chica sentada leyendo un libro" />

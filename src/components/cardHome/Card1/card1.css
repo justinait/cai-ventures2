@@ -1,23 +1,29 @@
 .homeTesisContainer{
     display: flex;
-    padding: 20px 0;
-    justify-content: center;
+    padding: 100px 20px;
+    justify-content: space-around;
+    gap: 60px;
 }
 .homeTesisImage img{
+    border-radius: 25px;
     object-fit: cover;
-    width: 400px;
-    height: 380px;
+    width: 350px;
+    height: 320px;
 }
 .homeTesisText{
     display: flex;
     flex-direction: column;
+    align-items: start;
 }
 .homeTesisText span{
-    width: 25%;
     background-color:#CD373B;
     padding:12px 18px;
     text-align: center;
     border-radius: 12px;
+}
+.homeTesisText span:hover{
+    background-color: #FF5963;
+    transition: all 1s;
 }
 .homeTesisText span a{
     text-decoration: none;
@@ -26,6 +32,7 @@
 }
 .homeTesisText h3{
     text-align: justify;
+    color: #212121;
 }
 
 @media screen and (max-width: 768px) {
@@ -38,7 +45,7 @@
     .homeTesisText span{
         width: 100%;
     }
-    .homeTesisImage img{
-        visibility: hidden;
+    .homeTesisImage{
+        display: none;
     }
 }
