@@ -46,11 +46,11 @@ const NavBar = () => {
                 <NavLink
                  onClick={handleClick}
                  className='nav-link'
-                 activeClassName='active'
-                 smooth={true}
+                //  ClassName='active'
+                 smooth="true"
                  duration={500}
                  to="/"
-                 exact
+                 exact="true"
                 >
                   Home
                 </NavLink>
@@ -59,11 +59,11 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  activeClassName='active'
-                  smooth={true}
+                  // activeClassName='active'
+                  smooth="true"
                   duration={500}
                   to="/About"
-                  exact
+                  exact="true"
                 >
                     Nosotros
                 </NavLink>
@@ -72,11 +72,11 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  activeClassName='active'
-                  smooth={true}
+                  // activeClassName='active'
+                  smooth="true"
                   duration={500}
                   to="/Services"
-                  exact
+                  exact="true"
                   href="#Servicios"
                 >
               Servicios
@@ -86,11 +86,11 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  activeClassName='active'
-                  smooth={true}
+                  // activeClassName='active'
+                  smooth="true"
                   duration={500}
                   to="/Contact"
-                  exact
+                  exact="true"
                 >
                   Contacto
                 </NavLink>
@@ -99,11 +99,11 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  activeClassName='active'
-                  smooth={true}
+                  // activeClassName='active'
+                  smooth="true"
                   duration={500}
                   to="/Faq"
-                  exact
+                  exact="true"
                 >
                   FAQ
                 </NavLink>
