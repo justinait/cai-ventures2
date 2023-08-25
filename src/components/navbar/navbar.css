@@ -207,7 +207,8 @@
  
   
 
-  @media (min-width: 300px) and (max-width:768px) {
+  /* @media (min-width: 300px) and (max-width:768px) { */
+    @media screen and (max-width: 768px){
     .navbar__menu a {
       color: black;
       font-family: "Montserrat";
@@ -226,4 +227,19 @@
     .nav-link::after {
       background-color: black; 
     }
+    .navbar__menu.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      margin-top: 2rem;
+      background: #EAEEFF;
+      width: 700px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .navbar__menu li {
+      margin-left: 9rem;
+    }
+
   }

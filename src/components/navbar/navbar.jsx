@@ -7,6 +7,7 @@ import Logo from '../../assets/logoNav.png';
 
 
 
+
 const NavBar = () => {
 
 
@@ -25,6 +26,7 @@ const NavBar = () => {
 
 
   return (
+
 
     <Container className='containerNav' >
       <div className="navbar__logo">
