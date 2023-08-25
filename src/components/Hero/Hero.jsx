@@ -9,8 +9,8 @@ function Hero() {
             <h6>"Asesoría de tesis para apoyarte en tu proceso de titulación"</h6>
             <h3>CAI Ventures</h3>
             <p>Nuestro equipo de profesionales experimentados en diversas 
-                áreas de investigación está aquí para guiarte y resolver 
-                todas tus dudas durante tu proceso de titulación.
+              áreas de investigación está aquí para guiarte y resolver 
+              todas tus dudas durante tu proceso de titulación.
             </p>
             <Button variant="danger">EMPEZÁ AHORA</Button>{' '}
         </div>
