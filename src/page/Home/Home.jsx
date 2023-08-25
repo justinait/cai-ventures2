@@ -2,8 +2,7 @@
 import './Home.css'
 import Hero from '../../components/Hero/Hero';
 import Home2 from '../../components/Home2/Home2';
-
-import SwiperCarousel from '../../components/Swiper/Swiper';
+import Home3 from '../../components/Home3/Home3';
 
 function Home() {
   return (
@@ -12,7 +11,7 @@ function Home() {
         <Hero/>
         <Home2 />
 
-        <SwiperCarousel />
+        <Home3 />
         
     </div>
   )
