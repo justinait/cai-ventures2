@@ -4,7 +4,7 @@ import LogoFooter from '../../assets/caiVenturesLogo.png';
 import Instagram from '../../assets/Instagram.png';
 import Facebook from '../../assets/Facebook.png';
 import Tiktok from '../../assets/Tiktok.png';
-import Linkedin from '../../assets/LinkediN.png';
+import Linkedin from '../../assets/LinkedIN.png';
 
 const Footer = () => {
     return (
