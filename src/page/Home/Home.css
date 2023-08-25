@@ -103,6 +103,30 @@ h3 {
 
 @media screen and (max-width: 768px) {
     .homeContainer{
-        padding: 2rem 1rem;        
+        padding: 2rem 1.5rem;        
+    }
+
+    .homeButtons {
+        width: 100%;
+    }
+    .homePresentationImage {
+        display: none;
+    }
+    .homeContainer3 {
+        flex-direction: column;
+    }
+    .homeWhoTitle {
+        font-size: 22px !important;
+    }
+    .homeImageWho {
+        width: 300px;
+        height: 300px;
+    }
+    .homeWho {
+        width: unset;
+        padding: 6%;
+    }
+    .homeWho p {    
+        margin-bottom: 1rem;
     }
 }
