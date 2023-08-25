@@ -1,0 +1,47 @@
+.homeContactContainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+    padding: 100px 20px;
+}
+.homeContactImage img{
+    width: 350px;
+    height: 320px;
+    border-radius: 25px;
+}
+.homeContactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.homeContactInfo h3{
+    text-align: justify;
+    color: #212121;
+}
+.homeContactInfo span {
+    background-color: #CD373B;
+    border-radius: 12px;
+    padding:12px 18px;
+}
+.homeContactInfo span:hover{
+    background-color: #FF5963;
+    transition: all 1s;
+}
+.homeContactInfo span a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .homeContactContainer{
+        flex-direction: column;
+    }
+    .homeContactInfo span{
+        width: 100%;
+        text-align: center;
+    }
+    .homeContactImage{
+        display: none;
+    }
+}

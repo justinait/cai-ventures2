@@ -1,0 +1,185 @@
+/* Generales */
+body {
+    background-color: #fff
+}
+
+i {
+    font-size: 40px;
+}
+
+.color-text {
+    color: #3349A1
+}
+
+
+.titutos-services {
+    margin: 20px 0 20px 0;
+}
+
+/* Seccion de Nos enfocamos en carreras de ciencas sociales */
+
+
+
+.servicios h2 {
+    margin-top: 5rem;
+}
+.servicios h2 , h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicios .row {
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 16px;
+    padding: 20px 150px;
+    margin: 5rem 0;
+}
+
+.servicios p {
+    font-size: 20px;
+}
+
+
+
+
+/* Carreras de ciencias sociales */
+
+
+.carreras {
+    display: flex;
+    margin-top: 20rem;
+}
+
+.carreras .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.carreras h2 {
+    font-weight: bold;
+}
+
+.carreras li {
+    font-size: 20px;
+}
+
+.img-ciencas-sociales  {
+    height: 100%;
+    margin-left: 5rem;
+    width: 400px;
+    border-radius: 16px;
+}
+
+
+
+/* Seccion de que incluyen las asesorias */
+
+.title-card {
+    margin-bottom: 5rem;
+}
+
+
+.asesorias {
+    background-color: #EAEEFF;
+    margin-top: 20rem;
+    padding: 4rem;
+    
+}
+
+.asesorias .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 48px;
+}
+
+.asesorias .row {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 5rem;
+
+}
+
+.asesorias .cards {
+    width: 340px;
+    height: 200px;
+
+    text-align: center;
+
+}
+
+.asesorias a {
+    
+    background-color: #b33236;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-style: none;
+    margin-top: 5rem;
+    
+}
+
+.asesorias a:hover {
+    background-color: rgb(255, 2, 2);
+    color: #fff;
+}
+
+
+/* etapas */
+
+
+
+.etapas  {
+
+    background-color: #EAEEFF;
+    margin-top: 0rem;
+    padding: 20rem 0 10rem 0;
+    
+}
+
+
+.etapas .container {
+    height: 800px;
+    width: 1000px;
+    background-color: #fff;
+    border-radius: 48px;
+    text-align: center;
+    padding-top: 4rem;
+   
+
+}
+
+
+
+
+
+
+
+/* Media Quearis */
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 1200px;
+       
+    }
+   
+
+}
+
+@media screen and (max-width: 576px) {
+    .row {
+        flex-direction: column ;
+    }
+   
+
+
+}
