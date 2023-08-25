@@ -6,10 +6,7 @@ import Logo from '../../assets/logoNav.png';
 
 
 
-
-
 const NavBar = () => {
-
 
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(false);
@@ -23,10 +20,7 @@ const NavBar = () => {
     setIsOpen(false); 
   };
 
-
-
   return (
-
 
     <Container className='containerNav' >
       <div className="navbar__logo">
@@ -61,7 +55,6 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  // activeClassName='active'
                   smooth="true"
                   duration={500}
                   to="/About"
@@ -74,12 +67,11 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  // activeClassName='active'
                   smooth="true"
                   duration={500}
                   to="/Services"
                   exact="true"
-                  href="#Servicios"
+
                 >
               Servicios
                 </NavLink>
@@ -88,7 +80,6 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  // activeClassName='active'
                   smooth="true"
                   duration={500}
                   to="/Contact"
@@ -101,7 +92,6 @@ const NavBar = () => {
                 <NavLink
                   onClick={handleClick}
                   className='nav-link'
-                  // activeClassName='active'
                   smooth="true"
                   duration={500}
                   to="/Faq"
