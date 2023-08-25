@@ -40,11 +40,14 @@ i {
 }
 .carrerasText h3 {
     font-size: 33px !important;
+    
+    font-weight: 600 !important;
 }
 .carreras {
     display: flex;
     margin-top: 5rem;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .carrerasText ul {
@@ -67,6 +70,26 @@ i {
 }
 
 
+@media screen and (max-width: 768px) {
+    .servicios .row {
+        
+        text-align: left;
+        padding: 5px 15px;
+        margin: 3rem;
+        border: 3px solid var(--colors-main-friendly-blue, #3349A1)
+    }   
+    .carrerasText{
+        
+        width: 80vw;
+        padding: 10%;
+        /* text-align: center; */
+        margin: auto;
+    }
+    
+    .carreras {
+        margin-bottom: 5rem;
+    }
+}
 
 /* Seccion de que incluyen las asesorias */
 
