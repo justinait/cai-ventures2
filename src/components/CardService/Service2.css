@@ -1,0 +1,42 @@
+.containerServiceDos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServiceContainerRow {
+    padding: 40px 0px 40px 0px;
+    margin-top: 200px !important;
+    display: flex;
+    height: auto;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    border-radius: 48px;
+}
+
+.containerTitle {
+    justify-content: center;
+    display: flex;
+}
+
+.tituloSecDos {
+    font-family: "Montserrat";
+    color: #3349A1;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitleServiceDos {
+    font-family: "Montserrat";
+    font-size: 22px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #3349A1;
+}
