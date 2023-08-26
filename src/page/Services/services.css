@@ -47,7 +47,6 @@ i {
     display: flex;
     margin-top: 5rem;
     justify-content: space-around;
-    flex-direction: column;
 }
 
 .carrerasText ul {
@@ -80,13 +79,14 @@ i {
     }   
     .carrerasText{
         
-        width: 80vw;
+        width: 90vw;
         padding: 10%;
         /* text-align: center; */
         margin: auto;
     }
     
     .carreras {
+        flex-direction: column;
         margin-bottom: 5rem;
     }
 }
@@ -182,12 +182,11 @@ i {
 
 
 /* Media Quearis */
-
-@media screen and (max-width: 768px) {
+/* mobile */
+@media screen and (max-width: 768px) { 
     .container {
         height: 1200px;
-       
-    }
+   }
    
 
 }
