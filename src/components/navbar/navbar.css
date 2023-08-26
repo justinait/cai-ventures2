@@ -1,46 +1,44 @@
-.containerNav {
-    background-color: #3349A1;
-    position: fixed;
-    z-index: 2 !important;
+.contieneNav {
+    background-color: #3349A1 !important;
+  }
+
+  .navbar>.container {
     display: flex;
-    height: 96px;
-    padding: 0px 100px;
+    flex-wrap: wrap;
     align-items: center;
+    height: auto !important;
     justify-content: space-between;
-    /* max-width: 1440px; */
-    width: 100vw;
   }
 
   .logoNav {
     width: 140px;
     margin-left: 0px;
   }
-  
-  
-  .navbar__menu a {
-    color: #FFF;
-    font-family: "Montserrat";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-    text-decoration: none;
-    padding: 10px;
+
+  .me-auto {
+    justify-content: end !important;
+    margin-right: 0px !important;
+    gap: 1rem !important;
+  }
+
+.navbar-collapse {
+  justify-content: end !important;
+}
+
+  .nav-link {
+    color: white;
+    font-size: 18px !important;
+  }
+
+  .nav-link:hover {
+    color: white;
+    font-size: 18px !important;
   }
   
-  .navbar {
-      display: flex !important;
-    }
-  
-    .log {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-    }
-  
     .nav-link.active {
-      color: white;
-      font-weight: 400;
+      color: white !important;
+      font-weight: 500 !important;
+      font-size: 18px !important;
     }
 
     .navbar__menu a:hover {
@@ -80,9 +78,7 @@
 /* Fin animación :) */
 
   
-    .nav-link {
-      text-decoration: none;
-    }
+
   
   
   
