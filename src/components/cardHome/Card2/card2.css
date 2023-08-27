@@ -1,28 +1,66 @@
 .homeServicesContainer{
-    display: flex;
-    padding: 50px 20px;
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
     background-color:#fff;
     gap: 50px;
     box-shadow: 8px 8px 40px 3px #688eb666;
+    border-radius: 48px;
+    border: 4px solid #3349A1;
 }
-.homeServicesImage img{
-    width: 250px;
-    height: 250px;
+.homeServicesContainer h3{
+    color: #212121;
+    font-weight: 700;
+    text-align: center;
 }
-.homeServicesInfo h3{
-    color: #3349A1;
-    text-align: left;
+.iconsHomeContainer{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+.iconsHomeChildren{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+.iconsHomeChildren figure{
+    background-color:#3349A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 50%;
+    margin:0 25%;
+}
+.iconsHomeChildren figure img{
+    width: 60px;
+}
+.iconsHomeChildren p{
+    text-align: center;
+}
+
 @media screen and (max-width: 768px) {
     .homeServicesContainer{
-        flex-direction: column;
-        align-items: center;
+        background-color:#EAEEFF ;
+        border: none;
+        border-radius:0;
+        box-shadow: none;
+        margin: 0 -20px;
     }
-    .homeServicesInfo h3{
-        text-align: center;
+    .iconsHomeChildren{
+        width: 120px;
     }
-    .homeServicesImage img{
-        width: 150px;
-        height: 150px;
+    .iconsHomeChildren figure{
+        padding: 16px;
+        width: 70px;
+        height: 70px; 
+    }
+    .iconsHomeChildren figure img{
+        width: 25px;
     }
 }
