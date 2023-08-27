@@ -183,13 +183,7 @@ i {
 
 /* Media Quearis */
 /* mobile */
-@media screen and (max-width: 768px) { 
-    .container {
-        height: 1200px;
-   }
-   
 
-}
 
 @media screen and (max-width: 576px) {
     .row {
