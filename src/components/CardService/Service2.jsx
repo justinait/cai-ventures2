@@ -14,7 +14,7 @@ const ServiceDos = () => {
                 </Col>
                 
                 <Row className='containerFirstServ'>
-                <Col>
+                <Col className='conTodoSerDos'>
                     <Col className='containerTextService'>
                         <Image className='imgServiceDos' fluid src={homeCard6} />
                     </Col>
@@ -23,7 +23,7 @@ const ServiceDos = () => {
                         <p className='textServiceDos'>Te apoyamos en cada paso, desde la elección del título de tu tesis hasta su finalización. Nuestro objetivo es ayudarte a superar con éxito el proceso de titulación.</p>
                     </Col>
                 </Col>
-                <Col>
+                <Col className='conTodoSerDos'>
                     <Col className='containerTextService'>
                         <Image className='imgServiceDosA' fluid src={cardSerDos} />
                     </Col>
@@ -37,7 +37,7 @@ const ServiceDos = () => {
 
 
                 <Row>
-                <Col>
+                <Col className='conTodoSerDos'>
                     <Col className='containerTextService'>
                         <Image className='imgServiceDosA' fluid src={cardSerDosA} />
                     </Col>
@@ -46,7 +46,7 @@ const ServiceDos = () => {
                         <p className='textServiceDos'>Contarás con el apoyo de un equipo de investigación que te asistirá en la búsqueda y obtención de información para tu tesis.</p>
                     </Col>
                 </Col>
-                <Col>
+                <Col className='conTodoSerDos'>
                     <Col className='containerTextService'>
                         <Image className='imgServiceDosA' fluid src={cardSerDosB} />
                     </Col>
