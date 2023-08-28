@@ -2,6 +2,16 @@
 i {
     font-size: 40px;
 }
+.serviceMobileTitle {
+    color: #3349A1;
+    display: none;
+    text-align: center;
+    padding: 30px 0px 0px;
+}
+.serviceDesktopTitle{
+    color: #3349A1;
+    margin: 4rem 5rem 0 5rem;
+}
 
 .color-text {
     color: #3349A1
@@ -9,6 +19,7 @@ i {
 
 .titutos-services {
     margin: 20px 0 20px 0;
+    font-weight: 600 !important;
 }
 
 /* Seccion de Nos enfocamos en carreras de ciencas sociales */
@@ -40,21 +51,16 @@ i {
 }
 .carrerasText h3 {
     font-size: 33px !important;
-    
     font-weight: 600 !important;
 }
 .carreras {
     display: flex;
-    margin-top: 5rem;
+    margin: 5rem 0;
     justify-content: space-around;
 }
 
 .carrerasText ul {
     margin-top: 3%;
-}
-
-.carreras h2 {
-    font-weight: bold;
 }
 
 .carreras li {
@@ -70,24 +76,32 @@ i {
 
 
 @media screen and (max-width: 768px) {
+    
+    .serviceMobileTitle {
+        display: block;
+    }
+    .serviceDesktopTitle{
+        display: none;
+    }
     .servicios .row {
-        
         text-align: left;
         padding: 5px 15px;
         margin: 3rem;
         border: 3px solid var(--colors-main-friendly-blue, #3349A1)
     }   
     .carrerasText{
-        
         width: 90vw;
         padding: 10%;
-        /* text-align: center; */
         margin: auto;
     }
     
     .carreras {
         flex-direction: column;
         margin-bottom: 5rem;
+    }
+    
+    .img-ciencas-sociales  {
+        margin-left: 0px;
     }
 }
 
