@@ -8,7 +8,7 @@ import Logo from '../../assets/logoNav.png';
 import './navbar.css';
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="contieneNav" sticky="top" >
+    <Navbar collapseOnSelect  expand="md" className="contieneNav" sticky="top" >
       <Container>
         <Navbar.Brand href="#home">
             <NavLink to="/">
