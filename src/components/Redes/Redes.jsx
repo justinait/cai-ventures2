@@ -10,7 +10,7 @@ const RedesFlotantes = () => {
     return (
         <Container>
             <Row>
-                <Col className='d-flex justify-content-end position-fixed bottom-0 end-0 m-4 redesContainer'>
+                <Col className='d-flex justify-content-end position-fixed bottom-1 end-0 m-4 redesContainer'>
                     <Col className='contRedesRed'>
                     <NavLink to="#" className="redesIcon">
                         <Image src={instaRed} alt="Instagram" />

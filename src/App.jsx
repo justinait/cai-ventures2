@@ -8,16 +8,11 @@ import Faq from './page/Faq/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import RedesFlotantes from './components/Redes/Redes';
-=======
+
 import WhatsApp from './components/WhatsApp/WhatsApp';
->>>>>>> 7f2712a1b007ffcd5ae8bdf4652472f81eeb87ca
-=======
-import RedesFlotantes from './components/Redes/Redes';
-import WhatsApp from './components/WhatsApp/WhatsApp';
->>>>>>> a00e039619f1391ec9ccdce072d5ee70acb8386d
+
 
 
 
