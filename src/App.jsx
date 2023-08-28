@@ -8,6 +8,7 @@ import Faq from './page/Faq/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
+import RedesFlotantes from './components/Redes/Redes';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar/>
+      <RedesFlotantes />
       <Routes>
         <Route path='/' element={< Home />} />
         <Route path='/servicios' element={<Services/>}/>

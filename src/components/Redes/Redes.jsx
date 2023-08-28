@@ -10,19 +10,22 @@ const RedesFlotantes = () => {
     return (
         <Container>
             <Row>
-                <Col>
-                    <NavLink>
-                        <Image src={instaRed} />
+                <Col className='d-flex justify-content-end position-fixed bottom-0 end-0 m-4 redesContainer'>
+                    <Col className='contRedesRed'>
+                    <NavLink to="#" className="redesIcon">
+                        <Image src={instaRed} alt="Instagram" />
                     </NavLink>
-                    <NavLink>
-                        <Image src={faceRed} />
+                    <NavLink to="#" className="redesIcon">
+                        <Image src={faceRed} alt="Facebook" />
                     </NavLink>
-                    <NavLink>
-                        <Image src={linkedinRed} />
+                    <NavLink to="#" className="redesIcon">
+                        <Image src={linkedinRed} alt="LinkedIn" />
                     </NavLink>
-                    <NavLink>
-                        <Image src={tiktokRed} />
+                    <NavLink to="#" className="redesIcon">
+                        <Image src={tiktokRed} alt="TikTok" />
                     </NavLink>
+                    </Col>
+                    
                 </Col>
             </Row>
         </Container>
