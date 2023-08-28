@@ -17,3 +17,9 @@
     justify-content: center !important;
     flex-direction: column !important;
 }
+
+@media (max-width: 768px) {
+    .redesContainer {
+        display: none !important;
+    }
+}
