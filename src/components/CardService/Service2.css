@@ -4,9 +4,16 @@
     justify-content: center;
 }
 
+.conTodoSerDos {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    flex-direction: column;
+}
+
 .ServiceContainerRow {
-    padding: 40px 0px 40px 0px;
-    margin-top: 200px !important;
+    padding: 50px;
+    margin-top: 0px !important;
     display: flex;
     height: auto;
     width: 90%;
@@ -16,7 +23,7 @@
     justify-content: center;
 
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-    border-radius: 48px;
+    border-radius: 20px;
 }
 
 .containerFirstServ {
@@ -35,7 +42,7 @@
     color: #3349A1;
     font-size: 35px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
     padding-bottom: 40px;
 }

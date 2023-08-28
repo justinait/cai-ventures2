@@ -1,11 +1,17 @@
+.mobileFooterContainer,.footer{
+    background-color: #090D22;
+}
+.mobileFooterContainer{
+    display: none;
+}
 .footer{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    background-color: #090D22;
     color: #fff;
     padding: 45px 100px;
     width: 100%;
+    height: 300px;
 }
 .footer div {
     display: flex;
@@ -38,7 +44,7 @@
     height: 35px;
 }
 .containerHelp{
-    margin-top: -50px;
+    margin-top: -90px;
 }
 .listAnimation li:hover{
     display: inline-block;
@@ -47,4 +53,46 @@
 }
 .listAnimation li a:hover{
     color: #F54D57;
+}
+.containerIndice{
+    padding-right: 130px;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        display: none;
+    }
+    .mobileFooterContainer{
+        display: block;
+        width: 100%;
+        align-items: center;
+        padding: 10px 10px 30px 10px;
+    }
+    .mobileImagesFooter{
+        width: 30px;
+        height: 30px;
+    }
+    .listMobile{
+        display: flex;
+        flex-direction: row;
+    }
+    .mobileInfoFooter{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .mobileInfoFooter a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .mobileInfoFooter span{
+        color: #fff;
+    }
+    .listMobile{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .logoImageMobile{
+        width:130px;
+        height: 130px;
+    }
 }

@@ -1,0 +1,17 @@
+.redesContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end !important;
+}
+
+.redesIcon {
+    margin: 10px;
+}
+.contRedesRed {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+}

@@ -1,0 +1,49 @@
+.servicesThreeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    margin: 3rem  6rem;
+    background-color: #fff;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    border-radius: 20px;
+}
+.cardServicesChildren{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 20px 0;
+}
+.containerIconsServices i{
+    color: #3349A1;
+    font-size:70px;
+}
+.containerIconsServices{
+    text-align: center;
+}
+.servicesThreeContainer h2{
+    color:  #3349A1;
+    text-align: center;
+    font-weight: 700;
+}
+.title-services{
+    color:  #212121;
+    font-size: 20px !important;
+}
+.infoServiceBox{
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .servicesThreeContainer{
+        margin: 2.5rem  1rem;
+        padding: 25px;
+    }
+    .cardServicesChildren{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .infoServiceBox{
+        width: 100%;
+    }
+}

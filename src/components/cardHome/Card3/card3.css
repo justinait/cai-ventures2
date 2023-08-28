@@ -16,7 +16,7 @@
     align-items: start;
 }
 .homeContactInfo h3{
-    text-align: justify;
+    text-align: left;
     color: #212121;
 }
 .homeContactInfo span {
@@ -33,6 +33,9 @@
     color: #fff;
     text-transform: uppercase;
 }
+.cardImageThree{
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .homeContactContainer{
         flex-direction: column;
@@ -43,5 +46,11 @@
     }
     .homeContactImage{
         display: none;
+    }
+    .cardImageThree{
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 18px; 
     }
 }

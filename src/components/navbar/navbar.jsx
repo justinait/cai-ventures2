@@ -1,111 +1,35 @@
-import { useState } from 'react';
-import './navbar.css';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import {  NavLink } from 'react-router-dom';
-import { Container, Row, Image } from 'react-bootstrap';
+
+import { Image } from 'react-bootstrap';
 import Logo from '../../assets/logoNav.png';
-
-
-
+import './navbar.css';
 const NavBar = () => {
-
-  const [isOpen, setIsOpen] = useState(false);
-  const [clicked, setClicked] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleClick = () => {
-    setClicked(!clicked);
-    setIsOpen(false); 
-  };
-
   return (
-
-    <Container className='containerNav' >
-      <div className="navbar__logo">
+    <Navbar collapseOnSelect expand="lg" className="contieneNav" sticky="top" >
+      <Container>
+        <Navbar.Brand href="#home">
             <NavLink to="/">
               <Image className='logoNav' src={Logo} />
             </NavLink>
-      </div>
-      <Row className='log' xxl={12} xl={12} lg={12}>
-      
-        <nav className={`navbar ${isOpen ? 'open' : ''}`} >
-          
-          <button className={`navbar__toggle-btn`} onClick={toggleNavbar}>
-            <span className="navbar__toggle-icon" />
-          </button>
-          
-          <ul className={`navbar__menu ${isOpen ? 'open' : ''}`}>
+        </Navbar.Brand>
 
-              <li>
-                <NavLink
-                 onClick={handleClick}
-                 className='nav-link'
-                //  ClassName='active'
-                 smooth="true"
-                 duration={500}
-                 to="/"
-                 exact="true"
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  onClick={handleClick}
-                  className='nav-link'
-                  smooth="true"
-                  duration={500}
-                  to="/About"
-                  exact="true"
-                >
-                    Nosotros
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  onClick={handleClick}
-                  className='nav-link'
-                  smooth="true"
-                  duration={500}
-                  to="/servicios"
-                  exact="true"
-
-                >
-              Servicios
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  onClick={handleClick}
-                  className='nav-link'
-                  smooth="true"
-                  duration={500}
-                  to="/Contact"
-                  exact="true"
-                >
-                  Contacto
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  onClick={handleClick}
-                  className='nav-link'
-                  smooth="true"
-                  duration={500}
-                  to="/Faq"
-                  exact="true"
-                >
-                  FAQ
-                </NavLink>
-              </li>
-          </ul>
-        </nav>
-      </Row>
-    </Container>
-
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
+        <Navbar.Collapse id="responsive-navbar-nav position-relative">
+          <Nav className="me-auto">
+            <NavLink className='nav-link' to='/'> Home </NavLink>
+            <NavLink className='nav-link' to='/About'>Nosotros</NavLink>
+            <NavLink className='nav-link' to='/services'>Servicios</NavLink>
+            <NavLink className='nav-link' to='/Contact'>Contacto</NavLink>
+            <NavLink className='nav-link' to='/Faq'>FAQ</NavLink>  
+          </Nav>
+         
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-};
+}
 
 export default NavBar;
