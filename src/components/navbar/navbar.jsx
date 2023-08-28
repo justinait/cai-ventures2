@@ -21,7 +21,7 @@ const NavBar = () => {
           <Nav className="me-auto">
             <NavLink className='nav-link' to='/'> Home </NavLink>
             <NavLink className='nav-link' to='/About'>Nosotros</NavLink>
-            <NavLink className='nav-link' to='/servicios'>Servicios</NavLink>
+            <NavLink className='nav-link' to='/services'>Servicios</NavLink>
             <NavLink className='nav-link' to='/Contact'>Contacto</NavLink>
             <NavLink className='nav-link' to='/Faq'>FAQ</NavLink>  
           </Nav>
