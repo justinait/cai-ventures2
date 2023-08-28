@@ -14,9 +14,9 @@
     gap: 80px;
     padding: 20px 0;
 }
-.containerIconsServices i{
-    color: #3349A1;
-    font-size:70px;
+.cardServicesChildren img{
+    width: 100px;
+    height: 100px;
 }
 .containerIconsServices{
     text-align: center;
@@ -25,10 +25,18 @@
     color:  #3349A1;
     text-align: center;
     font-weight: 700;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
 }
 .title-services{
     color:  #212121;
-    font-size: 20px !important;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
 }
 .infoServiceBox{
     width: 60%;
@@ -42,6 +50,10 @@
     .cardServicesChildren{
         flex-direction: column;
         gap: 40px;
+    }
+    .cardServicesChildren img{
+        width: 68px;
+        height: 68px;
     }
     .infoServiceBox{
         width: 100%;
