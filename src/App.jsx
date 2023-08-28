@@ -8,6 +8,7 @@ import Faq from './page/Faq/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
+import WhatsApp from './components/WhatsApp/WhatsApp';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/faq' element={<Faq/>}/>
       </Routes>
+      <WhatsApp />
       <Footer/>
     </BrowserRouter>
   );
