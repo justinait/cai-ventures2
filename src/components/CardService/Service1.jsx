@@ -6,7 +6,9 @@ function Service1() {
     <div>
         <div className="servicios">
            
-            <h2 className="color-text">¿Qué servicios ofrecemos?</h2>
+            <h3 className="serviceMobileTitle">Nuestros servicios</h3>
+            <h3 className="serviceDesktopTitle">¿Qué servicios ofrecemos?</h3>
+            
             <div className="row">
                 <div className="col-12 col-lg-12">
                     <h3 className="color-text titutos-services">1. Tesis de grado</h3>
