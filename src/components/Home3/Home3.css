@@ -17,4 +17,8 @@
 .carouselHome img {
     object-position: center !important;
 }
-  
+.swiper-pagination-bullet {
+  background-color: #dc3545 !important;
+  width: .8rem !important;
+  height: .8rem !important;
+}

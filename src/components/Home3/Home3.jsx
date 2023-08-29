@@ -5,12 +5,11 @@ import swipperTres from '../../assets/swipperTres.png';
 
 import 'swiper/css';
 import 'swiper/css/bundle';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css/pagination'; 
 import './Home3.css';
 
-import React, { useRef, useState } from 'react';
-import {Autoplay, Pagination, Navigation} from 'swiper/modules';
+import React from 'react';
+import { Autoplay, Pagination } from 'swiper/modules'; 
 import { Image } from 'react-bootstrap';
 
 const Home3 = () => {
@@ -23,25 +22,21 @@ const Home3 = () => {
         }}
         pagination={{
             clickable: true,
-          }}
+        }}
         spaceBetween={30}
         slidesPerView={1}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
 
-        // onSlideChange={() => console.log('slide change')}
-        // onSwiper={(swiper) => console.log(swiper)}
         >
-    <SwiperSlide>
-        <img  src={home4} />
-    </SwiperSlide>
-    <SwiperSlide>
-        <img src={swipperDos} />
-    </SwiperSlide>
-    <SwiperSlide>
-        <img src={swipperTres} />
-    </SwiperSlide>
-
+      <SwiperSlide>
+        <img src={home4} alt="Slide 1" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={swipperDos} alt="Slide 2" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src={swipperTres} alt="Slide 3" />
+      </SwiperSlide>
     </Swiper>
   )
 }
