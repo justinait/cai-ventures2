@@ -99,3 +99,19 @@
     background-color: #FF5963 !important;
     border: none !important;
 }
+
+
+@media screen and (max-width: 768px){
+    .subtitleServiceDos {
+        text-align: center;
+    }
+    .tituloSecDos {
+        font-size: 26px;
+    }
+    .containerTextService {
+        width: 95vw;
+    }
+    .serviceButtons {
+        width: 100%;
+    }
+}

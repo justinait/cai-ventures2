@@ -9,6 +9,8 @@
     width: 350px;
     height: 320px;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 .homeContactInfo{
     display: flex;

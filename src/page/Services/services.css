@@ -87,7 +87,9 @@ i {
         text-align: left;
         padding: 5px 15px;
         margin: 3rem;
-        border: 3px solid var(--colors-main-friendly-blue, #3349A1)
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 2px solid var(--colors-main-friendly-blue, #3349A1);
+        
     }   
     .carrerasText{
         width: 90vw;

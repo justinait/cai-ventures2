@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import home2 from '../../assets/home2.jpg';
+import home2 from '../../assets/home22.jpg';
 
 function Home2() {
   return (
