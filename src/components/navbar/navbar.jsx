@@ -16,7 +16,7 @@ const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true)
   return (
 <nav className="contieneNav navbar navbar-expand-md navbar-dark ">
-      <div className="container">
+      <div className="container NavbarCont">
       <Navbar.Brand href="#home">
              <NavLink to="/">
                <Image className='logoNav' src={Logo} />

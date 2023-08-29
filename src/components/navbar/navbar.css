@@ -7,6 +7,12 @@
   box-shadow: none !important;
 }
 
+#navbarNav {
+  border-bottom: 1px solid #3349A1 !important;
+  background: #3349A1 !important;
+  box-shadow: none !important;
+}
+
 .contieneNav {
     background-color: #3349A1 !important;
   }
@@ -94,12 +100,6 @@
 
 /* Fin animación :) */
 
-  
-
-  
-  
-  
-  
   .navbar__logo {
     width: 0px !important;
   }
@@ -185,8 +185,28 @@
         transform: none !important;
         height: 0px !important;
       }
-     /*
-      .nav-link:hover::after {
-        transform:none; 
-      } */
+
+      #navbarNav {
+        border-bottom: 1px solid #ACBCFF !important;
+        background: var(--colors-light-friendly-blue, #EAEEFF) !important;
+        box-shadow: 0px 0px 0px 10px #EAEEFF !important;
+    }
+
+    .nav-link {
+      color: black;
+    }
+
+    .nav-link.active {
+      color: black !important;
+    }
+
+    .NavbarCont {
+      width: initial;
+    }
+
+    .container {
+      width: 100vw !important;
+    }
+
+
     }
