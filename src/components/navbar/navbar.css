@@ -1,3 +1,12 @@
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 .contieneNav {
     background-color: #3349A1 !important;
   }
@@ -15,6 +24,10 @@
     margin-left: 0px;
   }
 
+
+
+
+
   .me-auto {
     justify-content: end !important;
     margin-right: 0px !important;
@@ -23,6 +36,10 @@
 
 .navbar-collapse {
   justify-content: end !important;
+}
+
+.responsive-navbar-nav {
+  color: white !important;
 }
 
   .nav-link {
@@ -154,89 +171,22 @@
       margin-right: 1rem;
     }
     
-  
-    
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-      }
-  
-      .log {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap !important;
+    @media (max-width: 767px) {
 
+      .nav-link.active {
+        display: inline-block;
+        transition: all 1s;
+        transform: translateX(8px);
       }
 
-
-  
-      .navbar__logo {
-        width: 0px !important;
+      .nav-link::after {
+        transition: none !important;
+        background-color: none;
+        transform: none !important;
+        height: 0px !important;
       }
-    
-      .navbar__toggle-btn {
-        display: flex;
-        align-items: center;
-        margin-top: 1rem;
-      }
-    
-      .navbar__menu {
-        display: none;
-        flex-direction: column;
-        padding: 1rem;
-      }
-    
-      .navbar__menu.open {
-        right: -48px;
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        margin-top: 2rem;
-        background: #EAEEFF;
-        max-width: 1440px;
-        justify-content: center;
-      }
+     /*
+      .nav-link:hover::after {
+        transform:none; 
+      } */
     }
-    
-
-  
- 
-  
-
-  /* @media (min-width: 300px) and (max-width:768px) { */
-    @media screen and (max-width: 768px){
-    .navbar__menu a {
-      color: black;
-      font-family: "Montserrat";
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 200;
-      line-height: normal;
-      text-decoration: none;
-      padding: 10px;
-    }
-
-    .nav-link.active {
-      color: black;
-    }
-  
-    .nav-link::after {
-      background-color: black; 
-    }
-    .navbar__menu.open {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      margin-top: 2rem;
-      background: #EAEEFF;
-      width: 700px;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .navbar__menu li {
-      margin-left: 9rem;
-    }
-
-  }

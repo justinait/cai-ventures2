@@ -1,9 +1,11 @@
 .redesContainer {
-    height: 100vh;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end !important;
+    margin-top:  180px !important;
 }
 
 .redesIcon {
@@ -14,4 +16,10 @@
     align-items: center !important;
     justify-content: center !important;
     flex-direction: column !important;
+}
+
+@media (max-width: 768px) {
+    .redesContainer {
+        display: none !important;
+    }
 }

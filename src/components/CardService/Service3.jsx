@@ -1,4 +1,8 @@
 import './service3.css';
+import planTesisImage from '../../assets/icons/icon-park-outline_plan.png';
+import borrarTesisImage from '../../assets/icons/bx_edit.png';
+import sustenTesisImage from '../../assets/icons/mdi_teach-poll.png';
+
 const Service3 = () => {
 
     return (
@@ -6,7 +10,7 @@ const Service3 = () => {
             <h2>Nuestras etapas de asesorías</h2>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <i className="fa-regular fa-calendar-check"></i>
+                    <img src={planTesisImage} alt="icono calendario con un check" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Plan de tesis</h3>
@@ -15,7 +19,7 @@ const Service3 = () => {
             </div>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <i className="fa-solid fa-pen-to-square"></i>
+                    <img src={borrarTesisImage} alt="icono de un lapiz y una hoja" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Borrador de Tesis</h3>
@@ -24,7 +28,7 @@ const Service3 = () => {
             </div>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <i className="fa-solid fa-person-chalkboard"></i>
+                    <img src={sustenTesisImage} alt="icono de teach-poll" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Sustentación</h3>
