@@ -8,9 +8,9 @@ import 'swiper/css/bundle';
 import 'swiper/css/pagination'; 
 import './Home3.css';
 
-import React from 'react';
+
 import { Autoplay, Pagination } from 'swiper/modules'; 
-import { Image } from 'react-bootstrap';
+
 
 const Home3 = () => {
   return (
