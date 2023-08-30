@@ -6,9 +6,9 @@ import './contact.css'
 function Contact() {
   return (
     <div>
-      <Card1/>
-      <Card2/>
-      </div>
+      <Card1 />
+      <Card2 />
+    </div>
   )
 }
 

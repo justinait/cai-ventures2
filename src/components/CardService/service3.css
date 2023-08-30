@@ -1,61 +1,107 @@
-.servicesThreeContainer{
+.servicesThreeContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 50px;
-    margin: 3rem  6rem;
+    margin: 3rem 6rem;
     background-color: #fff;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
 }
-.cardServicesChildren{
+
+.cardServicesChildren {
     display: flex;
     justify-content: center;
     gap: 80px;
     padding: 20px 0;
 }
-.cardServicesChildren img{
+
+.cardServicesChildren img {
     width: 100px;
     height: 100px;
 }
-.containerIconsServices{
+
+.containerIconsServices {
     text-align: center;
 }
-.servicesThreeContainer h2{
-    color:  #3349A1;
+
+.servicesThreeContainer h2 {
+    color: #3349A1;
     text-align: center;
     font-weight: 700;
     font-family: Montserrat;
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal; 
+    line-height: normal;
 }
-.title-services{
-    color:  #212121;
+
+.title-services {
+    color: #212121;
     font-size: 24px !important;
     font-style: normal;
     font-weight: 600;
-    line-height: normal; 
+    line-height: normal;
 }
-.infoServiceBox{
+
+.infoServiceBox {
     width: 60%;
 }
 
 @media screen and (max-width: 768px) {
-    .servicesThreeContainer{
-        margin: 2.5rem  1rem;
+    .servicesThreeContainer {
+        margin: 2.5rem 1rem;
         padding: 25px;
     }
-    .cardServicesChildren{
+
+    .cardServicesChildren {
         flex-direction: column;
         gap: 40px;
     }
-    .cardServicesChildren img{
+
+    .cardServicesChildren img {
         width: 68px;
         height: 68px;
     }
-    .infoServiceBox{
+
+    .infoServiceBox {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1440px) {
+  /*   .containerIconsServices {
+        width: 68px;
+        height: 67px;
+    }
+ */
+
+
+    
+    
+ }
+    .servicesThreeContainer {
+       
+        margin: 2.5rem 1rem;
+        padding: 25px;
+        position: relative;
+
+    
+       
+    }
+
+    .cardServicesChildren {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cardServicesChildren img {
+        width: 68px;
+        height: 68px;
+        
+    }
+
+    .infoServiceBox {
+        width: 100%;
+       justify-content: center;
+    }

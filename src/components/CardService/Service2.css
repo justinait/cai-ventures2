@@ -101,16 +101,51 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .subtitleServiceDos {
         text-align: center;
+        
     }
+
     .tituloSecDos {
         font-size: 26px;
     }
+
     .containerTextService {
         width: 95vw;
     }
+
+    .serviceButtons {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+  /*   .containerServiceDos{
+        background-color: red;
+    }
+    */
+    .subtitleServiceDos {
+        text-align: center;
+    }
+
+   /*  .imgServiceDos {
+        width: 68px;
+        height: 68px;
+    } */
+    .textServiceDos{
+        font-size: 18px;
+    }
+
+
+    .tituloSecDos {
+        font-size: 26px;
+    }
+
+    .containerTextService {
+        width: 95vw;
+    }
+
     .serviceButtons {
         width: 100%;
     }
