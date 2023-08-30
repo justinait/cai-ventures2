@@ -1,0 +1,24 @@
+.contactPagesContainer{
+    display: flex;
+    width: 100%;
+}
+
+@media screen and (min-width: 360px){
+    .contactPagesContainer{
+        flex-direction: column-reverse;
+        padding: 16px;
+        margin: 20px 0 70px 0;
+    }
+}
+@media screen and (min-width: 768px){
+    .contactPagesContainer{
+        padding: 50px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .contactPagesContainer{
+        flex-direction: row;
+        padding: 40px 20px;
+        gap: 10px;
+    }
+}

@@ -5,7 +5,7 @@ import './contact.css'
 
 function Contact() {
   return (
-    <div>
+    <div className='contactPagesContainer'>
 
       <Card1/>
       <Card2/>
