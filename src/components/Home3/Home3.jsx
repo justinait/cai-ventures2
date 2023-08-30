@@ -33,7 +33,7 @@ const Home3 = () => {
 
         >
       <SwiperSlide>
-        <Image fluid src={home4} alt="Slide 1" />
+        <Image fluid src={home4} alt="imagen personas" />
       </SwiperSlide>
       <SwiperSlide>
         <Image fluid src={swipperDos} alt="Slide 2" />
