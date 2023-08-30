@@ -25,10 +25,11 @@
     background-color: #FF5963;
     transition: all 1s;
 }
-.homeTesisText span a{
+.homeTesisText span .linkAboutTesis{
     text-decoration: none;
     color:#fff ;
     text-transform: uppercase;
+    font-weight: 500;
 }
 .homeTesisText h3{
     text-align: left;
