@@ -7,6 +7,7 @@ import './Hero.css'
 function Hero() {
   return (
     <div className='homeContainer2'>
+
       <div className='homePresentation'>
         <h6>"Asesoría de tesis para apoyarte en tu proceso de titulación"</h6>
         <h3>CAI Ventures</h3>
@@ -26,6 +27,7 @@ function Hero() {
           <Button className='homeButtons' variant="danger">EMPIEZA AHORA</Button>
         </Link>
       </div>
+
     </div>
   )
 }
