@@ -1,0 +1,50 @@
+.homeContainer3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7rem;
+    align-items: center;
+}
+
+.homeImageWho {
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+}
+.homeWhoTitle {
+    font-size: 33px !important;
+}
+.homeWho {
+    width: 25rem;
+}
+.homeWho p {
+    text-align: justify;
+    margin-bottom: 0%;
+}
+
+.homeWhoText {
+    margin: 6% 0px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .homeContainer3 {
+        flex-direction: column;
+    }
+    .homeWhoTitle {
+        font-size: 22px !important;
+    }
+    .homeImageWho {
+        width: 300px;
+        height: 300px;
+    }
+    .homeWho {
+        width: unset;
+        padding: 6%;
+    }
+    .homeWho p {    
+        margin-bottom: 1rem;
+    }
+}
