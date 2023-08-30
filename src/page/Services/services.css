@@ -209,7 +209,7 @@ i {
 }
 
 /* tablet rsponsive service1 */
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .serviceMobileTitle {
         display: block;
     }
