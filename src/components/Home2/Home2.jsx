@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import home2 from '../../assets/home22.jpg';
+import { Link } from 'react-router-dom';
+import './Home.css'
 
 function Home2() {
   return (
@@ -13,7 +15,11 @@ function Home2() {
           <p> 2. Te acompañamos hasta que obtengas tu título. Nuestro equipo de asesores e investigadores está preparado para asegurar que obtengas tu título en el primer intento.</p>
           <p> 3. Recibe una guía fácil y práctica para avanzar. Gracias a la metodología de nuestros expertos y nuestra plataforma, llevarás un proceso práctico en cada una de las etapas de la asesoría.</p>
         </div>
-        <Button className='homeButtons' variant="danger">VER MÁS</Button>{' '}
+
+        <Link to="/about">
+          <Button className='homeButtons' variant="danger">VER MÁS</Button>{' '}
+        </Link>
+        
 
       </div>
     </div>

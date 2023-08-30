@@ -1,0 +1,153 @@
+.homeContainer {
+    padding: 3.5rem 6.5rem 0rem;
+}
+
+h3 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+}
+
+.homeButtons {
+    border-radius: 16px !important;
+    background: var(--coral-red, #CD373B);
+    background: var(--colors-main-coral-red, #CD373B);
+    border: none !important;    
+    padding: 10px 28px !important;
+}
+.homeButtons:hover {
+    background: var(--colors-light-coral-red, #FF5963) !important;
+    border: none !important;
+    transition: all 0.5s;
+}
+
+.homeContainer2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+}
+
+.homePresentation {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.homePresentation h6 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+.homePresentation p {
+    margin-top: 3%;
+}
+.homePresentationImage {
+    width: 16.125rem;
+}
+
+.homePresentationImage p {
+    color: var(--main, var(--colors-main-friendly-blue, #3349A1));
+}
+
+.homePresentationImage img {
+    width: 300px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.homePresentationImage .homeButtons {
+    display: none;
+}
+.specialTextHome {
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 6%;
+}
+
+@media (max-width: 1920px) {
+    .homeContainer2 {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1400px) {
+    .homeContainer{
+        padding: 2rem 1.5rem;        
+    }
+
+    .homeButtons {
+        width: 100%;
+    }
+    .homePresentation {
+        width: 80vw;
+    }
+    .homePresentationImage p{
+        display: none;
+    }
+    .homeContainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homePresentationImage {
+        width: unset;
+    }
+    .homePresentationImage img {
+        width: 80vw;
+        height: 300px;
+        border-radius: 25px;
+        object-fit: cover;
+        object-position: center;
+        margin: 7% 0;
+        border-radius: 25px;
+    }
+    .homePresentationImage .homeButtons {
+        display: block;
+    }
+    .homePresentation .homeButtons {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .homeContainer{
+        padding: 2rem 1.5rem;        
+    }
+    .homePresentation p {
+        margin-top: 3%;
+        font-weight: 500;
+        font-size: initial;
+    }
+    .homeButtons {
+        width: 100%;
+    }
+    .homePresentation, .homePresentationImage img {
+        width: 90vw;
+    }
+    .homePresentationImage img {
+        height: 35vh;
+    }
+    .homePresentationImage p{
+        display: none;
+    }
+    .homePresentation h6 {
+        font-weight: 400;
+    }
+    .homeContainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homePresentationImage {
+        width: unset;
+    }
+    .homePresentationImage .homeButtons {
+        display: block;
+    }
+    
+    .homePresentation .homeButtons {
+        display: none;
+    }
+
+}

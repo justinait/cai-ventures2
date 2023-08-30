@@ -1,0 +1,98 @@
+.divContactContainer{
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.divContactContainer h2{
+    font-size: 56px;
+    color: #3349A1;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
+.formContactContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+}
+.formContactContainer input{
+    background-color: #EAEEFF;
+    border-radius: 16px;
+    border: none;
+    padding: 12px 50px;
+    color: #3C3C3C;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.formContactContainer textarea{
+    resize: none;
+    background-color: #EAEEFF;
+    color: #3C3C3C; 
+    border-radius: 16px;
+    border: none;
+    padding: 12px 60px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+.btnFormContact{
+    margin-left: 60%;
+    border: 0;
+    display: flex;
+    width: 220px;
+    height: 60px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:#fff;
+    background-color: #CD373B;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .divContactContainer{
+        width: 100%;
+    }
+    .divContactContainer h2{
+        font-size: 24px;
+        font-weight: 600; 
+    }
+    .formContactContainer{
+        gap: 30px;
+    }
+    .formContactContainer input{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px 20px; 
+    }
+    .formContactContainer textarea {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px 20px; 
+    }
+    .btnFormContact{
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        width: 100%;
+        height: 40px;
+        padding: 0 24px; 
+    }
+}
+
+@media (min-width: 769px)  and (max-width:1024px){
+
+}
