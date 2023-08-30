@@ -1,5 +1,6 @@
 import './Footer.css';
-import LogoFooter from '../../assets/caiVenturesLogo.png';
+import { Link } from 'react-router-dom';
+import logoFooter from '../../assets/logoFooter.png';
 import Instagram from '../../assets/Instagram.png';
 import Facebook from '../../assets/Facebook.png';
 import Tiktok from '../../assets/Tiktok.png';
@@ -10,7 +11,7 @@ const Footer = () => {
         <>
             <footer className='footer'>
                 <div className='containerLogos'>
-                    <img src={LogoFooter} alt="logo de la empresa"/>
+                    <img src={logoFooter} alt="logo de la empresa"/>
                     <ul className='list listContact'>
                         <li><a href="/"><img src={Instagram} alt="logo de instagram" /></a></li>
                         <li><a href="/"><img src={Facebook} alt="logo de facebook" /></a></li>
@@ -21,33 +22,36 @@ const Footer = () => {
                 <div className='containerIndice'>
                     <h4>Indice</h4>
                     <ul className='list listAnimation'>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/about">Nosotros</a></li>
-                        <li><a href="/services">Servicios</a></li>
-                        <li><a href="/contact">Contacto</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><Link className='linkFooter' to='/'>Inicio</Link></li>
+                        <li><Link className='linkFooter' to='/about'>Nosotros</Link></li>
+                        <li><Link className='linkFooter' to='/services'>Servicios</Link></li>
+                        <li><Link className='linkFooter' to='/contact'>Contacto</Link></li>
+                        <li><Link className='linkFooter' to='/faq'>FAQ</Link></li>
                     </ul>
                 </div>
                 <div className='containerHelp'>
                     <h4>Ayuda</h4>
                     <ul className='list listAnimation'>
-                        <li><a href="/">Politicas de Privacidad</a></li>
-                        <li><a href="/">Términos y Condiciones</a></li>
+                        <li><Link className='linkFooter'>Politicas de Privacidad</Link></li>
+                        <li><Link className='linkFooter'>Términos y Condiciones</Link></li>
                     </ul>
                 </div>
             </footer>
             <footer className='mobileFooterContainer'>
-                <ul className='list listMobile'>
-                    <li><a href="/"><img className='mobileImagesFooter' src={Instagram} alt="logo de instagram" /></a></li>
-                    <li><a href="/"><img className='mobileImagesFooter' src={Facebook} alt="logo de facebook" /></a></li>
-                    <li><a href="/"><img className='mobileImagesFooter logoImageMobile' src={LogoFooter} alt="logo de la empresa"/></a></li>
-                    <li><a href="/"><img className='mobileImagesFooter' src={Linkedin} alt="logo de linkedin" /></a></li>
-                    <li><a href="/"><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
-                </ul>
+                <div className='mobileLogoContainer'>
+                    <Link to='/'><img className='logoImageMobile' src={logoFooter} alt="logo de la empresa"/></Link>
+                </div>
                 <div className='mobileInfoFooter'>
-                    <a href="/">Términos y Condiciones</a>
-                    <span>-</span>
-                    <a href="/">Politicas de Privacidad</a>
+                    <ul className='list listMobile'>
+                        <li><a href="/"><img className='mobileImagesFooter' src={Instagram} alt="logo de instagram" /></a></li>
+                        <li><a href="/"><img className='mobileImagesFooter' src={Facebook} alt="logo de facebook" /></a></li>
+                        <li><a href="/"><img className='mobileImagesFooter' src={Linkedin} alt="logo de linkedin" /></a></li>
+                        <li><a href="/"><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
+                    </ul>
+                    <div className='listConditions'>
+                        <Link className='linkFooter'>Términos y Condiciones</Link>
+                        <Link className='linkFooter'>Politicas de Privacidad</Link>
+                    </div>
                 </div>
             </footer>
         </>
