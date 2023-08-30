@@ -7,7 +7,7 @@ function WhatsApp() {
     <div className='whatsappContainer'>
         
       <a href='https://wa.link/xn96ef' target="_blank">
-        <img src={WhatsAppIcon} alt="" className='whatsappIcon' />
+        <img src={WhatsAppIcon} alt="WhatsApp" className='whatsappIcon' />
       </a>
         
     </div>

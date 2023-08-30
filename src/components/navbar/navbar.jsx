@@ -5,21 +5,40 @@ import {  NavLink } from 'react-router-dom';
 
 import Navbar from 'react-bootstrap/Navbar';
 
-
+import  {  useEffect } from "react";
 import { Image } from 'react-bootstrap';
 import Logo from '../../assets/logoNav.png';
+import logoBajada from '../../assets/logoBajada.png';
 import './navbar.css';
 
 
 
 const NavBar = () => {
-  const [collapsed, setCollapsed] = useState(true)
+
+
+
+  const [collapsed, setCollapsed] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+  const logoToShow = isDesktop ? logoBajada : Logo;
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
 <nav className="contieneNav navbar navbar-expand-md navbar-dark ">
       <div className="container NavbarCont">
       <Navbar.Brand href="#home">
              <NavLink to="/">
-               <Image className='logoNav' src={Logo} />
+               <Image className='logoNav' src={logoToShow} />
             </NavLink>
          </Navbar.Brand>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onClick={() => setCollapsed(!collapsed)}>
