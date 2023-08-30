@@ -1,8 +1,21 @@
+import { Container, Row, Col } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
+import faqImage from '../../assets/faqImage.png';
+import './Questions.css';
 
 function Questions() {
   return (
-    <Accordion defaultActiveKey={['0']} alwaysOpen>
+    <Container className='containerFaq'>
+      <Row className='faqRow'>
+        <Col className='ContainerImgTitle'>
+          <Col xl={4}>
+            <img className='imgFaq'  src={faqImage} />
+            </Col>
+          <Col xl={7} md={6} sm={5}>
+            <h2 className='faqTitle'>Preguntas Frecuentes</h2>
+            <p className='textFaq'>Sabemos lo importante que es para vos entregar el mejor proyecto universitario. Te brindamos algunas respuestas a las preguntas frecuentes de nuestro servicio.</p>
+            <Col>
+            <Accordion defaultActiveKey={['0']} alwaysOpen>
       <Accordion.Item eventKey="0">
         <Accordion.Header>¿Hacen elaboración de Tesis?</Accordion.Header>
         <Accordion.Body>
@@ -35,6 +48,12 @@ function Questions() {
         </Accordion.Body>
       </Accordion.Item>      
     </Accordion>
+            </Col>
+          </Col>
+        </Col>
+      </Row>
+
+    </Container>
   );
 }
 
