@@ -32,7 +32,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
 }
 .homePresentation h6 {
     font-weight: 500;
@@ -54,8 +53,13 @@ h3 {
 .homePresentationImage img {
     width: 300px;
     border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
 }
 
+.homePresentationImage .homeButtons {
+    display: none;
+}
 .specialTextHome {
     font-size: larger;
     font-weight: 500;
@@ -63,7 +67,13 @@ h3 {
     margin-top: 6%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1920px) {
+    .homeContainer2 {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1400px) {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }
@@ -71,10 +81,73 @@ h3 {
     .homeButtons {
         width: 100%;
     }
+    .homePresentation {
+        width: 80vw;
+    }
     .homePresentationImage p{
         display: none;
     }
     .homeContainer2 {
         flex-direction: column;
+        align-items: center;
     }
+    .homePresentationImage {
+        width: unset;
+    }
+    .homePresentationImage img {
+        width: 80vw;
+        height: 300px;
+        border-radius: 25px;
+        object-fit: cover;
+        object-position: center;
+        margin: 7% 0;
+        border-radius: 25px;
+    }
+    .homePresentationImage .homeButtons {
+        display: block;
+    }
+    .homePresentation .homeButtons {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .homeContainer{
+        padding: 2rem 1.5rem;        
+    }
+    .homePresentation p {
+        margin-top: 3%;
+        font-weight: 500;
+        font-size: initial;
+    }
+    .homeButtons {
+        width: 100%;
+    }
+    .homePresentation, .homePresentationImage img {
+        width: 90vw;
+    }
+    .homePresentationImage img {
+        height: 35vh;
+    }
+    .homePresentationImage p{
+        display: none;
+    }
+    .homePresentation h6 {
+        font-weight: 400;
+    }
+    .homeContainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .homePresentationImage {
+        width: unset;
+    }
+    .homePresentationImage .homeButtons {
+        display: block;
+    }
+    
+    .homePresentation .homeButtons {
+        display: none;
+    }
+
 }

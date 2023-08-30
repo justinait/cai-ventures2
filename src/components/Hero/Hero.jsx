@@ -21,6 +21,10 @@ function Hero() {
       <div className='homePresentationImage'>
         <img src={home1} alt='Chica graduada' />
         <p className='specialTextHome'>“Obtén tu título ahora con CAI Ventures”</p>
+        
+        <Link to="/services">
+          <Button className='homeButtons' variant="danger">EMPIEZA AHORA</Button>
+        </Link>
       </div>
     </div>
   )
