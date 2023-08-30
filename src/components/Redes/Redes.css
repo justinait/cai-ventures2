@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: flex-end !important;
     margin-top:  180px !important;
+    z-index: 2 !important;
 }
 
 .redesIcon {
