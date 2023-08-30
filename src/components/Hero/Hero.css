@@ -73,7 +73,7 @@ h3 {
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }
