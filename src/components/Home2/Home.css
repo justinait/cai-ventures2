@@ -21,14 +21,41 @@
 }
 .homeWho p {
     text-align: justify;
-    margin-bottom: 0%;
 }
 
 .homeWhoText {
     margin: 6% 0px;
 }
+.aux .homeButtons {
+    display: none;
+}
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1440px) {
+    .homeContainer3 {
+        flex-direction: column-reverse;
+    }
+    
+    .homeWho .homeButtons{
+        display: none;
+    }
+    .homeWho {
+        width: 80vw;
+    }
+    
+    .aux .homeButtons {
+        display: block;
+    }
+    .homeImageWho {
+        width: 50vw;
+        margin-bottom: 10%;
+        box-shadow: unset;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
     
     .homeContainer3 {
         flex-direction: column;
