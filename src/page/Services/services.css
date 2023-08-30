@@ -219,7 +219,7 @@ i {
     .servicios .row {
         text-align: left;
         padding: 5px 15px;
-        margin: 3rem;
+        margin: 5rem;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 2px solid var(--colors-main-friendly-blue, #3349A1);
         
