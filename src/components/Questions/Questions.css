@@ -92,7 +92,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
     .ContainerImgTitle {
         flex-direction: column;
@@ -102,10 +102,25 @@
     .faqTitle {
         margin-top: 2rem;
     }
+    .contImgFaq {
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 360px)  {
     .containerFaq {
         background-color: #EAEEFF;
+    }
+
+    .faqTitle {
+        font-size: 20px;
+    }
+
+    .textFaq {
+        font-size: 16px;
     }
 }
