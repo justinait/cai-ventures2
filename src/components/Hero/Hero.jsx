@@ -15,7 +15,7 @@ function Hero() {
             <Button className='homeButtons' variant="danger">EMPEZÁ AHORA</Button>
         </div>
         <div className='homePresentationImage'>
-            <img src={home1} />
+            <img src={home1} alt='Chica graduada' />
             <p className='specialTextHome'>“Obtén tu título ahora con CAI Ventures”</p>
         </div>
     </div>
