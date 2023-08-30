@@ -15,10 +15,10 @@ function Questions() {
             <h2 className='faqTitle'>Preguntas Frecuentes</h2>
             <p className='textFaq'>Sabemos lo importante que es para vos entregar el mejor proyecto universitario. Te brindamos algunas respuestas a las preguntas frecuentes de nuestro servicio.</p>
             <Col>
-            <Accordion defaultActiveKey={['0']} alwaysOpen>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>¿Hacen elaboración de Tesis?</Accordion.Header>
-        <Accordion.Body>
+            <Accordion defaultActiveKey={['0']} alwaysOpen className='custom-accordion'>
+      <Accordion.Item eventKey="0" >
+        <Accordion.Header className='accordionHeader'>¿Hacen elaboración de Tesis?</Accordion.Header>
+        <Accordion.Body className='textoAcordion'>
         No, en CAI VENTURES no elaboramos tesis. 
         Sin embargo, ofrecemos un servicio integral de 
         asesoría para tesis, con el objetivo de fomentar 
@@ -26,24 +26,24 @@ function Questions() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>¿Con qué carreras cuentan?</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Header className='accordionHeader'>¿Con qué carreras cuentan?</Accordion.Header>
+        <Accordion.Body className='textoAcordion'>
         Explora las diversas carreras de Ciencias 
         Sociales que ofrecemos. Visita nuestra página 
         de servicios para más información.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>¿El asesor está especializado en mi carrera?</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Header className='accordionHeader'>¿El asesor está especializado en mi carrera?</Accordion.Header>
+        <Accordion.Body className='textoAcordion'>
         Explora las diversas carreras de Ciencias 
         Sociales que ofrecemos. Visita nuestra página 
         de servicios para más información.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
-        <Accordion.Header>¿Tienen modalidades de pago?</Accordion.Header>
-        <Accordion.Body>
+        <Accordion.Header className='accordionHeader'>¿Tienen modalidades de pago?</Accordion.Header>
+        <Accordion.Body className='textoAcordion'>
         Sí. Ofrecemos y aceptamos pagos en cuotas.
         </Accordion.Body>
       </Accordion.Item>      
