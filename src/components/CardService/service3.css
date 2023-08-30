@@ -53,6 +53,10 @@
         margin: 2.5rem 1rem;
         padding: 25px;
     }
+    .title-services{
+        text-align: center;
+
+    }
 
     .cardServicesChildren {
         flex-direction: column;
@@ -69,14 +73,17 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media  (max-width: 1440px) {
   /*   .containerIconsServices {
         width: 68px;
         height: 67px;
     }
  */
 
+ .title-services{
+    text-align: center;
 
+}
     
     
  }
