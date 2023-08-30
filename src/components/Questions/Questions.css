@@ -1,0 +1,126 @@
+@media screen and (max-width: 1440px) {
+.containerFaq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1792px;
+    padding: 80px 60px;
+    align-items: flex-start;
+    gap: 85px;
+}
+
+.textoAcordion {
+    font-size: 16px;
+}
+
+.faqTitle {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #3349A1;
+    margin-bottom: 2rem;
+}
+
+.ContainerImgTitle {
+    display: flex;
+    flex-direction: row;
+    /* gap: 3rem; */
+}
+
+.textFaq {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 3rem;
+}
+
+.imgFaq {
+    width: 300px;
+}
+
+.imgFaqContainer {
+    width: auto !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.accordion-button::before {
+    background-color: red !important;
+}
+
+.accordion-button::after {
+    background-color: #202B55 !important;
+    border-radius: 24px;
+    color: white !important;
+}
+
+.accordion-item {
+    background-color: #EAEEFF !important;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 !important;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='%23FFFFFF' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='%23FFFFFF' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    --bs-accordion-active-bg: #EAEEFF !important;
+    --bs-accordion-active-color: #212121;
+    --bs-accordion-btn-icon-width: 1.50rem !important;
+} 
+
+
+
+
+
+
+.accordion-button:not(.collapsed) {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .ContainerImgTitle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faqTitle {
+        margin-top: 2rem;
+    }
+    .contImgFaq {
+        display: flex;
+        flex: 0 0 auto;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 360px)  {
+    .containerFaq {
+        background-color: #EAEEFF;
+    }
+
+    .faqTitle {
+        font-size: 20px;
+    }
+
+    .textFaq {
+        font-size: 16px;
+    }
+}

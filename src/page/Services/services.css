@@ -13,7 +13,7 @@ i {
     margin: 4rem 5rem 0 5rem;
 }
 
-.color-text {
+.blueText {
     color: #3349A1
 }
 
@@ -204,6 +204,39 @@ i {
 @media screen and (max-width: 576px) {
     .row {
         flex-direction: column ;
+    }
+
+}
+
+/* tablet rsponsive service1 */
+@media (min-width: 768px) and (max-width: 1440px) {
+    .serviceMobileTitle {
+        display: block;
+    }
+    .serviceDesktopTitle{
+        display: none;
+    }
+    .servicios .row {
+        text-align: left;
+        padding: 5px 15px;
+        margin: 5rem;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 2px solid var(--colors-main-friendly-blue, #3349A1);
+        
+    }   
+    .carrerasText{
+        width: 90vw;
+        padding: 10%;
+        margin: auto;
+    }
+    
+    .carreras {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    
+    .img-ciencas-sociales  {
+        margin-left: 0px;
     }
 
 }

@@ -8,7 +8,7 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
-    color: #fff;
+    color: #D9D9D9;
     padding: 45px 100px;
     width: 100%;
     height: 300px;
@@ -16,18 +16,19 @@
 .footer div {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    align-self: self-start;
 }
 .list{
     list-style-type: none;
     padding-left: 0px;
 }
-.list li a{
-    color: #fff;
+.list li .linkFooter{
+    color: #D9D9D9;
     text-decoration: none;
 }
 .containerLogos {
-    margin-top: -100px;
+    margin-top: -15px;
+    gap: 40px;
     width: 320px;
 }
 .containerLogos img{
@@ -37,62 +38,68 @@
 .listContact{
     display: flex;
     justify-content: space-evenly;
-    margin-top: -100px;
 }
 .listContact li img{
     width: 35px;
     height: 35px;
 }
 .containerHelp{
-    margin-top: -90px;
+    gap: 10px;
 }
 .listAnimation li:hover{
     display: inline-block;
     transition: all 1s;
     transform: translateX(8px);
 }
-.listAnimation li a:hover{
+.listAnimation li .linkFooter:hover{
     color: #F54D57;
 }
 .containerIndice{
     padding-right: 130px;
+    gap: 10px;
 }
 @media screen and (max-width: 768px) {
     .footer{
         display: none;
     }
     .mobileFooterContainer{
-        display: block;
-        width: 100%;
-        align-items: center;
-        padding: 10px 10px 30px 10px;
-    }
-    .mobileImagesFooter{
-        width: 30px;
-        height: 30px;
-    }
-    .listMobile{
         display: flex;
-        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 20px 40px;
+        gap: 30px;
+    }
+    .mobileLogoContainer{
+        width: 120px;
+    }
+    .logoImageMobile{
+        width: 100%;
     }
     .mobileInfoFooter{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        width: 150px;
+        gap: 10px;
     }
-    .mobileInfoFooter a{
+    .mobileInfoFooter .linkFooter{
         text-decoration: none;
         color: #fff;
-    }
-    .mobileInfoFooter span{
-        color: #fff;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
     }
     .listMobile{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
-    .logoImageMobile{
-        width:130px;
-        height: 130px;
+    .mobileImagesFooter{
+        width: 24px;
+        height: 24px;
+    }
+    .listConditions{
+        display: flex;
+        flex-direction: column;
     }
 }

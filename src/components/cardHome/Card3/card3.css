@@ -30,10 +30,11 @@
     background-color: #FF5963;
     transition: all 1s;
 }
-.homeContactInfo span a{
+.homeContactInfo span .linkContactHome{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    font-weight: 500;
 }
 .cardImageThree{
     display: none;

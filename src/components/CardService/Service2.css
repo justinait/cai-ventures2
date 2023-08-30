@@ -101,16 +101,67 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .subtitleServiceDos {
         text-align: center;
+        
     }
+
     .tituloSecDos {
         font-size: 26px;
     }
+
     .containerTextService {
         width: 95vw;
     }
+
+    .serviceButtons {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  /*   .containerServiceDos{
+        background-color: red;
+    }
+    */
+     .ServiceContainerRow {
+        padding: 30px;
+        margin-top: 0px !important;
+        display: flex;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        justify-content: center;
+    
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+    } 
+
+    .subtitleServiceDos {
+        text-align: center;
+    }
+
+   /*  .imgServiceDos {
+        width: 68px;
+        height: 68px;
+    } */
+    .textServiceDos{
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    .tituloSecDos {
+        font-size: 26px;
+    }
+
+    .containerTextService {
+        width: 95vw;
+    }
+
     .serviceButtons {
         width: 100%;
     }
