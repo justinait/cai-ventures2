@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Mision from '../../components/Mision/Mision';
 
 function About() {
   return (
-    <div>About</div>
+
+
+    <Mision />
+    
   )
 }
 
