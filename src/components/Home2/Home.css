@@ -55,12 +55,11 @@
     
 }
 
-
-
-@media (max-width: 768px) {
-    
+@media  screen and (max-width: 768px) {
     .homeContainer3 {
-        flex-direction: column;
+        border-bottom: 1px solid #ACBCFF;
+        background: var(--colors-light-friendly-blue, #EAEEFF);
+        box-shadow: 0px 0px 0px 20px #EAEEFF;
     }
     .homeWhoTitle {
         font-size: 22px !important;
@@ -75,5 +74,11 @@
     }
     .homeWho p {    
         margin-bottom: 1rem;
+    }
+    .homeButtons {
+        width: 90vw;
+    }
+    .aux {
+        text-align: center;
     }
 }

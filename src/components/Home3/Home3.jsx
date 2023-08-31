@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import home4 from '../../assets/home4.jpg';
+import home4 from '../../assets/home4.png';
 import swipperDos from '../../assets/swipperDos.png';
 import swipperTres from '../../assets/swipperTres.png';
 
