@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import home4 from '../../assets/home4.jpg';
+import home4 from '../../assets/home4.png';
 import swipperDos from '../../assets/swipperDos.png';
 import swipperTres from '../../assets/swipperTres.png';
 
@@ -10,10 +10,14 @@ import './Home3.css';
 
 
 import { Autoplay, Pagination } from 'swiper/modules'; 
+import {  Row, Col, Image } from 'react-bootstrap';
 
 
 const Home3 = () => {
   return (
+   
+      <Row className='swiperRow' >
+        <Col xxl={12} xl={12} lg={10} md={10} sm={10}>
     <Swiper className='carouselHome'
         centeredSlides={true}
         autoplay={{
@@ -29,15 +33,18 @@ const Home3 = () => {
 
         >
       <SwiperSlide>
-        <img src={home4} alt="Slide 1" />
+        <Image fluid src={home4} alt="imagen personas" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={swipperDos} alt="Slide 2" />
+        <Image fluid src={swipperDos} alt="Slide 2" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={swipperTres} alt="Slide 3" />
+        <Image fluid src={swipperTres} alt="Slide 3" />
       </SwiperSlide>
     </Swiper>
+    </Col>
+    </Row>
+
   )
 }
 

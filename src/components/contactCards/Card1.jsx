@@ -31,8 +31,7 @@ const Card1 = () => {
                     </div>
                 </div>
 
-
-
+                
 
                 <div className='cardsubtitle3'>
 
