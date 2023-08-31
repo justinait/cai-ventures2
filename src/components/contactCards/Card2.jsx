@@ -45,7 +45,7 @@ const Card2 = () => {
                 }))
             }
         });
-        if(stop) return alert('no se puede completar la accion');
+        if(stop) return;
     }
     
     useEffect(() => {
