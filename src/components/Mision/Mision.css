@@ -1,18 +1,19 @@
 .misionVision {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    justify-content: space-around;
+    gap: 4rem;
 }
 
 .misionContainer {
     padding: 24px;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 48px;
-}
 
-.containerText {
-    gap: 240px;
+    display: flex;
+    align-items: center;
+    width: 80vw;
 }
 
 .textMision {
@@ -32,3 +33,9 @@
     line-height: normal;
     color: #CD373B;
 }
+
+/* @media (max-width: 768px) {
+    .imgMision {
+        width: 47px;
+    }
+} */
