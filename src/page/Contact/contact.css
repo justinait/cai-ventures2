@@ -3,6 +3,7 @@
     width: 100%;
 }
 
+
 @media screen and (min-width: 360px){
     .contactPagesContainer{
         flex-direction: column-reverse;
@@ -17,8 +18,11 @@
 }
 @media screen and (min-width: 1024px){
     .contactPagesContainer{
+        width: 40%;
         flex-direction: row;
         padding: 40px 20px;
         gap: 10px;
     }
+    
 }
+

@@ -53,7 +53,8 @@
         margin: 2.5rem 1rem;
         padding: 25px;
     }
-    .title-services{
+
+    .title-services {
         text-align: center;
 
     }
@@ -73,42 +74,38 @@
     }
 }
 
-@media  (max-width: 1024px) {
-  /*   .containerIconsServices {
-        width: 68px;
-        height: 67px;
-    }
- */
+@media (max-width: 1024px) {
 
- .title-services{
-    text-align: center;
+    .title-services {
+        text-align: center;
+
+    }
+
 
 }
-    
-    
- }
-    .servicesThreeContainer {
-       
-        margin: 2.5rem 1rem;
-        padding: 25px;
-        position: relative;
 
-    
-       
-    }
+.servicesThreeContainer {
 
-    .cardServicesChildren {
-        flex-direction: column;
-        gap: 40px;
-    }
+    margin: 2.5rem 1rem;
+    padding: 25px;
+    position: relative;
 
-    .cardServicesChildren img {
-        width: 68px;
-        height: 68px;
-        
-    }
 
-    .infoServiceBox {
-        width: 100%;
-       justify-content: center;
-    }
+
+}
+
+.cardServicesChildren {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cardServicesChildren img {
+    width: 68px;
+    height: 68px;
+
+}
+
+.infoServiceBox {
+    width: 100%;
+    justify-content: center;
+}
