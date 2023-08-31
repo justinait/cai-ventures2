@@ -1,9 +1,9 @@
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import './Redes.css';
-import instaRed from '../../assets/instagramRed.png';
-import faceRed from '../../assets/facebookRed.png';
-import linkedinRed from '../../assets/linkedinRed.png';
-import tiktokRed from '../../assets/tiktokRed.png';
+import instaAzul from '../../assets/instaAzul.png';
+import faceAzul from '../../assets/faceAzul.png';
+import linkAzul from '../../assets/linkAzul.png';
+import tikAzul from '../../assets/tikAzul.png';
 import {  NavLink } from 'react-router-dom';
 
 const RedesFlotantes = () => {
@@ -13,16 +13,16 @@ const RedesFlotantes = () => {
                 <Col className='d-flex justify-content-end position-fixed bottom-1 end-0 m-4 redesContainer'>
                     <Col className='contRedesRed'>
                     <NavLink to="#" className="redesIcon">
-                        <Image src={instaRed} alt="Instagram" />
+                        <Image src={instaAzul} alt="Instagram" />
                     </NavLink>
                     <NavLink to="#" className="redesIcon">
-                        <Image src={faceRed} alt="Facebook" />
+                        <Image src={faceAzul} alt="Facebook" />
                     </NavLink>
                     <NavLink to="#" className="redesIcon">
-                        <Image src={linkedinRed} alt="LinkedIn" />
+                        <Image src={linkAzul} alt="LinkedIn" />
                     </NavLink>
                     <NavLink to="#" className="redesIcon">
-                        <Image src={tiktokRed} alt="TikTok" />
+                        <Image src={tikAzul} alt="TikTok" />
                     </NavLink>
                     </Col>
                     
