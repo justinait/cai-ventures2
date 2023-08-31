@@ -18,9 +18,9 @@ function Home2() {
       <div className='homeWho'>
         <h3 className='homeWhoTitle'>¿Por qué asesorarte con CAI Ventures?</h3>
         <div className='homeWhoText'>
-          <p><strong className='blueText'> 1.</strong> Ahorra tiempo en la elaboración de tu tesis. Con nuestra asesoría y metodología, podrás finalizar tu tesis en menos tiempo y abrirte a mejores oportunidades laborales. </p>
-          <p><strong className='blueText'> 2.</strong>  Te acompañamos hasta que obtengas tu título. Nuestro equipo de asesores e investigadores está preparado para asegurar que obtengas tu título en el primer intento.</p>
-          <p><strong className='blueText'> 3.</strong>  Recibe una guía fácil y práctica para avanzar. Gracias a la metodología de nuestros expertos y nuestra plataforma, llevarás un proceso práctico en cada una de las etapas de la asesoría.</p>
+          <p><strong style={{fontSize:'larger'}} className='blueText'> 1.</strong> Ahorra tiempo en la elaboración de tu tesis. Con nuestra asesoría y metodología, podrás finalizar tu tesis en menos tiempo y abrirte a mejores oportunidades laborales. </p>
+          <p><strong style={{fontSize:'larger'}} className='blueText'> 2.</strong>  Te acompañamos hasta que obtengas tu título. Nuestro equipo de asesores e investigadores está preparado para asegurar que obtengas tu título en el primer intento.</p>
+          <p><strong style={{fontSize:'larger'}} className='blueText'> 3.</strong>  Recibe una guía fácil y práctica para avanzar. Gracias a la metodología de nuestros expertos y nuestra plataforma, llevarás un proceso práctico en cada una de las etapas de la asesoría.</p>
         </div>
 
         <Link to="/about">
