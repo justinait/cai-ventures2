@@ -36,8 +36,8 @@ const Mision = () => {
                     <p className='textMision'> Asesoramiento individualizado</p>
                     <p className='textMision'> Facilitar el proceso de investigación </p>
                     <p className='textMision'> Fomentar el crecimiento académico </p>
-                    <p className='textMision'>  Ofrecer servicios especializados </p>
-                    <p className='textMision'>  Promover la investigación de alta calidad </p>
+                    <p className='textMision'> Ofrecer servicios especializados </p>
+                    <p className='textMision'> Promover la investigación de alta calidad </p>
                 </Col>
             </Row>
         </Container>
