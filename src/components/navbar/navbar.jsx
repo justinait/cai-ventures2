@@ -52,8 +52,9 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
           <NavLink className='nav-link' to='/'> Home </NavLink>
+          <NavLink className='nav-link' to='/services'>Servicios</NavLink>
           <NavLink className='nav-link' to='/About'>Nosotros</NavLink>            
-           <NavLink className='nav-link' to='/services'>Servicios</NavLink>
+          <NavLink className='nav-link' to='/Blog'>Blog</NavLink>
           <NavLink className='nav-link' to='/Contact'>Contacto</NavLink>
           <NavLink className='nav-link' to='/Faq'>FAQ</NavLink>  
           </ul>
