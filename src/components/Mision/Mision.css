@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     width: 80vw;
+    justify-content: center;
 }
 
 .textMision {
@@ -35,6 +36,10 @@
     line-height: normal;
     color: #CD373B;
 }
+
+    .contImg {
+        padding: 0px 0px 0px 40px !important;
+    }
 
 }
 

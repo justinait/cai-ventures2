@@ -8,7 +8,7 @@ const Mision = () => {
     return (
         <Container className='misionVision'>
             <Row className='misionContainer'>
-                <Col  md={4} sm={3}>
+                <Col className='contImg' xl={3}  md={4} sm={3}>
                     <Image className='imgMision' fluid src={misionUno} width='150px' />
                 </Col>
                 <Col className='containerText' xl={7} md={8} sm={7}>
@@ -18,7 +18,7 @@ const Mision = () => {
             </Row>
 
             <Row className='misionContainer'>
-                <Col md={4} sm={3}>
+                <Col className='contImg' xl={3} md={4} sm={3}>
                     <Image className='imgMision' fluid src={misionDos} width='150px' />
                 </Col>
                 <Col className='containerText' xl={7} md={8} sm={7}>
@@ -28,7 +28,7 @@ const Mision = () => {
             </Row>
 
             <Row className='misionContainer'>
-                <Col  md={4} sm={3}>
+                <Col className='contImg' xl={3}  md={4} sm={3}>
                     <Image className='imgMision' fluid src={misionTres} width='150px' />
                 </Col>
                 <Col className='containerText' xl={7} md={8} sm={7}>
