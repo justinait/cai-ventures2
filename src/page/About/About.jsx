@@ -1,8 +1,11 @@
 import React from 'react'
+import Nosotros1 from '../../components/cardNosotros/Nosotros1'
 
 function About() {
   return (
-    <div>About</div>
+    <div>
+      <Nosotros1/>
+    </div>
   )
 }
 
