@@ -23,7 +23,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768);
+      setIsDesktop(window.innerWidth > 767);
     };
 
     window.addEventListener("resize", handleResize);
