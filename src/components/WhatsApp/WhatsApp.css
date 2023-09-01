@@ -1,8 +1,8 @@
 .whatsappContainer {    
     bottom: 0vh;
     right: 0vh;
-    position: fixed;
-    z-index: -1;
+    position: sticky;    
+    text-align: right;
 }
 .whatsappIcon {
     width: 130px;
