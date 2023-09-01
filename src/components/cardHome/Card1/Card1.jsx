@@ -1,4 +1,3 @@
-// import React from 'react';
 import './card1.css';
 import { Link } from 'react-router-dom';
 import cardImage1 from '../../../assets/cardHome1.jpeg';
@@ -13,7 +12,8 @@ const Card1 = () => {
                 -Borrador de Tesis <br />
                 -Sustentación
                 </p>
-                <span><Link className='linkAboutTesis' to='/about'>ver más</Link></span>
+                <img src={cardImage1} className='imgHomeTablet' alt="chica sentada leyendo un libro" />
+                <span><Link className='linkAboutTesis' to='/services'>ver más</Link></span>
             </div>
             <div className='homeTesisImage'>
                 <img src={cardImage1} alt="chica sentada leyendo un libro" />
