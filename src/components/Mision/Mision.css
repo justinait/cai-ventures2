@@ -1,0 +1,63 @@
+@media (max-width: 1440px) {
+.misionVision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.misionContainer {
+    padding: 24px;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    border-radius: 48px;
+
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    justify-content: center;
+}
+
+.textMision {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: auto !important;
+}
+
+.titleMision {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #CD373B;
+}
+
+    .contImg {
+        padding: 0px 0px 0px 40px !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .textMision {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .titleMision {
+        font-size: 18px;
+    }
+
+    .imgMision {
+        width: 60px !important; 
+    }
+
+    .containerText {
+        padding-top: 15px;
+    }
+} 
