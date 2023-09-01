@@ -39,21 +39,35 @@
 .cardImageThree{
     display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
     .homeContactContainer{
         flex-direction: column;
     }
+    .homeContactInfo{
+        align-items: center;
+    }
     .homeContactInfo span{
-        width: 100%;
+        width: 80%;
         text-align: center;
+        margin-top: 25px;
     }
     .homeContactImage{
         display: none;
     }
     .cardImageThree{
         display: block;
+        width: 90%;
+        margin: 20px;
+        border-radius: 18px; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .homeContactInfo span{
+        width: 100%;
+        margin: 0;
+    }
+    .cardImageThree{
         width: 100%;
         margin: 20px 0;
-        border-radius: 18px; 
     }
 }

@@ -1,26 +1,50 @@
 .redesContainer {
-    height: auto;
-    width: auto;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end !important;
-    margin-top:  180px !important;
+    align-items: flex-end;
     z-index: 2 !important;
+    position: sticky;
+    display: flex !important;
+    width: auto !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 .redesIcon {
-    margin: 10px;
+    margin: 10px !important;
 }
+
+.iconImg {
+    width: 25px !important;
+}
+
 .contRedesRed {
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
     flex-direction: column !important;
+}
+.whatsBlanco {
+    border-radius: 50%;
+    background: #25D366;
+    margin-top: 10px;
+}
+
+.whatsappImg {
+    width: 35px;
 }
 
 @media (max-width: 768px) {
-    .redesContainer {
+    .oculto {
         display: none !important;
     }
+}
+
+
+
+@media (max-width: 792px) {
+
+    .whatsappIcon {
+        width: 100px;
+    }
+        
 }

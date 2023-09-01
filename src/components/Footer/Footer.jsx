@@ -11,12 +11,12 @@ const Footer = () => {
         <>
             <footer className='footer'>
                 <div className='containerLogos'>
-                    <img src={logoFooter} alt="logo de la empresa"/>
+                    <img src={logoFooter} className='imgLogo' alt="logo de la empresa"/>
                     <ul className='list listContact'>
-                        <li><a href="/"><img src={Instagram} alt="logo de instagram" /></a></li>
-                        <li><a href="/"><img src={Facebook} alt="logo de facebook" /></a></li>
-                        <li><a href="/"><img src={Linkedin} alt="logo de linkedin" /></a></li>
-                        <li><a href="/"><img src={Tiktok} alt="logo de tik tok" /></a></li>
+                        <li><a href=" https://www.instagram.com/tesiscaiventures/?igshid=MzRlODBiNWFlZA%3D%3D" target='_blank'><img src={Instagram} alt="logo de instagram" /></a></li>
+                        <li><a href=" https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d " target='_blank'><img src={Facebook} alt="logo de facebook" /></a></li>
+                        <li><a href=" https://www.linkedin.com/in/cai-ventures-3033b8271" target='_blank'><img src={Linkedin} alt="logo de linkedin" /></a></li>
+                        <li><a href=" https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" target='_blank'><img src={Tiktok} alt="logo de tik tok" /></a></li>
                     </ul>
                 </div>
                 <div className='containerIndice'>
@@ -39,14 +39,14 @@ const Footer = () => {
             </footer>
             <footer className='mobileFooterContainer'>
                 <div className='mobileLogoContainer'>
-                    <Link to='/'><img className='logoImageMobile' src={logoFooter} alt="logo de la empresa"/></Link>
+                    <img className='logoImageMobile' src={logoFooter} alt="logo de la empresa"/>
                 </div>
                 <div className='mobileInfoFooter'>
                     <ul className='list listMobile'>
-                        <li><a href="/"><img className='mobileImagesFooter' src={Instagram} alt="logo de instagram" /></a></li>
-                        <li><a href="/"><img className='mobileImagesFooter' src={Facebook} alt="logo de facebook" /></a></li>
-                        <li><a href="/"><img className='mobileImagesFooter' src={Linkedin} alt="logo de linkedin" /></a></li>
-                        <li><a href="/"><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
+                        <li><a href=" https://www.instagram.com/tesiscaiventures/?igshid=MzRlODBiNWFlZA%3D%3D" target='_blank'><img className='mobileImagesFooter' src={Instagram} alt="logo de instagram" /></a></li>
+                        <li><a href=" https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" target='_blank'><img className='mobileImagesFooter' src={Facebook} alt="logo de facebook" /></a></li>
+                        <li><a href=" https://www.linkedin.com/in/cai-ventures-3033b8271" target='_blank'><img className='mobileImagesFooter' src={Linkedin} alt="logo de linkedin" /></a></li>
+                        <li><a href=" https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" target='_blank'><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
                     </ul>
                     <div className='listConditions'>
                         <Link className='linkFooter'>Términos y Condiciones</Link>

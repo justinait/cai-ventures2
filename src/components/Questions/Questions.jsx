@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import faqImage from '../../assets/faqImage.png';
 import './Questions.css';
-
+import {  NavLink } from 'react-router-dom';
 function Questions() {
   return (
     <Container className='containerFaq'>
@@ -48,7 +48,17 @@ function Questions() {
         </Accordion.Body>
       </Accordion.Item>      
     </Accordion>
+
+              <Row className='contNo'>
+                <NavLink className='nav-link solucion' to='/Contact'> 
+                  <h2 className='questionNo'>¿No has encontrado la solución que buscas?</h2>
+                </NavLink>
+              </Row>
             </Col>
+
+            
+             
+           
           </Col>
         </Col>
       </Row>

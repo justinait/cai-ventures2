@@ -10,6 +10,24 @@
     gap: 85px;
 }
 
+.questionNo {
+    color: #000;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 16px;
+}
+.contNo {
+    margin-top: 2rem !important;
+}
+
+.solucion {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .textoAcordion {
     font-size: 16px;
 }
@@ -27,7 +45,6 @@
 .ContainerImgTitle {
     display: flex;
     flex-direction: row;
-    /* gap: 3rem; */
 }
 
 .textFaq {
@@ -100,6 +117,7 @@
         align-items: center;
     }
 
+
     .faqTitle {
         margin-top: 2rem;
     }
@@ -109,6 +127,14 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+
+    .accordion-button collapsed {
+        font-size: 20px !important;
+    }
+
+    .accordion-button {
+        font-size: 20px !important;
     }
 }
 
