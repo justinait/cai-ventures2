@@ -2,10 +2,12 @@
     bottom: 0vh;
     right: 0vh;
     position: fixed;
+    z-index: -1;
 }
 .whatsappIcon {
     width: 130px;
 }
+
 
 
 @media (max-width: 792px) {
