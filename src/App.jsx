@@ -29,7 +29,7 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/faq' element={<Faq/>}/>
       </Routes>
-      <WhatsApp />
+      {/* <WhatsApp /> */}
       <Footer/>
     </BrowserRouter>
   );
