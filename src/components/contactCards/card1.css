@@ -202,7 +202,7 @@
 @media (min-width:768px) and (max-width:1024px) {
     .containerCard {
         display: flex;
-        width: 85%;
+        width: 95%;
         height: 456px;
         padding: 40px;
         flex-direction: column;
@@ -285,4 +285,18 @@
     
 
 }
+@media  (min-width: 1024px) {
+   .cardsubtitletext1{
+    font-size: 20px;
+   }
+   .cardsubtitletext2{
+    font-size: 20px;
+   }
+   .cardsubtitletext3{
+    font-size: 20px;
+   }
+   .containerCard{
+    width: 42vw;
+   }
 
+}
