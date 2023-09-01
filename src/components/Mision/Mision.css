@@ -1,3 +1,4 @@
+@media (max-width: 1440px) {
 .misionVision {
     display: flex;
     align-items: center;
@@ -23,6 +24,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    width: auto !important;
 }
 
 .titleMision {
@@ -34,8 +36,23 @@
     color: #CD373B;
 }
 
-/* @media (max-width: 768px) {
-    .imgMision {
-        width: 47px;
+}
+
+@media (max-width: 768px) {
+    .textMision {
+        width: auto;
+        font-size: 14px;
     }
-} */
+
+    .titleMision {
+        font-size: 18px;
+    }
+
+    .imgMision {
+        width: 60px !important; 
+    }
+
+    .containerText {
+        padding-top: 15px;
+    }
+} 
