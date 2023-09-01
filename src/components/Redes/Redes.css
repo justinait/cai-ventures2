@@ -18,6 +18,8 @@
 }
 
 .contRedesRed {
+    margin-bottom: 5rem !important;
+    margin-top: 7rem !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
@@ -39,10 +41,7 @@
     }
 }
 
-
-
 @media (max-width: 792px) {
-
     .whatsappIcon {
         width: 100px;
     }
