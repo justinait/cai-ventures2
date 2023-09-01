@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 50px;
-    margin: 3rem 6rem;
     background-color: #fff;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
@@ -50,8 +49,9 @@
 
 @media screen and (max-width: 768px) {
     .servicesThreeContainer {
-        margin: 2.5rem 1rem;
+       width: 95vw;
         padding: 25px;
+        
     }
 
     .title-services {
@@ -78,6 +78,26 @@
 
     .title-services {
         text-align: center;
+
+    }
+
+    .servicesThreeContainer {
+        display: flex;
+        width: 90vw;
+    
+    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        background: #FFF;
+
+        /* Shadow */
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+
 
     }
 

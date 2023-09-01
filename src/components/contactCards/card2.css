@@ -97,5 +97,9 @@
 }
 
 @media (min-width: 769px)  and (max-width:1024px){
+    .divContactContainer{
+        width: 100%;
+        margin: 0;
+    }
 
 }
