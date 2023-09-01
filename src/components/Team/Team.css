@@ -46,8 +46,19 @@
         background: var(--colors-main-friendly-blue, #3349A1);
         box-shadow: 8px 8px 20px 3px rgba(0, 0, 0, 0.25);
     }
+    .personContainer img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media  screen and (max-width: 768px) {
 
+    .personContainer img {
+        width: 180px;
+        height: 180px;
+    }
+    .infoPerson {
+        width: 90vw;
+    }
 }
