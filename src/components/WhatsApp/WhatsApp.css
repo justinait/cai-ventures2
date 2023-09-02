@@ -1,15 +1,13 @@
 .whatsappContainer {    
-    bottom: 0vh;
-    right: 0vh;
-    position: fixed;
+    position: initial;
+    text-align: right;
+    margin-right: 30px !important;
 }
 .whatsappIcon {
     width: 130px;
 }
 
-
 @media (max-width: 792px) {
-
     .whatsappIcon {
         width: 100px;
     }

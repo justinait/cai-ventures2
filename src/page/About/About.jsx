@@ -1,12 +1,17 @@
-import React from 'react';
+import React from 'react'
+import Nosotros1 from '../../components/cardNosotros/Nosotros1'
 import Mision from '../../components/Mision/Mision';
+import Team from '../../components/Team/Team';
 
 function About() {
   return (
+    <div>
 
-
-    <Mision />
-    
+      <Nosotros1/>
+      <Team />
+      <Mision />
+        
+    </div>
   )
 }
 

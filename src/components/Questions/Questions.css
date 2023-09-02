@@ -128,6 +128,14 @@
         align-items: center;
         justify-content: center;
     }
+
+    .accordion-button collapsed {
+        font-size: 20px !important;
+    }
+
+    .accordion-button {
+        font-size: 20px !important;
+    }
 }
 
 @media screen and (max-width: 360px)  {
