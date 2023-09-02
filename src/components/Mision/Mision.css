@@ -43,10 +43,11 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .textMision {
         width: auto;
         font-size: 14px;
+        text-align: center;
     }
 
     .titleMision {
@@ -59,5 +60,17 @@
 
     .containerText {
         padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contImg {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px !important;
     }
 } 
