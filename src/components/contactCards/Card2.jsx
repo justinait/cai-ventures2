@@ -1,8 +1,20 @@
 import './card2.css';
-import { useState , useEffect } from 'react';
+import { useState , useEffect , useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
+import config from '../../config/config.js';
 
 
 const Card2 = () => {
+
+    const formulario = useRef();
+    const {service_id,template_id,public_id} = config.EMAIL;
+
+    const estilos ={
+        color:"red",
+        paddingLeft:"25px",
+        margin:"0"
+    }
 
     //defino los valores de cada unput para acceder a su valor despues.
     const [input, setInput] = useState({
@@ -14,7 +26,7 @@ const Card2 = () => {
             value:'',
             error:''
         },
-        description:{
+        message:{
             value:'',
             error:''
         }
@@ -30,8 +42,8 @@ const Card2 = () => {
         }));    
     };
     
-    const handleSubmitForm =(evt)=> {
-        evt.preventDefault();
+    const handleSubmitForm =(e)=> {
+        e.preventDefault();
         let stop = false;
         Object.keys(input).forEach(key=>{
             if (input[key].value.trim().length === 0) {
@@ -46,29 +58,43 @@ const Card2 = () => {
             }
         });
         if(stop) return;
+
+        emailjs.sendForm(service_id, template_id, formulario.current,public_id)
+        .then((result) => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Mensaje enviado',
+                text: '¡Sera respondido a la brevedad!'
+            })
+            console.log(result);
+            e.target.first_name.value = "";
+            e.target.email.value = "";
+            e.target.message.value = "";
+        }, (error) => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: `${error}`,
+            })
+        });
     }
-    
+
     useEffect(() => {
         
     }, [input]);
     
-    const estilos ={
-        color:"red",
-        paddingLeft:"25px",
-        margin:"0"
-    }
     return (
         <div className="divContactContainer">
             <h2>¡Contactanos!</h2>
-            <form className="formContactContainer" onSubmit={handleSubmitForm}>
+            <form className="formContactContainer" onSubmit={handleSubmitForm} ref={formulario}>
                 <input type="text" placeholder='Nombre y Apellido' name="first_name" value={input['first_name'].value} onChange={handleInputChange}/>
                 {input.first_name.error&& <p style={estilos}>{input.first_name.error}</p>}
 
                 <input type="email" name="email" placeholder='Email' value={input['email'].value} onChange={handleInputChange}/>
                 {input.email.error&& <p style={estilos}>{input.email.error}</p>}
 
-                <textarea name="description" placeholder='Mensaje' cols="30" rows="10" value={input['description'].value} onChange={handleInputChange}></textarea>
-                {input.description.error&& <p style={estilos}>{input.description.error}</p>}
+                <textarea name="message" placeholder='Mensaje' cols="30" rows="10" value={input['message'].value} onChange={handleInputChange}></textarea>
+                {input.message.error&& <p style={estilos}>{input.message.error}</p>}
                 
                 <button className='btnFormContact'>enviar</button>
             </form>
