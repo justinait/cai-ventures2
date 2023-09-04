@@ -54,7 +54,8 @@ a {
 }
 
 .homePresentationImage img {
-    width: 300px;
+    width: 439px;
+    height: 535px;
     border-radius: 25px;
     object-fit: cover;
     object-position: center;

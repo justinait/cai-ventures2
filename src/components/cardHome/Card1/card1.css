@@ -5,10 +5,10 @@
     gap: 60px;
 }
 .homeTesisImage img{
+    width: 548px;
+    height: 531px;
     border-radius: 25px;
     object-fit: cover;
-    width: 350px;
-    height: 320px;
 }
 .homeTesisText{
     display: flex;
