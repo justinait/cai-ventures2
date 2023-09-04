@@ -70,10 +70,13 @@
 @media screen and (max-width: 768px) {
     .homeTesisText span{
         width: 100%;
-        margin: 0;
+        margin: 4% 0;
     }
     .imgHomeTablet{
         display: none;
+    }
+    .homeTesisContainer {
+        padding: 60px 20px 30px 20px;
     }
 }
 
