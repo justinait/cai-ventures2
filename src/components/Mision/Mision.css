@@ -1,4 +1,4 @@
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) { */
 .misionVision {
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@
         padding: 0px 0px 0px 40px !important;
     }
 
-}
+/* } */
 
 @media (max-width: 576px) {
     .textMision {
