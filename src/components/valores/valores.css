@@ -1,0 +1,68 @@
+.aboutValueContainer{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutTitle{
+    color: var(--colors-tipography-black, #212121);
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.aboutIconsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+}
+.aboutIconsChildren{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    gap: 20px;
+    margin: 15px;
+    color: var(--colors-tipography-black, #212121);
+    font-weight: 500; 
+}
+.aboutImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--colors-main-friendly-blue, #3349A1);
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+    .aboutIconsChildren{
+        width: 250px;
+    }
+    .aboutImgContainer img{
+        width: 60px;
+    }
+    .aboutTitle{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutIconsChildren{
+        width: 30%;
+    }
+    .aboutImgContainer{
+        width: 80px;
+        height: 80px;
+    }
+    .aboutImgContainer img{
+        width: 30px;
+    }
+    .aboutTitle{
+        font-size: 24px;
+        color: var(--colors-main-friendly-blue, #3349A1); 
+    }
+}

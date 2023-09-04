@@ -4,7 +4,6 @@ import instaAzul from '../../assets/instaAzul.png';
 import faceAzul from '../../assets/faceAzul.png';
 import linkAzul from '../../assets/linkAzul.png';
 import tikAzul from '../../assets/tikAzul.png';
-import whatsBlanco from '../../assets/whatsBlanco.png';
 import {  NavLink } from 'react-router-dom';
 
 const RedesFlotantes = () => {
@@ -24,9 +23,6 @@ const RedesFlotantes = () => {
                     </NavLink>
                     <NavLink target="_blanck" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
                         <Image className='iconImg oculto' src={tikAzul} alt="TikTok" />
-                    </NavLink>
-                    <NavLink target="_blanck" to="https://wa.link/xn96ef"  className="whatsBlanco">
-                        <Image src={whatsBlanco} alt="whatsapp" className="redesIcon whatsappImg" />
                     </NavLink>
                 </Col>
                 </Col>

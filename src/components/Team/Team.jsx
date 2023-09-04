@@ -1,6 +1,6 @@
 import React from 'react'
 import Vanesa from '../../assets/cofounder.png'
-import Yuli from '../../assets/yuli.jpg'
+import Yuli from '../../assets/yuli2.jpg'
 import './Team.css'
 
 function Team() {
@@ -12,7 +12,7 @@ function Team() {
                 <img src={Yuli} alt="Yuli Yasmina Soria Mendoza" />
                 <div className='infoPerson'>
                     <h5>Yuli Yasmina Soria Mendoza</h5>
-                    <p>CEO - COFOUNDER</p>
+                    <p>CEO & COFOUNDER</p>
                     <p>Dos años de experiencia en formulación de proyectos y 
                         tres años de experiencia como especialista en metodología 
                         de investigación y estadística.</p>
