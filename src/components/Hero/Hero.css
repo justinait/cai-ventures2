@@ -83,7 +83,8 @@ a {
     }
 
     .homeButtons {
-        width: 100%;
+        width: 80%;
+        margin: auto;
     }
     .homePresentation {
         width: 80vw;
@@ -99,8 +100,8 @@ a {
         width: unset;
     }
     .homePresentationImage img {
-        width: 80vw;
-        height: 300px;
+        width: 540px;
+        height: 366px;
         border-radius: 25px;
         object-fit: cover;
         object-position: center;

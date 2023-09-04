@@ -48,9 +48,8 @@
     }
     .homeTesisText span{
         display: flex;
-        width: 80%;
-        margin-top: 40px;
-        margin-left: 10%;
+        width: 65%;
+        margin: 3% auto;
     }
     .homeTesisText .linkAboutTesis{
         margin: auto;
@@ -60,11 +59,11 @@
     }
     .imgHomeTablet{
         display: flex;
-        width: 80vw;
-        height: 420px;
+        width: 494px;
+        height: 380px;
         object-fit: cover;
         border-radius: 25px;
-        margin: auto;
+        margin: 3% auto;
     }
 }
 @media screen and (max-width: 768px) {
