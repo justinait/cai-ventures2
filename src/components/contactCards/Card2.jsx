@@ -9,6 +9,7 @@ const Card2 = () => {
 
     const formulario = useRef();
     const {service_id,template_id,public_id} = config.EMAIL;
+    const [loading, setLoading] = useState(false);
 
     const estilos ={
         color:"red",
@@ -61,15 +62,19 @@ const Card2 = () => {
 
         emailjs.sendForm(service_id, template_id, formulario.current,public_id)
         .then((result) => {
-            Swal.fire({
-                icon: 'success',
-                title: 'Mensaje enviado',
-                text: '¡Sera respondido a la brevedad!'
-            })
+            setLoading(false);
             console.log(result);
-            e.target.first_name.value = "";
-            e.target.email.value = "";
-            e.target.message.value = "";
+            if (result.text === 'ok') {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Mensaje enviado',
+                    text: '¡Sera respondido a la brevedad!'
+                });
+                e.target.first_name.value = "";
+                e.target.email.value = "";
+                e.target.message.value = "";
+                setLoading(true);
+            }
         }, (error) => {
             Swal.fire({
                 icon: 'error',
@@ -81,7 +86,7 @@ const Card2 = () => {
 
     useEffect(() => {
         
-    }, [input]);
+    }, [input,loading]);
     
     return (
         <div className="divContactContainer">
@@ -96,7 +101,7 @@ const Card2 = () => {
                 <textarea name="message" placeholder='Mensaje' cols="30" rows="10" value={input['message'].value} onChange={handleInputChange}></textarea>
                 {input.message.error&& <p style={estilos}>{input.message.error}</p>}
                 
-                <button className='btnFormContact'>enviar</button>
+                <button className='btnFormContact' disabled={loading}>enviar</button>
             </form>
         </div>
     );
