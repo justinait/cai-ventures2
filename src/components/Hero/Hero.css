@@ -141,6 +141,7 @@ a {
     .homeContainer2 {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 4rem;
     }
     .homePresentationImage {
         width: unset;
