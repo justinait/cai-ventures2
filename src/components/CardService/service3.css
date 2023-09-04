@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
     padding: 50px;
+    margin: 3rem 6rem;
+   
     background-color: #fff;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
@@ -49,10 +52,11 @@
 
 @media screen and (max-width: 768px) {
     .servicesThreeContainer {
-       width: 95vw;
+        width: 95vw;
         padding: 25px;
-        
+      
     }
+
 
     .title-services {
         text-align: center;
@@ -80,34 +84,14 @@
         text-align: center;
 
     }
+   
 
-    .servicesThreeContainer {
-        display: flex;
-        width: 90vw;
-    
-    
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-
-        border-radius: var(--border-radius-border-radius-sm, 16px);
-        background: #FFF;
-
-        /* Shadow */
-        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-
-
-
-    }
-
-
-}
 
 .servicesThreeContainer {
 
-    margin: 2.5rem 1rem;
-    padding: 25px;
+    margin: 2.5rem 3rem;
+    padding: 40px;
+    width:85%;
     position: relative;
 
 
@@ -115,6 +99,7 @@
 }
 
 .cardServicesChildren {
+  
     flex-direction: column;
     gap: 40px;
 }
@@ -122,6 +107,8 @@
 .cardServicesChildren img {
     width: 68px;
     height: 68px;
+  
+
 
 }
 
@@ -129,3 +116,21 @@
     width: 100%;
     justify-content: center;
 }
+
+}
+
+/* 
+@media (min-width: 1024px) {
+
+ 
+
+
+.servicesThreeContainer {
+
+    margin: 2.5rem 5rem;
+    padding: 25px;
+    position: relative;
+
+
+}
+} */

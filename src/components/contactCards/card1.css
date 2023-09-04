@@ -203,6 +203,7 @@
     .containerCard {
         display: flex;
         width: 95%;
+        margin: 10px;
         height: 456px;
         padding: 40px;
         flex-direction: column;

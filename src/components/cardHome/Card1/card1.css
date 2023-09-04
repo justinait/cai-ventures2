@@ -5,10 +5,10 @@
     gap: 60px;
 }
 .homeTesisImage img{
+    width: 548px;
+    height: 531px;
     border-radius: 25px;
     object-fit: cover;
-    width: 350px;
-    height: 320px;
 }
 .homeTesisText{
     display: flex;
@@ -48,9 +48,8 @@
     }
     .homeTesisText span{
         display: flex;
-        width: 80%;
-        margin-top: 40px;
-        margin-left: 10%;
+        width: 65%;
+        margin: 3% auto;
     }
     .homeTesisText .linkAboutTesis{
         margin: auto;
@@ -60,20 +59,23 @@
     }
     .imgHomeTablet{
         display: flex;
-        width: 80vw;
-        height: 420px;
+        width: 494px;
+        height: 380px;
         object-fit: cover;
         border-radius: 25px;
-        margin: auto;
+        margin: 3% auto;
     }
 }
 @media screen and (max-width: 768px) {
     .homeTesisText span{
         width: 100%;
-        margin: 0;
+        margin: 4% 0;
     }
     .imgHomeTablet{
         display: none;
+    }
+    .homeTesisContainer {
+        padding: 60px 20px 30px 20px;
     }
 }
 

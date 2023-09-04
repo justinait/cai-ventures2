@@ -70,4 +70,7 @@
         width: 100%;
         margin: 20px 0;
     }
+    .homeContactContainer {
+        padding: 70px 20px 10px;
+    }
 }

@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import home2 from '../../assets/home22.jpg';
 import { Link } from 'react-router-dom';
 import './Home.css'
+import '../Hero/Hero.css'
 
 function Home2() {
   return (
