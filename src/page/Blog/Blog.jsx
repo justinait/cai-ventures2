@@ -2,8 +2,8 @@ import React from 'react';
 import './blog.css'
 import rectangleblog from '../../assets/Rectangleblog.png'
 import img1blog from '../../assets/img1blog.png'
-import img2blog from '../../assets/img2blog.png'
-import img3blog from '../../assets/img3blog.png'
+import img2blog from '../../assets/Img2blog.png'
+import img3blog from '../../assets/Img3blog.png'
 import buttonshareblog from '../../assets/buttonshareblog.png'
 
 
