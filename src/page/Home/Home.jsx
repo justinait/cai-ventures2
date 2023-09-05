@@ -7,6 +7,7 @@ import Card2 from '../../components/cardHome/Card2/Card2';
 import Card3 from '../../components/cardHome/Card3/Card3';
 
 function Home() {
+  
   return (
     <div className='homeContainer'>
         

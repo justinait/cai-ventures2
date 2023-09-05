@@ -14,37 +14,37 @@ const Valores = () => {
             <div className='aboutIconsContainer'>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores1} alt="" />
+                        <img src={imgValores1} alt="Responsabilidad" />
                     </div>
                     <p>Responsabilidad</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores2} alt="" />
+                        <img src={imgValores2} alt="Etica" />
                     </div>
                     <p>Ética</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores3} alt="" />
+                        <img src={imgValores3} alt="Perseverancia" />
                     </div>
                     <p>Perseverancia</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores4} alt="" />
+                        <img src={imgValores4} alt="Servicio" />
                     </div>
                     <p>Servicio</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores5} alt="" />
+                        <img src={imgValores5} alt="Compromiso" />
                     </div>
                     <p>Compromiso</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores6} alt="" />
+                        <img src={imgValores6} alt="Confianza" />
                     </div>
                     <p>Confianza</p>
                 </div>
