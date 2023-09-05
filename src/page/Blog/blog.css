@@ -1,0 +1,263 @@
+.principalcardblog {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: url("../../assets/Rectangleblog.png");
+    width: 100%;
+    margin-bottom: 100px;
+
+}
+
+.titleblog {
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10%;
+
+
+
+}
+
+.subtitleblog p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.principalcardblog img {
+    width: 100%;
+    height: 30%;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(8, 13, 34, 0.80) 0%, rgba(8, 13, 34, 0.80) 100%), url(<path-to-image>), lightgray 0px -679.585px / 100% 331.161% no-repeat;
+
+}
+
+.segondcardblog {
+    display: flex;
+    width: 95%;
+    margin-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.card2blog {
+    display: flex;
+    height: 353px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: var(--border-radius-border-radius-lg, 48px);
+    background: #FFF;
+
+    /* Shadow */
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+}
+
+.card2blogimg img {
+    width: 458px;
+    height: 353px;
+    align-self: stretch;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    border-radius: var(--border-radius-border-radius-lg, 48px 0 0 48px);
+    background: #FFF;
+
+    /* Shadow */
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+}
+
+.card2blogtext {
+    display: flex;
+    height: 313px;
+    padding: 10px 30px 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+    flex: 1 0 0;
+}
+
+.text-section {
+    display: flex;
+    padding: 0px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.text-sectionSubtitle {
+    color: var(--Tipografa, var(--colors-tipography-black, #212121));
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-sectionTitle {
+    color: var(--colors-main-friendly-blue, #3349A1);
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.text-sectionDescription {
+    color: var(--Tipografa, var(--colors-tipography-black, #212121));
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.buttonshareblog {
+    display: flex;
+
+    width: 72px;
+    height: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 999999px;
+    background: var(--colors-main-friendly-blue, #3349A1);
+}
+
+
+@media screen and (max-width:768px) {
+    .titleblog {
+        color: var(--colors-main-friendly-blue, #3349A1);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 263px;
+        height: 24px;
+
+    }
+
+    .segondcardblog {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+   
+   
+      
+
+
+    }
+
+    .card2blog {
+        display: flex;
+        width: 95%;
+        height: auto;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+   
+        
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+/*         border-radius: var(--border-radius-border-radius-sm, 16px); */
+      
+        border-radius: var(--border-radius-border-radius-lg, 16px 16px 16px 16px);
+
+        /* Shadow */
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+       
+ 
+
+    }
+
+    .card2blogimg img {
+        height: auto;
+        width: 100%;
+    
+    
+      
+    
+        /* margin-left: 20px;
+        margin-top: 40px;
+        margin-right: 20px; */
+     
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        border-radius: var(--border-radius-border-radius-lg, 16px 16px 0 0);
+    }
+  
+
+    .text-section {
+        display: flex;
+  
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1px;
+        align-self: stretch;
+      
+
+    }
+
+    .text-sectionSubtitle {
+        color: var(--colors-tipography-black, #212121);
+        font-family:  'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .text-sectionTitle {
+        color: var(--colors-main-friendly-blue, #3349A1);
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .text-sectionDescription {
+        color: var(--Tipografa, var(--colors-tipography-black, #212121));
+
+        /* Mobile-Body */
+        font-family: 'Montserrat';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-self: stretch;
+    }
+
+    .buttonshareblog {
+        width: 24px;
+        height: 4.003px;
+        flex-shrink: 0;
+    
+
+
+    }
+
+
+}

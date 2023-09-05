@@ -8,6 +8,7 @@ import Faq from './page/Faq/Faq';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
+import Blog from './page/Blog/Blog';
 
 import RedesFlotantes from './components/Redes/Redes';
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/services' element={<Services/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/blog' element={<Blog/>}/>
         <Route path='/faq' element={<Faq/>}/>
       </Routes>
       <WhatsApp />
