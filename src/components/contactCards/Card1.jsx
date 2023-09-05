@@ -27,7 +27,7 @@ const Card1 = () => {
                         <img src={cel} alt="" />
                     </div>
                     <div className='cardsubtitletext2'>
-                    955716302 / 928 897 150
+                    928 897 150 / 955716302
                     </div>
                 </div>
 

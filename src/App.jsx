@@ -14,7 +14,7 @@ import RedesFlotantes from './components/Redes/Redes';
 
 import WhatsApp from './components/WhatsApp/WhatsApp';
 import Pagos from './components/Pagos/Pagos';
-
+import CheckScroll from './utils/CheckScroll';
 
 
 
@@ -24,6 +24,7 @@ function App() {
     <BrowserRouter>
       <NavBar/>
       <RedesFlotantes />
+      <CheckScroll/>
       <Routes>
         <Route path='/' element={< Home />} />
         <Route path='/services' element={<Services/>}/>
