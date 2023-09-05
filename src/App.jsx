@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import RedesFlotantes from './components/Redes/Redes';
 
 import WhatsApp from './components/WhatsApp/WhatsApp';
+import Pagos from './components/Pagos/Pagos';
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/faq' element={<Faq/>}/>
+        <Route path='/Pagos' element={<Pagos />} />
       </Routes>
       <WhatsApp />
       <Footer/>
