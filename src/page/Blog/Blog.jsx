@@ -16,7 +16,7 @@ const Blog = () => {
                 <div className='titleblog'>
                     Blog de CAI Ventures
                     <p className='subtitleblog'>
-                        Donde compartimos consejos, webinars y demás
+                        Donde  compartimos consejos, webinars y demás
                     </p>
 
                 </div>
