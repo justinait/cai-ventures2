@@ -53,10 +53,10 @@ const NavBar = () => {
           <ul className="navbar-nav me-auto">
           <NavLink className='nav-link' to='/'> Home </NavLink>
           <NavLink className='nav-link' to='/services'>Servicios</NavLink>
-          <NavLink className='nav-link' to='/About'>Nosotros</NavLink>            
-          <NavLink className='nav-link' to='/Blog'>Blog</NavLink>
-          <NavLink className='nav-link' to='/Contact'>Contacto</NavLink>
-          <NavLink className='nav-link' to='/Faq'>FAQ</NavLink>  
+          <NavLink className='nav-link' to='/about'>Nosotros</NavLink>            
+          <NavLink className='nav-link' to='/blog'>Blog</NavLink>
+          <NavLink className='nav-link' to='/contact'>Contacto</NavLink>
+          <NavLink className='nav-link' to='/faq'>FAQ</NavLink>  
           </ul>
         </div>
       </div>
