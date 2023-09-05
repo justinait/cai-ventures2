@@ -1,9 +1,11 @@
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service2.css';
 import homeCard6 from '../../assets/homeCard6.png';
 import cardSerDos from '../../assets/cardSerDos.png';
 import cardSerDosA from '../../assets/cardSerDosA.png';
 import cardSerDosB from '../../assets/cardSerDosB.png';
+
 
 const ServiceDos = () => {
     return (
@@ -58,9 +60,14 @@ const ServiceDos = () => {
                 </Row>
 
                 <Row>
-                    <Col className='serviceContainerButton'>
-                    <Button className='serviceButtons' >AGENDAR SESIÓN</Button>{' '}
-                    </Col>
+                <Col className='serviceContainerButton'>
+                <Link to='/Pagos'>
+                    <Button className='serviceButtons'>AGENDAR SESIÓN</Button>
+                </Link>
+                </Col>
+                    
+                  
+                  
                 </Row>
             </Row>
         </Container>
