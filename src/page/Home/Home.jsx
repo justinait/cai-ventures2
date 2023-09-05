@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import Hero from '../../components/Hero/Hero';
 import Home2 from '../../components/Home2/Home2';
 import Home3 from '../../components/Home3/Home3';
@@ -7,6 +8,11 @@ import Card2 from '../../components/cardHome/Card2/Card2';
 import Card3 from '../../components/cardHome/Card3/Card3';
 
 function Home() {
+  
+  useEffect(()=> {
+    scrollTo(0,0)
+  }, [])
+
   return (
     <div className='homeContainer'>
         
