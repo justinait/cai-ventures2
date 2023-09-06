@@ -11,7 +11,7 @@ function Questions() {
           <Col xl={4} lg={5} md={3} sm={12} className='contImgFaq'>
             <img className='imgFaq'  src={faqImage} />
             </Col>
-          <Col xl={7} md={8} lg={6} sm={8}>
+          <Col className='contTiTe' xl={7} md={11} lg={6} sm={8}>
             <h2 className='faqTitle'>Preguntas Frecuentes</h2>
             <p className='textFaq'>Sabemos lo importante que es para vos entregar el mejor proyecto universitario. Te brindamos algunas respuestas a las preguntas frecuentes de nuestro servicio.</p>
             <Col>
