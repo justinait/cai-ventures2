@@ -143,17 +143,22 @@
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
     .titleblog {
         color: var(--colors-main-friendly-blue, #3349A1);
-        font-family: Montserrat;
-        font-size: 24px;
+        font-size: 54px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        width: 263px;
+        width: 100%;
         height: 24px;
 
+    }
+    .principalcardblog{
+        background-image: none;
+    }
+    .subtitleblog{
+        display:none
     }
 
     .segondcardblog {
@@ -161,10 +166,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-   
-   
-      
-
 
     }
 
@@ -175,33 +176,23 @@
         margin-bottom: 30px;
         padding-bottom: 10px;
         margin-left: 10px;
-   
-        
         flex-direction: column;
         align-items: center;
         gap: 10px;
-/*         border-radius: var(--border-radius-border-radius-sm, 16px); */
-      
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 16px 16px);
-
-        /* Shadow */
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
        
  
 
     }
 
+    .card2blogimg{
+        width:100%
+    }
+
     .card2blogimg img {
         height: auto;
-        width: 100%;
-    
-    
-      
-    
-        /* margin-left: 20px;
-        margin-top: 40px;
-        margin-right: 20px; */
-     
+        width: 100%; 
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 0 0);
     }
@@ -209,30 +200,26 @@
 
     .text-section {
         display: flex;
-  
         padding: 16px;
         flex-direction: column;
         align-items: flex-start;
         gap: 1px;
         align-self: stretch;
-      
-
     }
 
     .text-sectionSubtitle {
         color: var(--colors-tipography-black, #212121);
         font-family:  'Montserrat';
-        font-size: 14px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-
     }
 
     .text-sectionTitle {
         color: var(--colors-main-friendly-blue, #3349A1);
         font-family: 'Montserrat';
-        font-size: 18px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
@@ -243,7 +230,7 @@
 
         /* Mobile-Body */
         font-family: 'Montserrat';
-        font-size: 12px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -254,10 +241,23 @@
         width: 24px;
         height: 4.003px;
         flex-shrink: 0;
-    
+        position: absolute;
+        margin-bottom: 18rem;
+    }
+}
 
 
+@media screen and  (max-width:768px){
+    .titleblog{
+        font-size: 24px;
+    }
+    .card2blog{
+        width: 90%;
+    }
+    .buttonshareblog{
+       
+        margin-bottom: 370px;
     }
 
-
+    
 }

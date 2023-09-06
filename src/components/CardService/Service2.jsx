@@ -59,7 +59,7 @@ const ServiceDos = () => {
 
                 <Row>
                     <Col className='serviceContainerButton'>
-                    <Button className='serviceButtons' >AGENDAR SESIÓN</Button>{' '}
+                    <Button  href="https://zcal.co/caiventures" target= "_blank" className='serviceButtons'>Agendar Sesión</Button>{' '}
                     </Col>
                 </Row>
             </Row>
