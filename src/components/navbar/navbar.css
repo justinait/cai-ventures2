@@ -74,6 +74,7 @@
   .nav-link {
     text-decoration: none;
     position: relative;
+    color: white;
   }
 
   .nav-link::after {
