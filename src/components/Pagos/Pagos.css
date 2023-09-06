@@ -1,5 +1,41 @@
 .containerPagos {
-    height: 100vh;
+    height: auto;
+}
+
+.titlePay {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.containerPay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.containerBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttonDosPay {
+    display: flex;
+    height: 120px;
+    padding: 0px 80px;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background-color: white;
+    border: 1px solid #DEE5FF;
+    border-radius: 16px;
 }
 
 .buttonOnline.active {
@@ -69,4 +105,40 @@
     font-weight: 600;
     line-height: normal;
     margin: 0px;
+}
+
+.containerBtn {
+    display: flex;
+    align-items: flex-start;
+}
+
+.interBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.interBtn p {
+    margin: 0px;
+}
+
+.containerOnlinePay {
+    gap: 1rem;
+}
+
+.active .imageOnline {
+    filter: invert(0%); 
+}
+  
+.imageOnline {
+    filter: invert(100%);
+}
+
+.active .imageEfectivo {
+    filter: invert(100%); 
+}
+  
+.imageEfectivo {
+    filter: invert(0%);
 }

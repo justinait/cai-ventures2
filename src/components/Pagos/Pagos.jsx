@@ -4,11 +4,12 @@ import Plin from '../../assets/plin.png';
 import Yape from '../../assets/yape.png';
 import tukuy from '../../assets/tukuy.png';
 import code from '../../assets/code.svg';
-import efectivo from '../../assets/efectivo.png';
+import efectivo from '../../assets/efectivo.svg';
 import bancoNacion from '../../assets/bancoNacion.png';
 import interBank from '../../assets/interBank.png';
 import bcp from '../../assets/bcp.png';
 import bbva from '../../assets/bbva.png';
+import flechaPagos from '../../assets/flechaPagos.png';
 import { Container, Image, Col, Row } from 'react-bootstrap';
 
 function UncontrolledExample() {
@@ -23,69 +24,116 @@ function UncontrolledExample() {
     setMostrarImagenesEfectivo(!mostrarImagenesEfectivo);
   };
 
+  
+
   return (
     <Container className='containerPagos'>
+        <Row>
+            <Col className='containerPay'>
+                <h2 className='titlePay'>Selecciona un método de pago</h2>
+            </Col>
+        </Row>
+        <Row className='containerBox'>
       <Row>
-        <Col>
+        <Col className='containerBtn'>
+            
           <button
             className={`buttonOnline ${mostrarImagenesOnline ? 'active' : ''}`}
             onClick={toggleImagenesOnline}
           >
-            <Image src={code} />
+            <Image src={code} className={`imageOnline `} />
             <p className={`titleOnline ${mostrarImagenesOnline ? 'active-text' : ''}`}>
               Pago online
             </p>
           </button>
+
           {mostrarImagenesOnline && (
             <>
+                      <Image src={flechaPagos} />
+   
+            <Row className='containerOnlinePay'>
             <Col>
-                <Image src={Plin} />
-                <p>plin.pe</p>
+                <button className='buttonDosPay'>
+                <Col className='interBtn'>
+                    <Image src={Plin} />
+                    <p>plin.pe</p>
+                </Col>
+                </button>
             </Col>
             <Col>
-                <Image src={Yape} />
-                <p>yape.com.pe</p>
+                <button className='buttonDosPay'>
+                <Col className='interBtn'>
+                    <Image src={Yape} />
+                    <p>yape.com.pe</p>
+                </Col>
+                </button>
             </Col>
             <Col>
-                <Image src={tukuy} />
-                <p>tukuy.club</p>
+                <button className='buttonDosPay'>
+                <Col className='interBtn'>
+                    <Image src={tukuy} />
+                    <p>tukuy.club</p>
+                </Col>
+                </button>
             </Col>
+            </Row>
             </>
           )}
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col className='containerBtn'>
           <button
             className={`buttonEfectivo ${mostrarImagenesEfectivo ? 'active' : ''}`}
             onClick={toggleImagenesEfectivo}
           >
-            <Image src={efectivo} />
+            <Image src={efectivo} className={`imageEfectivo `} />
             <p className={`titleEfectivo ${mostrarImagenesEfectivo ? 'active-text' : ''}`}>
               Pago en efectivo
             </p>
           </button>
+        
           {mostrarImagenesEfectivo && (
             <>
+            <Image src={flechaPagos} />
+            <Row className='containerOnlinePay'>
             <Col>
-                <Image src={bancoNacion} />
-                <p>www.bn.com.pe</p>
+                <button className='buttonDosPay'>
+                    <Col className='interBtn'>
+                    <Image src={bancoNacion} />
+                    <p>www.bn.com.pe</p>
+                    </Col>
+                </button>
             </Col>
             <Col>
+                <button className='buttonDosPay'>
+                <Col className='interBtn'>
                 <Image src={interBank} />
                 <p>interbank.pe</p>
+                </Col>
+                </button>
             </Col>
             <Col>
-                <Image src={bcp} />
-                <p>www.viabcp.pe</p>
+                <button className='buttonDosPay'>
+                    <Col className='interBtn'>
+                    <Image src={bcp} />
+                    <p>www.viabcp.pe</p>
+                    </Col>
+                </button>
             </Col>
             <Col>
+                <button className='buttonDosPay'>
+                <Col className='interBtn'>
                 <Image src={bbva} />
                 <p>www.bbva.pe</p>
+                </Col>
+                </button>
             </Col>
+            </Row>
             </>
           )}
-        </Col>
+       </Col>
+       </Row>
       </Row>
     </Container>
   );
