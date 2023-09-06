@@ -1,8 +1,8 @@
 import './card2.css';
 import { useState , useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2';
 import config from '../../config/config.js';
+import { successAlert,errorAlert,loadingAlert } from '../../utils/alert.js';
 
 
 const Card2 = () => {
@@ -14,7 +14,7 @@ const Card2 = () => {
     const estilos ={
         color:"red",
         paddingLeft:"25px",
-        margin:"0"
+        margin:"0px",
     }
 
     //defino los valores de cada unput para acceder a su valor despues.
@@ -81,40 +81,17 @@ const Card2 = () => {
 
         emailjs.sendForm(service_id, template_id, formulario.current,public_id)
         .then((result) => {
-            let timerInterval
-            Swal.fire({
-                title: 'Enviando consulta...',
-                html: 'procesando el mensaje <b></b>.',
-                timer: 2000,
-                timerProgressBar: true,
-                didOpen: () => {
-                    Swal.showLoading()
-                    const b = Swal.getHtmlContainer().querySelector('b')
-                    timerInterval = setInterval(() => {
-                        b.textContent = Swal.getTimerLeft()
-                    }, 100)
-                },
-                willClose: () => {
-                    clearInterval(timerInterval)
-                }
-            }).then(() => {
+            loadingAlert()
+            .then(() => {
                 if (result.status === 200) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Mensaje enviado',
-                        text: '¡Sera respondido a la brevedad!'
-                    });
+                    successAlert();//es una funcion que contiene la alerta de mensaje enviado
                     clearInputValue();//esta funcion limpia el fomrulario desde cero.
                     setBtnsubmit(false);
                 }
             })
             
         }, (error) => {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: `${error}`,
-            })
+            errorAlert(error);
         });
     }
     
@@ -131,7 +108,9 @@ const Card2 = () => {
                 {input.message.error&& <p style={estilos}>{input.message.error}</p>}
                 <textarea name="message" placeholder='Mensaje' cols="30" rows="10" value={input['message'].value} onChange={handleInputChange}></textarea>
                 
-                <button className='btnFormContact' disabled={btnsubmit}>enviar</button>
+                <div className='btnFormContainer'>
+                    <button className='btnFormContact' disabled={btnsubmit}>enviar</button>
+                </div>
             </form>
         </div>
     );

@@ -44,31 +44,40 @@
     font-weight: 500;
     line-height: normal; 
 }
-.btnFormContact{
-    margin-left: 60%;
-    border: 0;
+.btnFormContainer{
     display: flex;
+    justify-content:right;
+}
+.btnFormContact{
+    right: 0;
+    border: 0;
     width: 220px;
     height: 60px;
     padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     color:#fff;
     background-color: #CD373B;
     border-radius: 16px;
-    font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .divContactContainer{
         width: 100%;
         margin: 0;
     }
+    .btnFormContact{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        width: 85%;
+        height: 50px;
+        padding: 0 24px; 
+    }
+}
+@media screen and (max-width: 768px) {
     .divContactContainer h2{
         font-size: 24px;
         font-weight: 600; 
@@ -87,19 +96,8 @@
         padding: 12px 20px; 
     }
     .btnFormContact{
-        font-size: 14px;
-        font-weight: 500;
-        margin: 0;
         width: 100%;
         height: 40px;
-        padding: 0 24px; 
+        font-size: 14px;
     }
-}
-
-@media (min-width: 769px)  and (max-width:1024px){
-    .divContactContainer{
-        width: 100%;
-        margin: 0;
-    }
-
 }
