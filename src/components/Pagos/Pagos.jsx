@@ -12,7 +12,7 @@ import bbva from '../../assets/bbva.png';
 import flechaPagos from '../../assets/flechaPagos.png';
 import { Container, Image, Col, Row } from 'react-bootstrap';
 
-function UncontrolledExample() {
+function Pagos() {
   const [mostrarImagenesOnline, setMostrarImagenesOnline] = useState(false);
   const [mostrarImagenesEfectivo, setMostrarImagenesEfectivo] = useState(false);
 
@@ -139,4 +139,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default Pagos;
