@@ -2,7 +2,7 @@
     display: flex;
     width: 70%;
     padding: 60px;
-    margin: 80px 200px;
+    margin: 6% auto;
     flex-direction: column;
     align-items: center;
     gap: 40px;
@@ -12,15 +12,12 @@
 
 .titleAboutus {
     color: var(--colors-main-friendly-blue, #3349A1);
-
-    /* Ttittle-MD Desktop */
     font-family: 'Montserrat';
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-align: center;
-
 }
 
 .aboutUsText {
@@ -31,78 +28,37 @@
     font-style: normal;
     font-weight: 400;
     line-height: 152.4%;
-    /* 36.576px */
     align-self: stretch;
+}
+@media screen and ( max-width: 1024px) {
+    .containerAboutUs1 {
+        width: 65%;
+        padding: 60px;
+        gap: 40px;
+    }
+
+    .aboutUsText {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .containerAboutUs1 {
-        display: flex;
-        width: 85%;
-        margin: 50px;
+        width: 80%;
+        margin: 50px auto;
         padding: 24px;
-        flex-direction: column;
-        align-items: center;
         gap: 24px;
-        border-radius: var(--border-radius-border-radius-md, 24px);
-        
     }
 
     .titleAboutus {
-        color: var(--colors-main-friendly-blue, #3349A1);
-
-        /* Mobile-Tittle-md */
-        font-family: 'Montserrat';
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-
     }
 
     .aboutUsText {
-        color: var(--colors-tipography-black, #212121);
-
-        /* Mobile-Body */
-        font-family: Montserrat;
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
-        line-height: normal;
-    }
-
-}
-
-@media (min-width: 768px) and ( max-width: 1024px) {
-    .containerAboutUs1 {
-        display: flex;
-        width: 65%;
-        padding: 60px;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-
-    }
-
-    .titleAboutus {
-        color: var(--colors-main-friendly-blue, #3349A1);
-        font-family: 'Montserrat';
-        font-size: 42px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-
-    .aboutUsText {
-        color: var(--colors-tipography-black, #212121);
-      
-        text-align: center;
-        font-family: 'Montserrat';
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 152.4%;
-        /* 27.432px */
-
     }
 }
