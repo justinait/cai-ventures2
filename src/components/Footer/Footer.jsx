@@ -32,8 +32,8 @@ const Footer = () => {
                 <div className='containerHelp'>
                     <h4>Ayuda</h4>
                     <ul className='list listAnimation'>
-                        <li><Link className='linkFooter'>Politicas de Privacidad</Link></li>
-                        <li><Link className='linkFooter'>Términos y Condiciones</Link></li>
+                        <li><Link className='linkFooter' to='/privacy'>Politicas de Privacidad</Link></li>
+                        <li><Link className='linkFooter' to='/privacy'>Términos y Condiciones</Link></li>
                     </ul>
                 </div>
             </footer>
@@ -49,8 +49,8 @@ const Footer = () => {
                         <li><a href=" https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" target='_blank'><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
                     </ul>
                     <div className='listConditions'>
-                        <Link className='linkFooter'>Términos y Condiciones</Link>
-                        <Link className='linkFooter'>Politicas de Privacidad</Link>
+                        <Link className='linkFooter' to='/privacy'>Términos y Condiciones</Link>
+                        <Link className='linkFooter' to='/privacy'>Politicas de Privacidad</Link>
                     </div>
                 </div>
             </footer>
