@@ -15,13 +15,13 @@ const RedesFlotantes = () => {
                     <NavLink target="_blank" to="https://instagram.com/tesiscaiventures?igshid=MzRlODBiNWFlZA==" className="redesIcon">
                         <Image className='iconImg oculto' src={instaAzul} alt="Instagram" />
                     </NavLink>
-                    <NavLink target="_blanck" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
+                    <NavLink target="_blank" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
                         <Image  className=' oculto'  src={faceAzul} alt="Facebook" />
                     </NavLink>
-                    <NavLink target="_blanck" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
+                    <NavLink target="_blank" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
                         <Image className='iconImg oculto' src={linkAzul} alt="LinkedIn" />
                     </NavLink>
-                    <NavLink target="_blanck" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
+                    <NavLink target="_blank" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
                         <Image className='iconImg oculto' src={tikAzul} alt="TikTok" />
                     </NavLink>
                 </Col>

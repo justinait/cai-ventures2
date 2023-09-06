@@ -4,6 +4,8 @@ import Card1 from '../../components/contactCards/Card1'
 import './contact.css'
 
 function Contact() {
+  
+
   return (
     <div className='contactPagesContainer'>
 
