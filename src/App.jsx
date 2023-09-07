@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import Article from './components/Article/Article';
 
 import RedesFlotantes from './components/Redes/Redes';
-
+import Privacy from './page/Privacy/Privacy';
 import WhatsApp from './components/WhatsApp/WhatsApp';
 import Pagos from './components/Pagos/Pagos';
 import CheckScroll from './utils/CheckScroll';
@@ -35,8 +35,7 @@ function App() {
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/Pagos' element={<Pagos />} />
-
-
+        <Route path='/privacy' element={<Privacy/>} />
       </Routes>
       <WhatsApp />
       <Footer/>

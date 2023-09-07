@@ -96,14 +96,7 @@
 
 
 
-.accordion-button:not(.collapsed) {
-    color: #212121;
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
+
 
 
 
@@ -138,16 +131,94 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .faqTitle{
+        font-family:'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .imgFaq {
+        width: 535px;
+        height: 325px;
+    }
+
+    .accordion-button {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #212121 !important;
+    }
+
+    .accordion {
+        --bs-accordion-btn-icon-width: 30px !important;
+    }
+    
+}
+
 @media screen and (max-width: 360px)  {
     .containerFaq {
-        background-color: #EAEEFF;
+        padding: 24px 60px
+    }
+
+    .questionNo {
+        color: #212121;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 
     .faqTitle {
-        font-size: 20px;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .accordion-button {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 
     .textFaq {
-        font-size: 16px;
+        text-align: justify;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 139.9%;
+        padding: 0px 20px 16px 20px;
+        margin: 0px;
+    }
+
+    .imgFaq {
+        width: 254px;
+        height: 174px;
+    }
+
+    .contTiTe {
+        align-items: center;
+        width: 328px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accordion-button {
+        font-family:'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
