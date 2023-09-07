@@ -10,16 +10,12 @@ function Home() {
   
   return (
     <div className='homeContainer'>
-        
       <Hero/>
       <Home2 />
-
       <Home3 />
-      
       <Card1/>
       <Card2/>
       <Card3/>
-        
     </div>
   )
 }

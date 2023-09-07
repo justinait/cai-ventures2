@@ -35,9 +35,6 @@
   height: .8rem !important;
 }
 
-
-
-
 @media screen and (max-width: 992px) {
   .carouselHome img {
     height: 512px;
@@ -54,14 +51,21 @@
   
 } 
 
-
 @media screen and (max-width: 576px) {
   .carouselHome img {
     height: 200px;
   }
 } 
+
 @media screen and (max-width: 360px) {
   .carouselHome img {
     height: 200px;
   }
-} 
+}
+
+@media screen and (min-width: 1920px) {
+  .carouselHome img {
+    width: 1615px;
+    height: 789px; 
+  }
+}

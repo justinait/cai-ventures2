@@ -2,6 +2,7 @@
     display:flex;
     flex-direction: column;
     padding: 40px;
+    margin: 0 -2.5rem;
     background-color:#fff;
     gap: 50px;
     box-shadow: 8px 8px 40px 3px #688eb666;
@@ -10,14 +11,15 @@
 }
 .homeServicesContainer h3{
     color: #212121;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
+    font-size: 42px;
 }
 .iconsHomeContainer{
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px 15px;
 }
 .iconsHomeChildren{
     width: 300px;
@@ -42,25 +44,77 @@
 }
 .iconsHomeChildren p{
     text-align: center;
+    font-size: 24px;
+    font-weight: 400; 
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width:1441px){
+    .iconsHomeContainer{
+        gap: 130px 100px; 
+    }
+    .iconsHomeChildren{
+        width: 400px;
+    }   
+    .iconsHomeChildren figure{
+        width: 151px;
+        height: 151px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .homeServicesContainer{
         background-color:#EAEEFF ;
         border: none;
         border-radius:0;
         box-shadow: none;
         margin: 0 -20px;
+        padding: 60px;
+    }
+    .homeServicesContainer h3{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
     }
     .iconsHomeChildren{
-        width: 120px;
+        gap: 20px 40px;
     }
     .iconsHomeChildren figure{
         padding: 16px;
-        width: 70px;
-        height: 70px; 
+        width: 128px;
+        height: 128px; 
     }
     .iconsHomeChildren figure img{
-        width: 25px;
+        width: 56px;
+    }
+    .iconsHomeChildren p{
+        font-size: 18px
     }
 }
+
+@media screen and (max-width: 767px) {
+    .homeServicesContainer{
+        padding: 20px;
+    }
+    .homeServicesContainer h3{
+        font-size: 24px;
+    }
+    .iconsHomeContainer{
+        gap: 20px 10px;
+    }
+    .iconsHomeChildren{
+        width: 125px;
+    }
+    .iconsHomeChildren p{
+        font-size: 14px
+    }
+    .iconsHomeChildren figure{
+        padding: 16px;
+        width: 56px;
+        height: 56px; 
+    }
+    .iconsHomeChildren figure img{
+        width: 24px;
+    }
+}   
