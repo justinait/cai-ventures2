@@ -25,16 +25,26 @@ function Article() {
 
   return (
     <div>
-      <div className='articleCard'>
-        <h3>{title}</h3>
-        <div className='articleImage'>
-          <img src={image}   />
+      <div className='principalcardblog'>
+
+        <div className='titleblog'>
+          Blog de CAI Ventures
+          <p className='subtitleblog'>
+            Donde  compartimos consejos, webinars y demás
+          </p>
+
         </div>
-        <div className=''>
-          <h6>{author}</h6>
-          <div className=''>
-            <p className=''>{content}</p>
-          </div>
+
+        </div>
+      <div className='articleCard'>
+        <p className='articleTitle'>{title}</p>
+        
+        <img src={image}  className='articleImage'  />
+        
+        <div className='articleTextContainer'>
+          <h4>Autora: {author}</h4>
+          <p className='articleContent'>{content}</p>
+          
         </div>
 
       </div>
