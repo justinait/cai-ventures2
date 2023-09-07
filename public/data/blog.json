@@ -1,29 +1,29 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "Título",
-        "subtitle": "Subtítulo",
-        "image": "img1blog",
-        "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
-        "author": "Yuli Yasmina"
-      },
-      {
-        "id": 2,
-        "title": "Título",
-        "subtitle": "Subtítulo",
-        "image": "img2blog",
-        "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
-        "author": "Yuli Yasmina"
-      },
-      {
-        "id": 3,
-        "title": "Título",
-        "subtitle": "Subtítulo",
-        "image": "img3blog",
-        "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
-        "author": "Yuli Yasmina"
-      }
-    ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "Título",
+      "subtitle": "Subtítulo",
+      "image": ".././src/assets/img1blog.png",
+      "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
+      "author": "Yuli Yasmina"
+    },
+    {
+      "id": 2,
+      "title": "Título",
+      "subtitle": "Subtítulo",
+      "image": ".././src/assets/Img2blog.png",
+      "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
+      "author": "Yuli Yasmina"
+    },
+    {
+      "id": 3,
+      "title": "Título",
+      "subtitle": "Subtítulo",
+      "image": ".././src/assets/Img3blog.png",
+      "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
+      "author": "Yuli Yasmina"
+    }
+  ]
 }
   
