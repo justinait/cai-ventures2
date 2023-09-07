@@ -15,6 +15,7 @@ function MoreArticles({allData, selectedArticle}) {
   return (
     <div>
         <h3>Más artículos</h3>
+        
         {otherArticles.map(e => {
             
             const {title, subtitle, image, content, author} = e;
