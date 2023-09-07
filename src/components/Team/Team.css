@@ -5,60 +5,98 @@
     text-align: center;
     margin: 5% 0;
 }
-
+.titleTeam{
+    color: var(--Tipografa, var(--colors-tipography-black, #212121));
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
 .personContainer img {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
 }
 
 .infoPerson {
-    width: 30vw;
-    height: 42%;
+    width: 35vw;
+    height: 50%;
     margin: 10% 0;
     border-radius: var(--border-radius-border-radius-lg, 48px);
     background: var(--colors-main-friendly-blue, #3349A1);
     box-shadow: 8px 8px 20px 3px rgba(0, 0, 0, 0.25);
     padding: 8%;
     text-align: left;
+    color: #FFF; 
 }
-
+.infoPerson h5{
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
 .infoPerson p {
-    font-weight: 300;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
 }
 
-/* 
-@media (max-width: 1440px){
-
-} */
+/* desktop XL*/
+@media (min-width: 1441px){
+    .personContainer img{
+        width: 516px;
+        height: 516px;
+    }
+    .infoPerson{
+        height: 35%;
+    }
+    .infoPerson h5{
+        font-size: 32px;
+    }
+}
 
 /* tablet */
 @media (max-width: 1024px) {
     .teamContainer {
         flex-direction: column;
         align-items: center;
+        gap: 70px 0;
     }
     .infoPerson {
         width: 70vw;
         margin: 5% 0;
         padding: 4%;
-        border-radius: var(--border-radius-border-radius-sm, 16px);
-        background: var(--colors-main-friendly-blue, #3349A1);
-        box-shadow: 8px 8px 20px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+    }
+    .infoPerson p {
+        font-size: 18px;
     }
     .personContainer img {
-        width: 250px;
-        height: 250px;
+        width: 275px;
+        height: 275px;
     }
 }
 
-@media  screen and (max-width: 768px) {
-
+/* mobile */
+@media  screen and (max-width: 767px) {
+    .teamContainer {
+        gap: 30px 0;
+    }
     .personContainer img {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
     .infoPerson {
         width: 90vw;
+    }
+    .infoPerson h5{
+        font-size: 16px;
+        font-weight: 500; 
+    }
+    .infoPerson p {
+        font-size: 14px;
+        font-weight: 400; 
     }
 }

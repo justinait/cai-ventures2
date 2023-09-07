@@ -41,8 +41,12 @@
         padding: 0px 0px 0px 40px !important;
     }
 
-/* } */
 
+@media screen and (max-width:1024px) {
+    .misionContainer {
+        width: 90vw;
+    }
+}
 @media (max-width: 576px) {
     .textMision {
         width: auto;

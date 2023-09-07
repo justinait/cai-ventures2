@@ -42,12 +42,13 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .containerAboutUs1 {
         width: 80%;
         margin: 50px auto;
         padding: 24px;
         gap: 24px;
+        border: none;
     }
 
     .titleAboutus {
@@ -60,5 +61,6 @@
     .aboutUsText {
         font-size: 14px;
         font-weight: 500;
+        text-align: left;
     }
 }

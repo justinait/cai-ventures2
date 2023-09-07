@@ -13,31 +13,31 @@ const Card2 = () => {
             <div className='iconsHomeContainer'>
                 <div className='iconsHomeChildren'>
                     <figure>
-                        <img src={iconsOne} alt="" />
+                        <img src={iconsOne} alt="icono de un grafico en ascenso" />
                     </figure>
                     <p>Capacitaciones y webinars virtuales sobre metodología de investigación y estadística.</p>
                 </div>
                 <div className='iconsHomeChildren'>
                     <figure>
-                        <img src={iconsTwo} alt="" />
+                        <img src={iconsTwo} alt="icono de una carpeta" />
                     </figure>
                     <p>Acceso a un repositorio de información sobre investigación. </p>
                 </div>
                 <div className='iconsHomeChildren'>
                     <figure>
-                        <img src={iconsThree} alt="" />
+                        <img src={iconsThree} alt="icono de una laptop abierta" />
                     </figure>
                     <p>Sesiones virtuales de asesoría.</p>
                 </div>
                 <div className='iconsHomeChildren'>
                     <figure>
-                        <img src={iconsFour} alt="" />
+                        <img src={iconsFour} alt="icono de una grupo de personas juntas" />
                     </figure>
                     <p>Preparación pre-sustentatoria a cargo de nuestro equipo especializado.</p>
                 </div>
                 <div className='iconsHomeChildren'>
                     <figure>
-                        <img src={iconsFive} alt="" />
+                        <img src={iconsFive} alt="icono de una lupa" />
                     </figure>
                     <p>Dos revisiones por antiplagio con Turnitin.</p>
                 </div>

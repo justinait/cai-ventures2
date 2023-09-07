@@ -34,7 +34,7 @@ const Valores = () => {
                     <div className='aboutImgContainer'>
                         <img src={imgValores4} alt="Servicio" />
                     </div>
-                    <p>Servicio</p>
+                    <p>Servicios</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
