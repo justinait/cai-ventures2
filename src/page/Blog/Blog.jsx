@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './blog.css'
 import rectangleblog from '../../assets/Rectangleblog.png'
 import img1blog from '../../assets/img1blog.png'
 import img2blog from '../../assets/Img2blog.png'
 import img3blog from '../../assets/Img3blog.png'
 import buttonshareblog from '../../assets/buttonshareblog.png'
-
-
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
+
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('/data/blog.json')
+        .then((response) => response.json())
+        .then((data) => setData(data.posts));
+    }, []);
+
     return (
+
         <div className='containerblog'>
             <div className='principalcardblog'>
 
@@ -26,101 +35,38 @@ const Blog = () => {
             {/* segunda carta */}
 
             <div className='segondcardblog'>
-
-                <div className='card2blog'>
-                    <div className='card2blogimg'>
-                        <img src={img1blog} alt="" />
-
-                    </div>
-                    <div className='card2blogtext'>
-
-
-                        <div className='text-section'>
-                            <p className='text-sectionSubtitle'>Subtitulo</p>
-                            <p className='text-sectionTitle'>titulo</p>
-                            <p className='text-sectionDescription'>“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</p>
-
-                        </div>
+                {data.map(e => {
+                    
+                    const {title, subtitle, image, content, author} = e;
+                    
+                    return (
+                        <Link to={`/blog/${e.id}`} key={e.id}>
+                            <div className='card2blog'>
+                                <div className='card2blogimg'>
+                                    <img src={image} alt={title} />
+                                </div>
+                                <div className='card2blogtext'>
 
 
+                                    <div className='text-section'>
+                                        <p className='text-sectionSubtitle'>{subtitle}</p>
+                                        <p className='text-sectionTitle'>{title}</p>
+                                        <p className='text-sectionDescription'>{content}</p>
+                                    </div>
 
-                        <button className='buttonshareblog'>
-                            <img src={buttonshareblog} alt="" />
-                        </button>
+                                    <button className='buttonshareblog'>
+                                        <img src={buttonshareblog} alt="" />
+                                    </button>
 
+                                </div>
 
+                            </div>
 
-                    </div>
-
-                </div>
-
-
-
-                <div className='card2blog'>
-                    <div className='card2blogimg'>
-                        <img src={img2blog} alt="" />
-
-                    </div>
-                    <div className='card2blogtext'>
-
-
-                        <div className='text-section'>
-                            <p className='text-sectionSubtitle'>Subtitulo</p>
-                            <p className='text-sectionTitle'>titulo</p>
-                            <p className='text-sectionDescription'>“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</p>
-
-                        </div>
-
-
-
-                        <button className='buttonshareblog'>
-                            <img src={buttonshareblog} alt="" />
-                        </button>
-
-
-
-                    </div>
-
-                </div>
-
-
-                <div className='card2blog'>
-                    <div className='card2blogimg'>
-                        <img src={img3blog} alt="" />
-
-                    </div>
-                    <div className='card2blogtext'>
-
-
-                        <div className='text-section'>
-                            <p className='text-sectionSubtitle'>Subtitulo</p>
-                            <p className='text-sectionTitle'>titulo</p>
-                            <p className='text-sectionDescription'>“Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi</p>
-
-                            
-
-                        </div>
-
-
-
-                        <button className='buttonshareblog'>
-                            <img src={buttonshareblog} alt="" />
-                        </button>
-
-
-
-                    </div>
-
-                </div>
-
-
-                
-
-
-               
-
-
-
+                        </Link>
+                        
+                    )
+                    
+                })}
 
 
             </div>
