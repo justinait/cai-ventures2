@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Article.css'
+import MoreArticles from '../MoreArticles/MoreArticles';
 
 function Article() { 
 
@@ -23,20 +24,23 @@ function Article() {
   const {title, subtitle, image, content, author} = thisArticle;
 
   return (
-    <div className='articleCard'>
-      <h3>{title}</h3>
-      <div className='articleImage'>
-        <img src={image}   />
-      </div>
-      <div className=''>
-        <h6>{author}</h6>
+    <div>
+      <div className='articleCard'>
+        <h3>{title}</h3>
+        <div className='articleImage'>
+          <img src={image}   />
+        </div>
         <div className=''>
-          <p className=''>{content}</p>
+          <h6>{author}</h6>
+          <div className=''>
+            <p className=''>{content}</p>
+          </div>
         </div>
 
       </div>
-
+      <MoreArticles allData={data} selectedArticle={thisArticle.id} />
     </div>
+    
   )
 }
 
