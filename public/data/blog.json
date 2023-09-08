@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Título",
       "subtitle": "Subtítulo",
-      "image": ".././src/assets/img1blog.jpg",
+      "image": "https://res.cloudinary.com/dsgxxcikg/image/upload/v1694193292/caiventures/vue7lwtzfjcta6airsbj.png",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     },
@@ -12,7 +12,7 @@
       "id": 2,
       "title": "Título",
       "subtitle": "Subtítulo",
-      "image": ".././src/assets/Img2blog.png",
+      "image": "https://res.cloudinary.com/dsgxxcikg/image/upload/v1694193293/caiventures/wsqqggboqng7szg3x3z5.png",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     },
@@ -20,7 +20,7 @@
       "id": 3,
       "title": "Título",
       "subtitle": "Subtítulo",
-      "image": ".././src/assets/Img3blog.png",
+      "image": "https://res.cloudinary.com/dsgxxcikg/image/upload/v1694193293/caiventures/xdw8o7eb8coly4lya6hy.png",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "title": "Título",
       "subtitle": "Subtítulo",
-      "image": ".././src/assets/Img3blog.png",
+      "image": "https://res.cloudinary.com/dsgxxcikg/image/upload/v1694193293/caiventures/xdw8o7eb8coly4lya6hy.png",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     }
