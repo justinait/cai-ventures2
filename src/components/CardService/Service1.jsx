@@ -1,9 +1,35 @@
 import React from 'react'
-import cai from "../../assets/images/cai1.png"
-
+import cai from "../../assets/images/cai2.png"
+import cai0 from "../../assets/images/cai0.png"
 function Service1() {
   return (
     <div>
+ 
+        <div className='containerfirstservice'>
+            <div className='servicefirstpart'>
+                <div className='servicefirsttext'>“Comienza el camino a la obtención de tu título”</div>
+                <div className='servicesegondpart'>
+                    <div className='servicesegondtext'>Puedes agendar una primera sesión gratuita, para informarte de todo lo necesario para comenzar.</div>
+                    <div className='firstservicebuttons'>
+                        <button className='servicebutton1'> AGENDAR SESION</button>
+                        <button className='servicebutton2'> CONTRATAR SERVICIO</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div className='servicefirstpic'>
+                <img className='imgfirstpic' src={cai0} alt="" />
+            </div>
+            
+            <div className='firstservicebuttonsprime'>
+                        <button className='servicebutton3'> AGENDAR SESION</button>
+                        <button className='servicebutton4'> CONTRATAR SERVICIO</button>
+
+                    </div>
+
+
+        </div>
         <div className="servicios">
            
             <h3 className="serviceMobileTitle">Nuestros servicios</h3>

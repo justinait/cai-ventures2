@@ -22,6 +22,7 @@ function MoreArticles({allData, selectedArticle}) {
             <Swiper
                 spaceBetween={50}
                 slidesPerView={2.3}
+                className='swiperMoreArticles'
             >
                 {otherArticles.map(e => {
                     const {title, subtitle, image, content, author} = e;
