@@ -106,11 +106,12 @@
 @media screen and (max-width: 768px) {
     .subtitleServiceDos {
         text-align: center;
+        font-size: 24px !important
         
     }
 
     .tituloSecDos {
-        font-size: 26px;
+        font-size: 24px;
         text-align: center;
     }
 
@@ -124,6 +125,16 @@
     .ServiceContainerRow{
         width: 85%;
     }
+    img.imgServiceDosA.img-fluid{
+        width: 68px !important;
+        height: 68px;
+    }
+    .img.imgServiceDos.img-fluid{
+        width: 68px !important;
+        height: 68px;
+    }
+    
+
    
 }
 
