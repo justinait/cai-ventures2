@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Título",
       "subtitle": "Subtítulo",
-      "image": ".././src/assets/img1blog.png",
+      "image": ".././src/assets/img1blog.jpg",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     },
@@ -13,7 +13,7 @@
       "title": "Título",
       "subtitle": "Subtítulo",
       "image": ".././src/assets/Img2blog.png",
-      "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     },
     {
@@ -21,7 +21,15 @@
       "title": "Título",
       "subtitle": "Subtítulo",
       "image": ".././src/assets/Img3blog.png",
-      "content": "Learn as if you will live forever, live like you will die tomorrow.” — Mahatma Gandhi",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      "author": "Yuli Yasmina Soria Mendoza"
+    },
+    {
+      "id": 4,
+      "title": "Título",
+      "subtitle": "Subtítulo",
+      "image": ".././src/assets/Img3blog.png",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
       "author": "Yuli Yasmina Soria Mendoza"
     }
   ]

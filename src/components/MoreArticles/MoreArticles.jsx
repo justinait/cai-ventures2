@@ -17,18 +17,17 @@ function MoreArticles({allData, selectedArticle}) {
 
   return (
     <div>
-        <h3>Más artículos</h3>
+        <p className='moreArticles'>Más artículos</p>
         
             <Swiper
                 spaceBetween={50}
                 slidesPerView={2.3}
-                onSwiper={(swiper) => console.log(swiper)}
             >
                 {otherArticles.map(e => {
                     const {title, subtitle, image, content, author} = e;
                             
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={e.id}>
                             <Link to={`/blog/${e.id}`} key={e.id}>
                                 <div className='swiperArticle'>
                                     <img src={image} alt={title} />
