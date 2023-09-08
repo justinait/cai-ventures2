@@ -5,6 +5,7 @@ import homeCard6 from '../../assets/homeCard6.png';
 import cardSerDos from '../../assets/cardSerDos.png';
 import cardSerDosA from '../../assets/cardSerDosA.png';
 import cardSerDosB from '../../assets/cardSerDosB.png';
+import Pagos from '../../components/Pagos/Pagos';
 
 
 const ServiceDos = () => {
@@ -63,6 +64,12 @@ const ServiceDos = () => {
                     <Col className='serviceContainerButton'>
                          <Button  href="https://zcal.co/caiventures" target= "_blank" className='serviceButtons'>Agendar Sesión</Button>{' '}
                     </Col>            
+                </Row>
+
+                <Row>
+                    <Link to='/Pagos'>
+                        <Button className='serviceButtons'>REALIZÁ TUS PAGOS AQUÍ</Button>
+                    </Link>            
                 </Row>
             </Row>
         </Container>
