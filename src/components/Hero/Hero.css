@@ -81,7 +81,6 @@ a {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }
-
     .homeButtons {
         width: 80%;
         margin: auto;
@@ -89,12 +88,16 @@ a {
     .homePresentation {
         width: 80vw;
     }
+    .homePresentation h3{
+        color: #3349A1;
+    }
     .homePresentationImage p{
         display: none;
     }
     .homeContainer2 {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 4rem;
     }
     .homePresentationImage {
         width: unset;
@@ -116,7 +119,7 @@ a {
     }
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }

@@ -46,6 +46,7 @@
 
     .homeContainer3 {
         flex-direction: column-reverse;
+        margin-bottom: 5rem;
     }
     
     .homeWho .homeButtons{
@@ -64,10 +65,9 @@
         margin-bottom: 10%;
         box-shadow: unset;
     }
-    
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 767px) {
     .homeContainer3 {
         border-bottom: 1px solid #ACBCFF;
         background: var(--colors-light-friendly-blue, #EAEEFF);
