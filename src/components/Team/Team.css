@@ -13,14 +13,11 @@
     line-height: normal; 
 }
 .personContainer img {
-    width: 400px;
-    height: 400px;
+    width: 472px;
+    height: 472px;
     border-radius: 50%;
 }
-
 .infoPerson {
-    width: 35vw;
-    height: 50%;
     margin: 10% 0;
     border-radius: var(--border-radius-border-radius-lg, 48px);
     background: var(--colors-main-friendly-blue, #3349A1);
@@ -42,18 +39,27 @@
     font-weight: 400;
     line-height: normal; 
 }
+.personFounder{
+    width: 633px;
+    height: 336px; 
+}
+.personCoFounder{
+    width: 584px;
+    height: 336px;       
+}
 
 /* desktop XL*/
 @media (min-width: 1441px){
-    .personContainer img{
-        width: 516px;
-        height: 516px;
-    }
-    .infoPerson{
-        height: 35%;
-    }
     .infoPerson h5{
         font-size: 32px;
+    }
+    .personFounder{
+        width: 656px;
+        height: 336px; 
+    }
+    .personCoFounder{
+        width: 584px;
+        height: 336px;      
     }
 }
 
@@ -66,6 +72,7 @@
     }
     .infoPerson {
         width: 70vw;
+        height: auto;
         margin: 5% 0;
         padding: 4%;
         border-radius: 16px;
@@ -74,8 +81,8 @@
         font-size: 18px;
     }
     .personContainer img {
-        width: 275px;
-        height: 275px;
+        width: 250px;
+        height: 250px; 
     }
 }
 

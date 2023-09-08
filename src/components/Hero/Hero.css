@@ -105,13 +105,13 @@ a {
     .homePresentationImage img {
         width: 540px;
         height: 366px;
-        border-radius: 25px;
         object-fit: cover;
         object-position: center;
         margin: 7% 0;
-        border-radius: 25px;
+        border-radius: 16px;
     }
     .homePresentationImage .homeButtons {
+        min-width: 25rem;
         display: block;
     }
     .homePresentation .homeButtons {
@@ -126,16 +126,19 @@ a {
     .homePresentation p {
         margin-top: 3%;
         font-weight: 500;
-        font-size: initial;
+        font-size: 14px;
     }
     .homeButtons {
         width: 100%;
     }
-    .homePresentation, .homePresentationImage img {
-        width: 90vw;
+    .homePresentationImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .homePresentationImage img {
-        height: 35vh;
+        width: 328px;
+        height: 220px;
     }
     .homePresentationImage p{
         display: none;
@@ -153,10 +156,6 @@ a {
     }
     .homePresentationImage .homeButtons {
         display: block;
+        border-radius: 8px !important;
     }
-    
-    .homePresentation .homeButtons {
-        display: none;
-    }
-
 }
