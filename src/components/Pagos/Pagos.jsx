@@ -9,7 +9,8 @@ import bancoNacion from '../../assets/bancoNacion.png';
 import interBank from '../../assets/interBank.png';
 import bcp from '../../assets/bcp.png';
 import bbva from '../../assets/bbva.png';
-import flechaPagos from '../../assets/flechaPagos.png';
+import { Link } from 'react-router-dom';
+
 import { Container, Image, Col, Row } from 'react-bootstrap';
 
 function Pagos() {
@@ -49,8 +50,7 @@ function Pagos() {
 
           {mostrarImagenesOnline && (
             <>
-                      <Image src={flechaPagos} />
-   
+
             <Row className='containerOnlinePay'>
             <Col>
                 <button className='buttonDosPay'>
@@ -80,8 +80,7 @@ function Pagos() {
             </>
           )}
         </Col>
-      </Row>
-      <Row>
+      
         <Col className='containerBtn'>
           <button
             className={`buttonEfectivo ${mostrarImagenesEfectivo ? 'active' : ''}`}
@@ -95,15 +94,17 @@ function Pagos() {
         
           {mostrarImagenesEfectivo && (
             <>
-            <Image src={flechaPagos} />
+
             <Row className='containerOnlinePay'>
             <Col>
+
                 <button className='buttonDosPay'>
                     <Col className='interBtn'>
                     <Image src={bancoNacion} />
                     <p>www.bn.com.pe</p>
                     </Col>
                 </button>
+
             </Col>
             <Col>
                 <button className='buttonDosPay'>
