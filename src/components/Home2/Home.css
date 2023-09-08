@@ -8,7 +8,7 @@
 .homeImageWho {
     width: 548px;
     height: 531px;
-    border-radius: 25px;
+    border-radius: 18px;
     object-fit: cover;
     object-position: center;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
@@ -46,6 +46,7 @@
 
     .homeContainer3 {
         flex-direction: column-reverse;
+        margin-bottom: 5rem;
     }
     
     .homeWho .homeButtons{
@@ -63,11 +64,11 @@
         height: 380px;
         margin-bottom: 10%;
         box-shadow: unset;
+        border-radius: 16px;
     }
-    
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 767px) {
     .homeContainer3 {
         border-bottom: 1px solid #ACBCFF;
         background: var(--colors-light-friendly-blue, #EAEEFF);
@@ -78,8 +79,8 @@
         font-size: 22px !important;
     }
     .homeImageWho {
-        width: 300px;
-        height: 300px;
+        width: 328px;
+        height: 220px;
     }
     .homeWho {
         width: unset;

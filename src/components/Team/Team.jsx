@@ -10,7 +10,7 @@ function Team() {
             <div className='teamContainer'>
                 <div className='personContainer'>
                     <img src={Yuli} alt="Yuli Yasmina Soria Mendoza" />
-                    <div className='infoPerson'>
+                    <div className='infoPerson personFounder'>
                         <h5>Yuli Yasmina Soria Mendoza</h5>
                         <p>CEO & FOUNDER</p>
                         <p>Dos años de experiencia en formulación de proyectos y
@@ -20,7 +20,7 @@ function Team() {
                 </div>
                 <div className='personContainer'>
                     <img src={Vanesa} alt="Vanesa Rimache Salcedo" />
-                    <div className='infoPerson'>
+                    <div className='infoPerson personCoFounder'>
                         <h5>Vanesa Rimache Salcedo</h5>
                         <p>COFOUNDER</p>
                         <p>Tres años de experiencia en Banca y Finanzas,

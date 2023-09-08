@@ -42,13 +42,14 @@
 @media screen and (max-width: 1024px) {
     .homeTesisContainer{
         flex-direction: column;
+        padding: 80px 20px 5px;
     }
     .homeTesisText{
         flex-direction: column;
     }
     .homeTesisText span{
         display: flex;
-        width: 65%;
+        width: 22rem;
         margin: 3% auto;
     }
     .homeTesisText .linkAboutTesis{
@@ -66,7 +67,7 @@
         margin: 3% auto;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .homeTesisText span{
         width: 100%;
         margin: 4% 0;
