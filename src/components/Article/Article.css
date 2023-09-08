@@ -25,7 +25,6 @@
 
 .articleTextContainer {
     padding: 5%;
-    height: 787px;
     text-align: left;
 }
 
@@ -69,7 +68,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .articleImage {
         width: 290px;
         height: 253px;

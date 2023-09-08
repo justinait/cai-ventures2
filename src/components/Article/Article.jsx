@@ -32,7 +32,6 @@ function Article() {
           <p className='subtitleblog'>
             Donde  compartimos consejos, webinars y demás
           </p>
-
         </div>
 
         </div>

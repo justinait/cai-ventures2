@@ -1,57 +1,45 @@
-.card2blog {
-    display: flex;
-    width: 45%;
-    height: auto;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    margin-left: 10px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border-radius: var(--border-radius-border-radius-lg, 16px 16px 16px 16px);
-    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-    justify-content: center;
+.swiperArticle {
+    border-radius: var(--border-radius-border-radius-sm, 16px);
     background: #FFF;
-}
-
-.text-section {
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1px;
-    align-self: stretch;
-}
-
-.text-sectionSubtitle {
-    color: var(--colors-tipography-black, #212121);
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-.text-sectionTitle {
-    color: var(--colors-main-friendly-blue, #3349A1);
-    font-family: 'Montserrat';
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-.text-sectionDescription {
-    color: var(--Tipografa, var(--colors-tipography-black, #212121));
-    font-family: 'Montserrat';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    align-self: stretch;
-}
-.card2blogimg img {
-    height: auto;
-    width: 100%;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    border-radius: var(--border-radius-border-radius-lg, 16px 16px 0 0);
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    
+}
+.swiperArticle p {
+    margin-bottom: 1%;
+}
+
+.swiperArticleText {
+    color: black;
+    text-align: left;
+    padding: 3% 7%;
+}
+.swiperSubtitle {
+    font-size: 26px;
+    font-weight: 500;
+}
+.swiperTitle {
+    color: var(--colors-main-friendly-blue, #3349A1);
+    font-size: 42px;
+    font-weight: 600;
+}
+.swiperContent {
+    font-size: 24px;
+    font-weight: 400;
+}
+.swiperMoreArticles{
+    padding: 4%;
+}
+
+.swiperArticle img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 315px;
+    border-radius: 16px 16px 0 0;
+}
+.moreArticles {
+    color: #3349A1;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
 }

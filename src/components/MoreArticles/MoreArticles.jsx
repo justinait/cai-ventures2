@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import './MoreArticles.css'
 
 function MoreArticles({allData, selectedArticle}) {
 
@@ -14,37 +17,35 @@ function MoreArticles({allData, selectedArticle}) {
 
   return (
     <div>
-        <h3>Más artículos</h3>
+        <p className='moreArticles'>Más artículos</p>
         
-        {otherArticles.map(e => {
-            
-            const {title, subtitle, image, content, author} = e;
+            <Swiper
+                spaceBetween={50}
+                slidesPerView={2.3}
+                className='swiperMoreArticles'
+            >
+                {otherArticles.map(e => {
+                    const {title, subtitle, image, content, author} = e;
+                            
+                    return (
+                        <SwiperSlide key={e.id}>
+                            <Link to={`/blog/${e.id}`} key={e.id}>
+                                <div className='swiperArticle'>
+                                    <img src={image} alt={title} />
+                                    <div className='swiperArticleText'>
+                                        <p className='swiperSubtitle'>{subtitle}</p>
+                                        <p className='swiperTitle'>{title}</p>
+                                        <p className='swiperContent'>{content}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </SwiperSlide>
+                        
                     
-            return (
-                <Link to={`/blog/${e.id}`} key={e.id}>
-                    <div className='card2blog'>
-                        <div className='card2blogimg'>
-                            <img src={image} alt={title} />
-                        </div>
-                        <div className='card2blogtext'>
-
-
-                            <div className='text-section'>
-                                <p className='text-sectionSubtitle'>{subtitle}</p>
-                                <p className='text-sectionTitle'>{title}</p>
-                                <p className='text-sectionDescription'>{content}</p>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </Link>
-                
-            )
-        })
-        }
+                    )
+                })}
+   
+            </Swiper>
        
     </div>
   )
