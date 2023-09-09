@@ -1,6 +1,5 @@
 .containerPagos {
     height: auto;
-    height: 100vh;
 }
 
 .titlePay {
@@ -141,6 +140,9 @@
 .active .imageOnline {
     filter: invert(0%); 
 }
+.hidden {
+    display: none;
+  }
   
 .imageOnline {
     filter: invert(100%);
