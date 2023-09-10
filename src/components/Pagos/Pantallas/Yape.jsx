@@ -1,11 +1,36 @@
 import { Container, Image, Col, Row } from 'react-bootstrap';
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import YapePagos from '../../../assets/yapePagos.png';
 import './Yape.css';
 import qrYape from '../../../assets/qrYape.png';
 import linkCopiar from '../../../assets/linkCopiar.png';
 
+
 function YapeScreen () { 
+
+    const textLinkRef = useRef(null);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    if (textLinkRef.current) {
+      const textToCopy = textLinkRef.current.innerText;
+
+      const textArea = document.createElement('textarea');
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+
+      try {
+        document.execCommand('copy');
+        console.log('Texto copiado al portapapeles:', textToCopy);
+        setCopied(true); 
+      } catch (err) {
+        console.error('Error al copiar texto al portapapeles:', err);
+      } finally {
+        document.body.removeChild(textArea);
+      }
+    }
+  };
     
     return (
         <Container className='containerPagosOk'>
@@ -21,7 +46,9 @@ function YapeScreen () {
                         <Image src={qrYape} />
                         </Col>
                     </Row>
+                    <Col className='bordeImgPagos'>
                     <Image src={YapePagos} />
+                    </Col>
                     </Col>
                 </Row>
 
@@ -32,10 +59,17 @@ function YapeScreen () {
 
                        <p className='linkPago'>O puedes utilizar este link de pago</p>
 
-                       <Col className='linkCopiar'>
-                        <p className='textLinkCopiar'>link.pago.pe/12321</p>
+                       {copied ? (
+                        <Col className='linkCopiarOk'>
+                            <p className='textLinkCopiarOk'>¡Link copiado!</p>
+                        </Col>
+                        
+                        ) : (
+                       <button className='linkCopiar' onClick={handleCopyLink}>
+                        <p className='textLinkCopiar' ref={textLinkRef}>link.pago.pe/12321</p>
                         <Image src={linkCopiar} />
-                       </Col>
+                       </button>
+                       )}
 
                        <button onClick={''}  className='cancelarPago'>CANCELAR</button>
                     </Col>
