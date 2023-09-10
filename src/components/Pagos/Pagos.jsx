@@ -26,6 +26,9 @@ function Pagos() {
   const [mostrarBancoNacionScreen, setMostrarBancoNacionScreen] = useState(false); 
   const [mostrarInterScreen, setMostrarInterScreen] = useState(false);
 
+  const handleCancelarClick = () => {
+    setMostrarYapeScreen(false);
+  };
   const toggleImagenesOnline = () => {
     if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen  && !mostrarInterScreen) {
       setMostrarImagenesOnline(!mostrarImagenesOnline);
@@ -92,7 +95,9 @@ function Pagos() {
   };
 
   return (
+    
     <Container className='containerPagos'>
+      
       <Col>
         <Image src={flechaPagos} onClick={reiniciarEstado} />
       </Col>
