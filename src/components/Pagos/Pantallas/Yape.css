@@ -1,0 +1,162 @@
+.escaneo {
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #212121;
+    text-align: center;
+}
+
+.escaneoBold {
+    color: #212121;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.monto {
+    color:#212121;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.containerPagosOk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 100px;
+}
+
+.contenedorTodoPago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.montoImgText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorMonto {
+    display: flex;
+    width: 557px !important;
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: var(--border-radius-border-radius-md, 24px);
+    background: #FFF;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+}
+
+.datosPago {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contieneImgQr {
+    display: flex;
+    width: 351px;
+    height: 370px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #EAEEFF;
+}
+
+.imgQrCont {
+    padding-bottom: 24px;
+}
+
+.contComprobante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textoComprobante {
+    color: #212121;
+    text-align: center;
+    font-family:'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.comprobanteColor {
+    color: #3349A1;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.linkPago {
+    color: #8C8C8C;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.linkCopiar {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid #8C8C8C;
+    margin-bottom: 30px;
+}
+
+.textLinkCopiar {
+    color: #8C8C8C;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.cancelarPago {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #CD373B;
+    border: none;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
