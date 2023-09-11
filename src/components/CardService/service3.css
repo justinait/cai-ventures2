@@ -4,11 +4,13 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin: 3rem 5rem;
+    
     background-color: #fff;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
    
+    margin: 3rem auto;
+    width: 90vw;
    
 }
 
@@ -85,28 +87,26 @@
         text-align: center;
     }
 
-.servicesThreeContainer {
-    margin: 2.5rem 3rem;
-    padding: 40px;
-    width:85%;
-    position: relative;
-}
+    .servicesThreeContainer {
+        padding: 40px;
+        position: relative;
+    }
 
-.cardServicesChildren {
-    flex-direction: column;
-    gap: 40px;
-}
+    .cardServicesChildren {
+        flex-direction: column;
+        gap: 40px;
+    }
 
-.cardServicesChildren img {
-    width: 68px;
-    height: 68px;
+    .cardServicesChildren img {
+        width: 68px;
+        height: 68px;
 
-}
+    }
 
-.infoServiceBox {
-    width: 100%;
-    justify-content: center;
-}
+    .infoServiceBox {
+        width: 100%;
+        justify-content: center;
+    }
 
 }
 
