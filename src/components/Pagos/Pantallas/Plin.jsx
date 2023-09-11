@@ -5,7 +5,7 @@ import './Yape.css';
 import qrYape from '../../../assets/qrYape.png';
 import linkCopiar from '../../../assets/linkCopiar.png';
 
-function PlinScreen() {
+function PlinScreen ({ reiniciarEstado }) {
   const textLinkRef = useRef(null);
   const [copied, setCopied] = useState(false);
 
@@ -69,7 +69,7 @@ function PlinScreen() {
               </button>
             )}
 
-            <button onClick={''} className='cancelarPago'>CANCELAR</button>
+            <button onClick={reiniciarEstado} className='cancelarPago'>CANCELAR</button>
           </Col>
         </Row>
       </Row>

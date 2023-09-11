@@ -4,7 +4,7 @@ import './BancoNacion.css';
 import linkCopiarBn from '../../../assets/linkCopiarBn.png';
 import interPagos from '../../../assets/interPagos.png';
 
-function InterScreen () { 
+function InterScreen ({ reiniciarEstado }) { 
 
     const textLinkRefTitular = useRef(null);
     const textLinkRefCuenta = useRef(null);
@@ -97,7 +97,7 @@ function InterScreen () {
                         <p className='textoComprobante'>Por favor, envía el comprobante de pago a:</p>
                         <p className='comprobanteColor'>955 716 302 <span className='textoComprobante'>o</span>  928 897 150</p>
 
-                       <button onClick={''}  className='cancelarPago'>CANCELAR</button>
+                       <button onClick={reiniciarEstado}  className='cancelarPago'>CANCELAR</button>
                     </Col>
                 </Row>
             </Row>
