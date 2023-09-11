@@ -34,7 +34,7 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 315px;
+    height: 228px;
     border-radius: 16px 16px 0 0;
 }
 .moreArticles {
@@ -44,10 +44,36 @@
     text-align: center;
 }
 
-
+@media (max-width: 1440px) {
+    
+    .swiperSubtitle {
+        font-size: 24px;
+    }
+    .swiperTitle {
+        font-size: 36px;
+    }
+    .swiperContent {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1024px) {
+    
+    .swiperContent {
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 767px) {
     .swiperArticle {
         border-radius: var(--border-radius-border-radius-sm, 16px);
-        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        box-shadow: 8px 8px 16px 0px rgba(104, 142, 182, 0.40);
+    }
+    .swiperSubtitle {
+        font-size: 14px;
+    }
+    .swiperTitle {
+        font-size: 18px;
+    }
+    .swiperContent {
+        font-size: 14px;
     }
 }

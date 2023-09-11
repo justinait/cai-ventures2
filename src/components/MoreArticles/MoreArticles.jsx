@@ -5,7 +5,8 @@ import 'swiper/css';
 import './MoreArticles.css'
 
 function MoreArticles({allData, selectedArticle}) {
-
+    
+    
     const [otherArticles, setOtherArticles] = useState([]);
     
     useEffect(() => {
@@ -20,8 +21,6 @@ function MoreArticles({allData, selectedArticle}) {
         <p className='moreArticles'>Más artículos</p>
         
             <Swiper
-                // spaceBetween={50}
-                // slidesPerView={2.3}
                 className='swiperMoreArticles'
                 breakpoints={{
                     320: {
@@ -40,7 +39,10 @@ function MoreArticles({allData, selectedArticle}) {
             >
                 {otherArticles.map(e => {
                     const {title, subtitle, image, content, author} = e;
-                            
+
+                    const maxLengthPreview = 60;
+                    const preview = content.slice(0, maxLengthPreview);
+                     
                     return (
                         <SwiperSlide key={e.id}>
                             <Link to={`/blog/${e.id}`} key={e.id}>
@@ -49,7 +51,7 @@ function MoreArticles({allData, selectedArticle}) {
                                     <div className='swiperArticleText'>
                                         <p className='swiperSubtitle'>{subtitle}</p>
                                         <p className='swiperTitle'>{title}</p>
-                                        <p className='swiperContent'>{content}</p>
+                                        <p className='swiperContent'>{preview}</p>
                                     </div>
                                 </div>
                             </Link>
