@@ -2,9 +2,9 @@ import { Container, Image, Col, Row } from 'react-bootstrap';
 import React, { useRef, useState } from 'react';
 import './BancoNacion.css';
 import linkCopiarBn from '../../../assets/linkCopiarBn.png';
-import interPagos from '../../../assets/interPagos.png';
+import bbvaPagos from '../../../assets/bbvaPagos.png';
 
-function InterScreen () { 
+function BbvaScreen () { 
 
     const textLinkRefTitular = useRef(null);
     const textLinkRefCuenta = useRef(null);
@@ -48,15 +48,15 @@ function InterScreen () {
                         <Col>
                             <p className='titular'>Titular de la cuenta</p>
                             {copiedTitular ? (
-                                 <Col className='linkCopiarOk'>
+                                <Col className='linkCopiarOk'>
                                     <p className='textLinkCopiarOk'>¡Copiado!</p>
                                 </Col>
-                         ) : (
+                            ) : (
                                 <button className='contTitular' onClick={() => handleCopyLink(textLinkRefTitular, setCopiedTitular)}>
                                     <p className='nameTitular' ref={textLinkRefTitular}>YULI YASMINA SORIA MENDOZA</p>
                                     <Image src={linkCopiarBn} />
                                 </button>
-                         )}
+                            )}
                         </Col>
                         <Col>
                             <p className='titular'>Número de cuenta</p>
@@ -66,7 +66,7 @@ function InterScreen () {
                                 </Col>
                             ) : (
                                 <button className='contTitular' onClick={() => handleCopyLink(textLinkRefCuenta, setCopiedCuenta)}>
-                                    <p className='nameTitular' ref={textLinkRefCuenta}>4263246738236</p>
+                                    <p className='nameTitular' ref={textLinkRefCuenta}>0011-0083-0200267675</p>
                                     <Image src={linkCopiarBn} />
                                 </button>
                             )}
@@ -79,13 +79,13 @@ function InterScreen () {
                                 </Col>
                             ) : (
                                 <button className='contTitular' onClick={() => handleCopyLink(textLinkRefCCI, setCopiedCCI)}>
-                                    <p className='nameTitular' ref={textLinkRefCCI}>00342601324673823643</p>
+                                    <p className='nameTitular' ref={textLinkRefCCI}>011-083-000200267675-33</p>
                                     <Image src={linkCopiarBn} />
                                 </button>
                             )}
                         </Col>
                         <Col className='bordeImgPagosEfectivo'>
-                        <Image className='imgNacionPago' src={interPagos} />
+                        <Image className='imgNacionPago' src={bbvaPagos} />
                         </Col>
                     </Row>
                     
@@ -105,4 +105,4 @@ function InterScreen () {
     )
 }
 
-export default InterScreen;
+export default BbvaScreen;
