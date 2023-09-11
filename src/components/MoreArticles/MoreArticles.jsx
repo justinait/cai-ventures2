@@ -20,9 +20,23 @@ function MoreArticles({allData, selectedArticle}) {
         <p className='moreArticles'>Más artículos</p>
         
             <Swiper
-                spaceBetween={50}
-                slidesPerView={2.3}
+                // spaceBetween={50}
+                // slidesPerView={2.3}
                 className='swiperMoreArticles'
+                breakpoints={{
+                    320: {
+                      slidesPerView: 1.1,
+                      spaceBetween: 20,
+                    },
+                    767: {
+                      slidesPerView: 2.1,
+                      spaceBetween: 30,
+                    },
+                    1920: {
+                      slidesPerView: 2.7,
+                      spaceBetween: 30,
+                    },
+                }}
             >
                 {otherArticles.map(e => {
                     const {title, subtitle, image, content, author} = e;

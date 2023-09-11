@@ -37,11 +37,6 @@
     margin-bottom: 0px;
 }
 
-.imgNacionPago {
-    width: 200px !important;
-    height: auto;
-    padding-top: 24px;
-}
 
 .montoBanco {
     text-align: center;
@@ -54,9 +49,11 @@
 }
 
 .contTitular {
+    width: 100%;
     display: flex;
     height: 60px;
     padding: 10px 20px;
+    background: white;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
@@ -80,4 +77,16 @@
     flex-direction: column;
     padding-bottom: 24px;
     align-items: center;
+}
+
+.bordeImgPagosEfectivo {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #EAEEFF;
+    width: auto !important;
+    margin-top: 24px !important;
 }
