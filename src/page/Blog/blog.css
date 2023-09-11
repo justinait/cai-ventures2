@@ -249,7 +249,11 @@
 
 @media screen and  (max-width:768px){
     .titleblog{
-        font-size: 24px;
+        font-size: 24px !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        color: var(--colors-main-friendly-blue, #3349A1) !important;
+
     }
     .card2blog{
         width: 90%;
