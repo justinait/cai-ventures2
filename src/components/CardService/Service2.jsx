@@ -39,10 +39,10 @@ const ServiceDos = () => {
 
 
 
-                <Row>
+                <Row className='containerFirstServ'>
                 <Col className='conTodoSerDos'>
                     <Col className='containerTextService'>
-                        <Image className='imgServiceDosA' fluid src={cardSerDosA} />
+                        <Image className='imgServiceDos' fluid src={cardSerDosA} />
                     </Col>
                     <h3 className='subtitleServiceDos'>Investigadores</h3>
                     <Col className='containerTextService'>
@@ -66,11 +66,11 @@ const ServiceDos = () => {
                     </Col>            
                 </Row>
 
-                <Row>
+                <Row className='buttonextra'>
                     <Link to='/Pagos'>
-                        <Button className='serviceButtons'>REALIZÁ TUS PAGOS AQUÍ</Button>
+                        <Button className='serviceButtons1'>REALIZÁ TUS PAGOS AQUÍ</Button>
                     </Link>            
-                </Row>
+                </Row> 
             </Row>
         </Container>
     )
