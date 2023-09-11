@@ -18,12 +18,12 @@ const NavBar = () => {
 
 
   const [collapsed, setCollapsed] = useState(true);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
   const logoToShow = isDesktop ? logoBajada : Logo;
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 767);
+      setIsDesktop(window.innerWidth > 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -34,7 +34,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <nav className="contieneNav navbar navbar-expand-md navbar-dark ">
+    <nav className="contieneNav navbar navbar-expand-lg navbar-dark ">
       <div className="container NavbarCont">
         <Navbar.Brand href="#home">
           <NavLink to="/">
@@ -56,7 +56,8 @@ const NavBar = () => {
             <NavLink className='nav-link' to='/about'>Nosotros</NavLink>
             <NavLink className='nav-link' to='/blog'>Blog</NavLink>
             <NavLink className='nav-link' to='/contact'>Contacto</NavLink>
-            <NavLink className='nav-link' to='/faq'>FAQ</NavLink>
+            <NavLink className='nav-link_button' to='/Pagos'>Contratar</NavLink>
+            <NavLink className='nav-link nav-link_hidden' to='/faq'>FAQ</NavLink>
           </ul>
         </div>
       </div>

@@ -1,0 +1,92 @@
+.contenedorMontoNacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 24px;
+    width: 673px;
+    background: #FFF;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+}
+
+.contenedorInterno {
+    padding: 30px 60px;
+}
+
+.contenedorTodoPagoNacion {
+    display: flex;
+    width: 913px;
+    height: auto;
+    padding: 60px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+.titular {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 24px 0px 24px 0px;
+    margin-bottom: 0px;
+}
+
+
+.montoBanco {
+    text-align: center;
+    color:#212121;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contTitular {
+    width: 100%;
+    display: flex;
+    height: 60px;
+    padding: 10px 20px;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid #212121;
+}
+
+.nameTitular {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+
+.imgQrContNacion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+    align-items: center;
+}
+
+.bordeImgPagosEfectivo {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #EAEEFF;
+    width: auto !important;
+    margin-top: 24px !important;
+}

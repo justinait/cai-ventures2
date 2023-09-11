@@ -105,7 +105,7 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .mobileFooterContainer{
         padding: 20px 40px;
         justify-content: space-between;
@@ -123,5 +123,8 @@
     }
     .mobileInfoFooter .linkFooter{
         font-size: 11px;
+    }
+    .listMobile{
+        gap: 0 12px;
     }
 }

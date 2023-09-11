@@ -1,20 +1,16 @@
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-  
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  
 .carouselHome img {
   object-position: center !important;
   width: 100%;
@@ -23,7 +19,6 @@
   object-position: center -750px;
   border-radius: 25px;
 }
-
 .swiperRow {
   display: flex;
   justify-content: center;
@@ -37,7 +32,8 @@
 
 @media screen and (max-width: 992px) {
   .carouselHome img {
-    height: 512px;
+    width: 720px;
+    height: 358px; 
   }
 } 
 
@@ -53,13 +49,13 @@
 
 @media screen and (max-width: 576px) {
   .carouselHome img {
-    height: 200px;
+    height: 220px;
   }
 } 
 
 @media screen and (max-width: 360px) {
   .carouselHome img {
-    height: 200px;
+    width: 328px;
   }
 }
 

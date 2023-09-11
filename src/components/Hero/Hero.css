@@ -1,5 +1,5 @@
 .homeContainer {
-    padding: 3.5rem 6.5rem 0rem;
+    padding: 3.5rem 5rem 0rem;
 }
 
 h3 {
@@ -81,13 +81,15 @@ a {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }
-
     .homeButtons {
         width: 80%;
         margin: auto;
     }
     .homePresentation {
-        width: 80vw;
+        width: 90vw;
+    }
+    .homePresentation h3{
+        color: #3349A1;
     }
     .homePresentationImage p{
         display: none;
@@ -95,6 +97,7 @@ a {
     .homeContainer2 {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 4rem;
     }
     .homePresentationImage {
         width: unset;
@@ -102,13 +105,13 @@ a {
     .homePresentationImage img {
         width: 540px;
         height: 366px;
-        border-radius: 25px;
         object-fit: cover;
         object-position: center;
         margin: 7% 0;
-        border-radius: 25px;
+        border-radius: 16px;
     }
     .homePresentationImage .homeButtons {
+        min-width: 25rem;
         display: block;
     }
     .homePresentation .homeButtons {
@@ -116,23 +119,26 @@ a {
     }
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .homeContainer{
         padding: 2rem 1.5rem;        
     }
     .homePresentation p {
         margin-top: 3%;
         font-weight: 500;
-        font-size: initial;
+        font-size: 14px;
     }
     .homeButtons {
         width: 100%;
     }
-    .homePresentation, .homePresentationImage img {
-        width: 90vw;
+    .homePresentationImage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .homePresentationImage img {
-        height: 35vh;
+        width: 328px;
+        height: 220px;
     }
     .homePresentationImage p{
         display: none;
@@ -150,10 +156,6 @@ a {
     }
     .homePresentationImage .homeButtons {
         display: block;
+        border-radius: 8px !important;
     }
-    
-    .homePresentation .homeButtons {
-        display: none;
-    }
-
 }
