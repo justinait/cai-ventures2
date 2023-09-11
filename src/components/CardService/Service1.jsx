@@ -14,7 +14,7 @@ function Service1() {
                         <button className='servicebutton1'> AGENDAR SESION</button>
                         <button className='servicebutton2'> CONTRATAR SERVICIO</button>
 
-                    </div>
+                    </div> 
                 </div>
             </div>
 

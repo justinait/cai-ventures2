@@ -49,8 +49,8 @@ const Footer = () => {
                         <li><a href=" https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" target='_blank'><img className='mobileImagesFooter' src={Tiktok} alt="logo de tik tok" /></a></li>
                     </ul>
                     <div className='listConditions'>
-                        <Link className='linkFooter' to='/privacy'>Términos y Condiciones</Link>
                         <Link className='linkFooter' to='/privacy'>Politicas de Privacidad</Link>
+                        <Link className='linkFooter' to='/privacy'>Términos y Condiciones</Link>
                     </div>
                 </div>
             </footer>
