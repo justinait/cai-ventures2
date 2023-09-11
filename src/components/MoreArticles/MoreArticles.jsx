@@ -20,12 +20,13 @@ function MoreArticles({allData, selectedArticle}) {
         <p className='moreArticles'>Más artículos</p>
         
             <Swiper
-                spaceBetween={50}
-                slidesPerView={2.3}
+                // spaceBetween={50}
+                // slidesPerView={2.3}
                 className='swiperMoreArticles'
                 breakpoints={{
                     320: {
-                      slidesPerView: 1,
+                      slidesPerView: 1.1,
+                      spaceBetween: 20,
                     },
                     767: {
                       slidesPerView: 2.1,
