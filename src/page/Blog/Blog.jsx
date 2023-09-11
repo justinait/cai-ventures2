@@ -39,6 +39,9 @@ const Blog = () => {
                     
                     const {title, subtitle, image, content, author} = e;
                     
+                    const maxLengthPreview = 100;
+                    const preview = content.slice(0, maxLengthPreview);
+                     
                     return (
                         <Link to={`/blog/${e.id}`} key={e.id}>
                             <div className='card2blog'>
@@ -47,11 +50,10 @@ const Blog = () => {
                                 </div>
                                 <div className='card2blogtext'>
 
-
                                     <div className='text-section'>
                                         <p className='text-sectionSubtitle'>{subtitle}</p>
                                         <p className='text-sectionTitle'>{title}</p>
-                                        <p className='text-sectionDescription'>{content}</p>
+                                        <p className='text-sectionDescription'>{preview}</p>
                                     </div>
 
                                     <button className='buttonshareblog'>
