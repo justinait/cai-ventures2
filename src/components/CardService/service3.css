@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
+    align-items: center;
     padding: 50px;
-    margin: 3rem 6rem;
-   
+    margin: 3rem 5rem;
     background-color: #fff;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
+   
+   
 }
 
 .cardServicesChildren {
@@ -52,8 +53,8 @@
 
 @media screen and (max-width: 768px) {
     .servicesThreeContainer {
-        width: 95vw;
-        padding: 25px;
+        width: 90vw;
+        padding: 25px
       
     }
 
@@ -82,24 +83,16 @@
 
     .title-services {
         text-align: center;
-
     }
-   
-
 
 .servicesThreeContainer {
-
     margin: 2.5rem 3rem;
     padding: 40px;
     width:85%;
     position: relative;
-
-
-
 }
 
 .cardServicesChildren {
-  
     flex-direction: column;
     gap: 40px;
 }
@@ -107,8 +100,6 @@
 .cardServicesChildren img {
     width: 68px;
     height: 68px;
-  
-
 
 }
 
