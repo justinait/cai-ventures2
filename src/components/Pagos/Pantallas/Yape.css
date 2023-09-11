@@ -1,3 +1,4 @@
+@media only screen and (min-width: 993px) and (max-width: 1440px) {
 .escaneo {
     font-family: 'Montserrat';
     font-size: 26px;
@@ -144,6 +145,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0px;
 }
 
 .comprobanteColor {
@@ -244,4 +246,109 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .escaneo {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 440px;
+    }
+
+    .datosPago {
+        padding-top: 40px;
+    }
+
+    .escaneoBold {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .monto {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .textoComprobante {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .comprobanteColor {
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .linkPago {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .cancelarPago {
+        display: flex;
+        width: 564px;
+        height: 50px;
+        padding: 0px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background:  #CD373B;
+
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .contenedorMonto {
+        width: 467px;
+    }
+
+    .textLinkCopiar {
+        font-size: 20px;
+    }
+
+    .textLinkCopiarOk {
+        font-size: 16px;
+    }
+
+    .textLinkCopiarTukuy {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .containerPagosOk {
+        margin-top: 0px;
+    }
 }

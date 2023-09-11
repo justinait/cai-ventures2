@@ -7,8 +7,8 @@ import code from '../../assets/code.svg';
 import efectivo from '../../assets/efectivo.svg';
 import bancoNacion from '../../assets/bancoNacion.png';
 import interBank from '../../assets/interBank.png';
-import bcp from '../../assets/bcp.png';
-import bbva from '../../assets/bbva.png';
+import bcpPagos from '../../assets/bcpPagos.png';
+import bbvaPagos from '../../assets/bbvaPagos.png';
 import { Container, Image, Col, Row } from 'react-bootstrap';
 import YapeScreen from './Pantallas/Yape';
 import TukuyScreen from './Pantallas/Tukuy';
@@ -16,6 +16,8 @@ import PlinScreen from './Pantallas/Plin';
 import BancoNacion from './Efectivo/BancoNacion'; 
 import flechaPagos from '../../assets/flechaPagos.svg';
 import InterScreen from './Efectivo/InterBanck';
+import BcpScreen from './Efectivo/Bcp';
+import BbvaScreen from './Efectivo/Bbva';
 
 function Pagos() {
   const [mostrarImagenesOnline, setMostrarImagenesOnline] = useState(false);
@@ -25,18 +27,17 @@ function Pagos() {
   const [mostrarTukuyScreen, setMostrarTukuyScreen] = useState(false);
   const [mostrarBancoNacionScreen, setMostrarBancoNacionScreen] = useState(false); 
   const [mostrarInterScreen, setMostrarInterScreen] = useState(false);
+  const [mostrarBcpScreen, setMostrarBcpScreen] = useState(false);
+  const [mostrarBbvaScreen, setMostrarBbvaScreen] = useState(false);
 
-  const handleCancelarClick = () => {
-    setMostrarYapeScreen(false);
-  };
   const toggleImagenesOnline = () => {
-    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen  && !mostrarInterScreen) {
+    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen  && !mostrarInterScreen && !mostrarBcpScreen && !mostrarBbvaScreen) {
       setMostrarImagenesOnline(!mostrarImagenesOnline);
     }
   };
   
   const toggleImagenesEfectivo = () => {
-    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen && !mostrarInterScreen) {
+    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen && !mostrarInterScreen && !mostrarBcpScreen && !mostrarBbvaScreen) {
       setMostrarImagenesEfectivo(!mostrarImagenesEfectivo);
     }
   };
@@ -47,6 +48,8 @@ function Pagos() {
     setMostrarYapeScreen(false);
     setMostrarTukuyScreen(false);
     setMostrarBancoNacionScreen(false); 
+    setMostrarBcpScreen(false);
+    setMostrarBbvaScreen(false);
   };
 
   const mostrarYape = () => {
@@ -55,6 +58,8 @@ function Pagos() {
     setMostrarYapeScreen(true);
     setMostrarTukuyScreen(false);
     setMostrarBancoNacionScreen(false);
+    setMostrarBcpScreen(false);
+    setMostrarBbvaScreen(false);
   };
 
   const mostrarTukuy = () => {
@@ -63,6 +68,8 @@ function Pagos() {
     setMostrarYapeScreen(false);
     setMostrarTukuyScreen(true);
     setMostrarBancoNacionScreen(false); 
+    setMostrarBcpScreen(false);
+    setMostrarBbvaScreen(false);
   };
 
   const mostrarBancoNacion = () => {
@@ -72,6 +79,8 @@ function Pagos() {
     setMostrarTukuyScreen(false);
     setMostrarBancoNacionScreen(true); 
     setMostrarImagenesEfectivo(false); 
+    setMostrarBcpScreen(false);
+    setMostrarBbvaScreen(false);
   };
 
   const mostrarInter = () => {
@@ -80,7 +89,31 @@ function Pagos() {
     setMostrarTukuyScreen(false);
     setMostrarBancoNacionScreen(false);
     setMostrarInterScreen(true); 
-    setMostrarImagenesEfectivo(false); 
+    setMostrarImagenesEfectivo(false);
+    setMostrarBcpScreen(false); 
+    setMostrarBbvaScreen(false);
+  };
+
+  const mostrarBcp = () => {
+    setMostrarPlinScreen(false);
+    setMostrarYapeScreen(false);
+    setMostrarTukuyScreen(false);
+    setMostrarBancoNacionScreen(false);
+    setMostrarInterScreen(false); 
+    setMostrarImagenesEfectivo(false);
+    setMostrarBcpScreen(true); 
+    setMostrarBbvaScreen(false);
+  };
+
+  const mostrarBbva = () => {
+    setMostrarPlinScreen(false);
+    setMostrarYapeScreen(false);
+    setMostrarTukuyScreen(false);
+    setMostrarBancoNacionScreen(false);
+    setMostrarInterScreen(false); 
+    setMostrarImagenesEfectivo(false);
+    setMostrarBcpScreen(false); 
+    setMostrarBbvaScreen(true);
   };
 
   const reiniciarEstado = () => {
@@ -92,6 +125,8 @@ function Pagos() {
     setMostrarTukuyScreen(false);
     setMostrarBancoNacionScreen(false); 
     setMostrarInterScreen(false);
+    setMostrarBcpScreen(false);
+    setMostrarBbvaScreen(false)
   };
 
   return (
@@ -99,7 +134,9 @@ function Pagos() {
     <Container className='containerPagos'>
       
       <Col>
-        <Image src={flechaPagos} onClick={reiniciarEstado} />
+      <button className='buttonPagos' onClick={reiniciarEstado}>
+        <Image src={flechaPagos} />
+      </button>
       </Col>
       <Row>
         <Col className='containerPay'>
@@ -107,8 +144,8 @@ function Pagos() {
         </Col>
       </Row>
       <Row className='containerBox'>
-        <Row>
-          <Col className='containerBtn'>
+        <Row className='boxRow'>
+          <Col className='containerBtn' >
           <button
             className={`buttonOnline ${mostrarImagenesOnline ? 'active' : ''}`}
             onClick={toggleImagenesOnline}
@@ -117,6 +154,8 @@ function Pagos() {
               mostrarPlinScreen ||
               mostrarTukuyScreen ||
               mostrarYapeScreen ||
+              mostrarBcpScreen ||
+              mostrarBbvaScreen ||
               mostrarInterScreen
             } 
           >
@@ -180,7 +219,9 @@ function Pagos() {
               mostrarPlinScreen ||
               mostrarTukuyScreen ||
               mostrarYapeScreen ||
-              mostrarInterScreen
+              mostrarInterScreen ||
+              mostrarBcpScreen ||
+              mostrarBbvaScreen
             } 
           >
             <Image src={efectivo} className={`imageEfectivo `} />
@@ -189,11 +230,11 @@ function Pagos() {
             </p>
           </button>
 
-            {mostrarImagenesEfectivo && !mostrarPlinScreen && !mostrarYapeScreen && !mostrarTukuyScreen && (
+            {mostrarImagenesEfectivo && !mostrarBancoNacionScreen && !mostrarBbvaScreen && !mostrarInterScreen && !mostrarBcpScreen &&  (
               <Row className='containerOnlinePay'>
                 <Col>
                 <button
-                className={`buttonDosPay ${mostrarTukuyScreen ? 'active' : ''}`}
+                className={`buttonDosPay ${mostrarBancoNacionScreen ? 'active' : ''}`}
                 onClick={() => {
                   mostrarBancoNacion();
                 }}
@@ -207,7 +248,7 @@ function Pagos() {
                 </Col>
                 <Col>
                 <button
-                className={`buttonDosPay ${mostrarTukuyScreen ? 'active' : ''}`}
+                className={`buttonDosPay ${mostrarInterScreen ? 'active' : ''}`}
                 onClick={() => {
                   mostrarInter();
                 }}
@@ -221,17 +262,25 @@ function Pagos() {
                  
                 </Col>
                 <Col>
-                  <button className='buttonDosPay'>
+                  <button className={`buttonDosPay ${mostrarBcpScreen ? 'active' : ''}`}
+                  onClick={() => {
+                    mostrarBcp();
+                  }}
+                  >
                     <Col className='interBtn'>
-                      <Image src={bcp} />
+                      <Image src={bcpPagos} />
                       <p>www.viabcp.pe</p>
                     </Col>
                   </button>
                 </Col>
                 <Col>
-                  <button className='buttonDosPay'>
+                  <button className={`buttonDosPay ${mostrarBbvaScreen ? 'active' : ''}`}
+                  onClick={() => {
+                    mostrarBbva();
+                  }}
+                  >
                     <Col className='interBtn'>
-                      <Image src={bbva} />
+                      <Image src={bbvaPagos} />
                       <p>www.bbva.pe</p>
                     </Col>
                   </button>
@@ -247,6 +296,8 @@ function Pagos() {
       {mostrarBancoNacionScreen && <BancoNacion />} 
       {mostrarPlinScreen && <PlinScreen />}
       {mostrarInterScreen && <InterScreen />}
+      {mostrarBcpScreen && <BcpScreen />}
+      {mostrarBbvaScreen && <BbvaScreen />}
     </Container>
   );
 }
