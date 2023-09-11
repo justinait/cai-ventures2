@@ -56,7 +56,8 @@ const NavBar = () => {
             <NavLink className='nav-link' to='/about'>Nosotros</NavLink>
             <NavLink className='nav-link' to='/blog'>Blog</NavLink>
             <NavLink className='nav-link' to='/contact'>Contacto</NavLink>
-            <NavLink className='nav-link' to='/faq'>FAQ</NavLink>
+            <NavLink className='nav-link_button' to='/Pagos'>Contratar</NavLink>
+            <NavLink className='nav-link nav-link_hidden' to='/faq'>FAQ</NavLink>
           </ul>
         </div>
       </div>

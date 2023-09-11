@@ -18,9 +18,13 @@
     align-items: start;
     gap: 30px;
 }
-.homeContactInfo h3{
+.homeContactInfo div{
     text-align: left;
     color: #212121;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
 }
 .homeContactInfo span {
     background-color: #CD373B;
@@ -48,6 +52,9 @@
     }
     .homeContactInfo{
         width: 35%;
+    }
+    .homeContactInfo div{
+        font-weight: 600;
     }
 }
 @media screen and (max-width: 1024px){
