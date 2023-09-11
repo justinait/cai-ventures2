@@ -191,6 +191,8 @@ Estilos generales  PARA LA SEGUNDA CAJA DE SERVICE.JSX */
     margin-left: 5rem;
     width: 376px;
     border-radius: 16px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* MEDIA QUERY PARA LA PRIMERA CAJA DE SERVICIO */

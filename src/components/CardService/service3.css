@@ -53,13 +53,15 @@
     width: 60%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .servicesThreeContainer {
         width: 90vw;
-        padding: 25px
+        padding: 25px;
       
     }
-
+    .servicesThreeContainer h2 {
+        font-size: 24px;      
+    }
 
     .title-services {
         text-align: center;
