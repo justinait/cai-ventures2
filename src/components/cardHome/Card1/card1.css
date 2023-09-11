@@ -80,3 +80,8 @@
     }
 }
 
+@media screen and (min-width: 1441px) {
+    .homeTesisText{
+        width: 40%;
+    }
+}

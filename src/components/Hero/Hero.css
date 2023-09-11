@@ -1,5 +1,5 @@
 .homeContainer {
-    padding: 3.5rem 6.5rem 0rem;
+    padding: 3.5rem 5rem 0rem;
 }
 
 h3 {
@@ -86,7 +86,7 @@ a {
         margin: auto;
     }
     .homePresentation {
-        width: 80vw;
+        width: 90vw;
     }
     .homePresentation h3{
         color: #3349A1;
