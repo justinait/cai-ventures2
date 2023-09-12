@@ -1,5 +1,509 @@
 
-@media only screen and (min-width: 993px) and (max-width: 1440px) {
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+    .escaneo {
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #212121;
+        text-align: center !important;
+    }
+    
+    .bordeImgPagos {
+        display: flex;
+        width: 150px;
+        height: 138px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid var(--colors-light-friendly-blue, #EAEEFF);
+    }
+    
+    .bordeImgPagosTukuy {
+        display: flex;
+        width: 96px;
+        height: 80px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid var(--colors-light-friendly-blue, #EAEEFF);
+    }
+    
+    .escaneoBold {
+        color: #212121;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    
+    .monto {
+        color:#212121;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .containerPagosOk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 100px;
+    }
+    
+    .contenedorTodoPago {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    
+    
+    .montoImgText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedorMonto {
+        display: flex;
+        width: 557px !important;
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-md, 24px);
+        background: #FFF;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    }
+    
+    .contenedorMontoTukuy {
+        display: flex;
+        width: 793px;
+        padding: 30px 60px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border-radius: var(--border-radius-border-radius-md, 24px);
+        background: #FFF;
+    
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    }
+    
+    .bordeImgPagosTukuy {
+        margin-top: 24px;
+    }
+    
+    .datosPago {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contieneImgQr {
+        display: flex;
+        width: 351px;
+        height: 370px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 1px solid #EAEEFF;
+    }
+    
+    .imgQrCont {
+        padding-bottom: 24px;
+    }
+    
+    .contComprobante {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textoComprobante {
+        color: #212121;
+        text-align: center;
+        font-family:'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px;
+    }
+    
+    .comprobanteColor {
+        color: #3349A1;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .linkPago {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 30px;
+    }
+    
+    .linkCopiar {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #8C8C8C;
+        margin-bottom: 30px;
+    }
+    
+    .linkCopiarOk {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #3349A1;
+        margin-bottom: 30px;
+    }
+    
+    .linkCopiarTukuy {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid #8C8C8C;
+    }
+    
+    .textLinkCopiar {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    
+    .textLinkCopiarOk {
+        color: #3349A1;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    
+    .textLinkCopiarTukuy {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+    
+    .cancelarPago {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #CD373B;
+        border: none;
+    
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    }
+
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+    .escaneo {
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #212121;
+        text-align: center !important;
+    }
+    
+    .bordeImgPagos {
+        display: flex;
+        width: 150px;
+        height: 138px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid var(--colors-light-friendly-blue, #EAEEFF);
+    }
+    
+    .bordeImgPagosTukuy {
+        display: flex;
+        width: 96px;
+        height: 80px;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid var(--colors-light-friendly-blue, #EAEEFF);
+    }
+    
+    .escaneoBold {
+        color: #212121;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+    }
+    
+    
+    .monto {
+        color:#212121;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .containerPagosOk {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 100px;
+    }
+    
+    .contenedorTodoPago {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    
+    
+    .montoImgText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenedorMonto {
+        display: flex;
+        width: 557px !important;
+        height: auto;
+        padding: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-md, 24px);
+        background: #FFF;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    }
+    
+    .contenedorMontoTukuy {
+        display: flex;
+        width: 793px;
+        padding: 30px 60px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        border-radius: var(--border-radius-border-radius-md, 24px);
+        background: #FFF;
+    
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+    }
+    
+    .bordeImgPagosTukuy {
+        margin-top: 24px;
+    }
+    
+    .datosPago {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contieneImgQr {
+        display: flex;
+        width: 351px;
+        height: 370px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 1px solid #EAEEFF;
+    }
+    
+    .imgQrCont {
+        padding-bottom: 24px;
+    }
+    
+    .contComprobante {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .textoComprobante {
+        color: #212121;
+        text-align: center;
+        font-family:'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px;
+    }
+    
+    .comprobanteColor {
+        color: #3349A1;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .linkPago {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 30px;
+    }
+    
+    .linkCopiar {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #8C8C8C;
+        margin-bottom: 30px;
+    }
+    
+    .linkCopiarOk {
+        display: flex;
+        padding: 16px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: 16px;
+        border: 1px solid #3349A1;
+        margin-bottom: 30px;
+    }
+    
+    .linkCopiarTukuy {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid #8C8C8C;
+    }
+    
+    .textLinkCopiar {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    
+    .textLinkCopiarOk {
+        color: #3349A1;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    
+    .textLinkCopiarTukuy {
+        color: #8C8C8C;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 0px;
+        line-height: normal;
+    }
+    
+    .cancelarPago {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: #CD373B;
+        border: none;
+    
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    }
+
+@media only screen and (min-width: 993px) and (max-width: 1399px) {
 .escaneo {
     font-family: 'Montserrat';
     font-size: 26px;
@@ -7,7 +511,7 @@
     font-weight: 400;
     line-height: normal;
     color: #212121;
-    text-align: center;
+    text-align: center !important;
 }
 
 .bordeImgPagos {
@@ -43,6 +547,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
 }
 
 
@@ -321,9 +826,7 @@
         justify-content: center;
         gap: 30px;
     }
-    
-    
-    
+
     .montoImgText {
         display: flex;
         flex-direction: column;
@@ -339,7 +842,6 @@
         gap: 24px;
         border-radius: var(--border-radius-border-radius-md, 24px);
         background: #FFF;
-        /* Shadow */
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     }
     
@@ -368,8 +870,8 @@
     
     .contieneImgQr {
         display: flex;
-        width: 351px;
-        height: 370px;
+        width: auto;
+        height: auto;
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -629,8 +1131,8 @@
     
     .contieneImgQr {
         display: flex;
-        width: 351px;
-        height: 370px;
+        width: auto;
+        height: auto;
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -761,6 +1263,7 @@
         font-weight: 400;
         line-height: normal;
     }
+    
 
     
 }

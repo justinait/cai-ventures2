@@ -172,7 +172,7 @@ function Pagos() {
         </Col>
       </Row>
       <Row className='containerBox'>
-        <Row className='boxRow' sm={2}>
+        <Row className='boxRow' >
           <Col className='containerBtn' >
           <button
             className={`buttonOnline ${mostrarImagenesOnline ? 'active' : ''}`}
