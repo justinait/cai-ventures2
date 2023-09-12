@@ -514,6 +514,8 @@
     text-align: center !important;
 }
 
+
+
 .bordeImgPagos {
     display: flex;
     width: 150px;
@@ -766,6 +768,12 @@
         line-height: normal;
         width: 440px;
     }
+
+    .botonesPaym {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
     
     .bordeImgPagos {
         display: flex;
@@ -1014,6 +1022,12 @@
         line-height: normal;
         margin-bottom: 0px;
         width: 311px;
+    }
+
+    .botonesPaym {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     .bordeImgPagos img {
