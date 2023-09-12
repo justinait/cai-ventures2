@@ -62,12 +62,11 @@ const Blog = () => {
                                     </Link>
                                     <button className='buttonshareblog'>
                                         
-                                        <div data-href="https://caiventures.vercel.app/blog/1" data-layout="" data-size="">
-                                            <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcaiventures.vercel.app%2Fblog%2F1&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                                        <div data-href="https://www.caiventuresconsultoria.com/blog" data-layout="" data-size="">
+                                            <a target="_blank" href= {`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.caiventuresconsultoria.com%2Fblog%2F${e.id}&amp;src=sdkpreparse`} class="fb-xfbml-parse-ignore">    
                                                 <img src={buttonshareblog} alt="Compartir en Facebook" />
                                             </a>
                                         </div>
-
                                     </button>
 
                                 </div>
