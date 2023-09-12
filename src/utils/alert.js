@@ -8,13 +8,18 @@ const errorAlert =(result)=>{
         text: `${result}`,
     })
 };
-
 //esta alerta aparece cuanod un mensaje  fue enviado correctamente
 const successAlert =()=>{
     Swal.fire({
         icon: 'success',
-        title: 'Mensaje enviado',
-        text: '¡Responderemos a la brevedad!'
+        html:`<div class="alertSuccess">Mensaje enviado</div>
+        <p>¡Responderemos a la brevedad!</p>
+        `,
+        iconColor: "#7DCE4F",
+        customClass:{
+            popup:"body-alert"
+        },
+        confirmButtonColor:"#CD373B"
     });
 };
 
