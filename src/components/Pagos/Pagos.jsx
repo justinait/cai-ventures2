@@ -147,33 +147,19 @@ function Pagos() {
 
   };
 
-  const ocultarFlechaReinicio =
-    mostrarPlinScreen ||
-    mostrarYapeScreen ||
-    mostrarTukuyScreen ||
-    mostrarBancoNacionScreen ||
-    mostrarInterScreen ||
-    mostrarBcpScreen ||
-    mostrarBbvaScreen;
+
 
   return (
     
     <Container className='containerPagos'>
       
-      <Row className='flechaTitle'>
+
       
-      {!ocultarFlechaReinicio && (
-          <NavLink className='buttonPagos' to='/services' onClick={reiniciarEstado}>
-            <Image src={flechaPagos} />
-          </NavLink>
-        )}
-        <Col className='containerPay'>
-          <h2 className='titlePay'>Selecciona un método de pago</h2>
-        </Col>
-      </Row>
+      
       <Row className='containerBox'>
-        <Row className='boxRow' >
-          <Col className='containerBtn' >
+        <Row className='parteUnoPagos'>
+          <Row className='btParte'>
+        <Col className='botonesPagos bUno'>
           <button
             className={`buttonOnline ${mostrarImagenesOnline ? 'active' : ''}`}
             onClick={toggleImagenesOnline}
@@ -190,7 +176,41 @@ function Pagos() {
             <Image src={code} className={`imageOnline `} />
             <p className={`titleOnline ${mostrarImagenesOnline ? 'active-text' : ''}`}></p>
           </button>
+        </Col>
+ 
 
+        <Col className='botonesPagos bDos'>
+          <button 
+            className={`buttonEfectivo ${mostrarImagenesEfectivo ? 'active' : ''}`}
+            onClick={toggleImagenesEfectivo}
+            disabled={
+              mostrarBancoNacionScreen ||
+              mostrarPlinScreen ||
+              mostrarTukuyScreen ||
+              mostrarYapeScreen ||
+              mostrarInterScreen ||
+              mostrarBcpScreen ||
+              mostrarBbvaScreen
+            } 
+          >
+            <Image src={efectivo} className={`imageEfectivo `} />
+            <p className={`titleEfectivo ${mostrarImagenesEfectivo ? 'active-text' : ''}`}> </p>
+          </button>
+        </Col>
+        </Row>
+
+        <Row className='flechaTitle'>
+          <Col className='containerPay'>
+            <h2 className='titlePay'>Selecciona un método de pago</h2>
+          </Col>
+        </Row>
+        </Row>
+
+
+
+        <Row className='boxRow' >
+          <Col className='containerBtn' >
+            
             {mostrarImagenesOnline && !mostrarPlinScreen && !mostrarYapeScreen && !mostrarTukuyScreen && (
               <Row className='containerOnlinePay'>
                 <Col>
@@ -235,28 +255,14 @@ function Pagos() {
               </Row>
             )}
           </Col>
-
-          <Col className='containerBtn'>
-          <button 
-            className={`buttonEfectivo ${mostrarImagenesEfectivo ? 'active' : ''}`}
-            onClick={toggleImagenesEfectivo}
-            disabled={
-              mostrarBancoNacionScreen ||
-              mostrarPlinScreen ||
-              mostrarTukuyScreen ||
-              mostrarYapeScreen ||
-              mostrarInterScreen ||
-              mostrarBcpScreen ||
-              mostrarBbvaScreen
-            } 
-          >
-            <Image src={efectivo} className={`imageEfectivo `} />
-            <p className={`titleEfectivo ${mostrarImagenesEfectivo ? 'active-text' : ''}`}> </p>
-          </button>
-
+          </Row>
+          <Row className='boxRow' >
+          
+          <Col className='containerBtnDos'>
+           
             {mostrarImagenesEfectivo && !mostrarBancoNacionScreen && !mostrarBbvaScreen && !mostrarInterScreen && !mostrarBcpScreen &&  (
               <Row className='containerOnlinePay'>
-                <Col>
+                <Col className='botonesPaym'>
                 <button
                 className={`buttonDosPay ${mostrarBancoNacionScreen ? 'active' : ''}`}
                 onClick={() => {
@@ -270,7 +276,7 @@ function Pagos() {
                       </Col>
                     </button>
                 </Col>
-                <Col>
+                <Col className='botonesPaym'>
                 <button
                 className={`buttonDosPay ${mostrarInterScreen ? 'active' : ''}`}
                 onClick={() => {
@@ -285,7 +291,7 @@ function Pagos() {
                     </button>
                  
                 </Col>
-                <Col>
+                <Col className='botonesPaym'>
                   <button className={`buttonDosPay ${mostrarBcpScreen ? 'active' : ''}`}
                   onClick={() => {
                     mostrarBcp();
@@ -297,7 +303,7 @@ function Pagos() {
                     </Col>
                   </button>
                 </Col>
-                <Col>
+                <Col className='botonesPaym'>
                   <button className={`buttonDosPay ${mostrarBbvaScreen ? 'active' : ''}`}
                   onClick={() => {
                     mostrarBbva();
