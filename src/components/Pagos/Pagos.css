@@ -1,4 +1,189 @@
-@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+
+    .buttonOnline .titleOnline::before {
+        content: "Pago online";
+      }
+      
+      .buttonEfectivo .titleEfectivo::before {
+        content: "Pago en efectivo";
+      }
+
+
+.containerPagos {
+    height: auto;
+    width: auto !important;
+}
+
+
+
+.titlePay {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buttonPagos {
+    border: none;
+    background-color:#F8F9FC;
+    padding: 20px;
+    width: auto !important;
+}
+
+.flechaTitle {
+    align-items: center;
+}
+
+.containerPay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: auto !important;
+}
+
+.containerBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttonDosPay {
+    display: flex;
+    height: 120px;
+    padding: 0px 80px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background-color: white;
+    border: 1px solid #DEE5FF;
+    border-radius: 16px;
+    width: 600px;
+}
+
+.buttonOnline.active {
+    background-color: #3349A1;
+}
+
+.buttonEfectivo.active {
+    background-color: #3349A1 !important ;
+}
+
+.titleEfectivo.active-text {
+    color: white;
+}
+.titleOnline.active-text {
+    color: white;
+}
+
+.buttonOnline {
+    display: flex;
+    width: 600px;
+    height: 120px;
+    padding: 0px 60px;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.titleOnline {
+    font-family: 'Montserrat';
+    color: #212121;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+}
+
+.buttonEfectivo {
+    display: flex;
+    width: 600px;
+    height: 120px;
+    padding: 0px 60px;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.titleEfectivo {
+    font-family: 'Montserrat';
+    color: #212121;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+}
+
+.containerBtn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.containerOnlinePay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.interBtn p {
+    margin: 0px;
+}
+
+.containerOnlinePay {
+    gap: 1rem;
+    margin-top: 20px !important;
+}
+
+.active .imageOnline {
+    filter: invert(0%); 
+}
+.hidden {
+    display: none;
+  }
+  
+.imageOnline {
+    filter: invert(100%);
+}
+
+.active .imageEfectivo {
+    filter: invert(100%); 
+}
+  
+.imageEfectivo {
+    filter: invert(0%);
+}
+
+}
+    @media only screen and (min-width: 1400px) and (max-width: 1440px) {
 
     .buttonOnline .titleOnline::before {
         content: "Pago online";
@@ -184,7 +369,6 @@
 
 }
 
-/* @media (max-width: 768px) { */
     @media only screen and (min-width: 993px) and (max-width: 1399px) {
         .containerPagos {
             height: auto;
@@ -347,12 +531,6 @@
     
 }
 
-
-
-
-
-
-
     @media only screen and (min-width: 768px) and (max-width: 992px) {
 
         .buttonOnline .titleOnline::before {
@@ -366,7 +544,7 @@
 
 
         .containerPagos {
-            height: auto;
+            height: auto !important;
             width: auto !important;
         }
         
@@ -516,9 +694,7 @@
     
 }
 
-
-
-@media only screen and (min-width: 360px) and (max-width: 767px) {
+    @media only screen and (min-width: 360px) and (max-width: 767px) {
     .containerPagos {
         height: auto;
         width: auto !important;
@@ -532,10 +708,6 @@
         content: "Efectivo";
       }
 
-      .boxRow {
-        align-items: flex-start !important;
-        display: flex;
-      }
 
       .interBtn img {
         width: 69px;
@@ -554,7 +726,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .buttonPagos {
@@ -567,6 +739,7 @@
         justify-content: center;
         padding: 50px;
     }
+
     
     .containerBox {
         display: flex;
