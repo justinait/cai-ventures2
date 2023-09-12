@@ -1,8 +1,20 @@
 @media only screen and (min-width: 1400px) and (max-width: 1440px) {
+
+    .buttonOnline .titleOnline::before {
+        content: "Pago online";
+      }
+      
+      .buttonEfectivo .titleEfectivo::before {
+        content: "Pago en efectivo";
+      }
+
+
 .containerPagos {
     height: auto;
     width: auto !important;
 }
+
+
 
 .titlePay {
     color: #212121;
@@ -17,6 +29,11 @@
     border: none;
     background-color:#F8F9FC;
     padding: 20px;
+    width: auto !important;
+}
+
+.flechaTitle {
+    align-items: center;
 }
 
 .containerPay {
@@ -24,6 +41,7 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    width: auto !important;
 }
 
 .containerBox {
@@ -51,7 +69,7 @@
 }
 
 .buttonEfectivo.active {
-    background-color: #3349A1 ;
+    background-color: #3349A1 !important ;
 }
 
 .titleEfectivo.active-text {
@@ -172,6 +190,14 @@
             height: auto;
             width: auto !important;
         }
+
+        .buttonOnline .titleOnline::before {
+            content: "Pago online";
+          }
+          
+          .buttonEfectivo .titleEfectivo::before {
+            content: "Pago en efectivo";
+          }
         
         .titlePay {
             font-family: 'Montserrat';
@@ -235,10 +261,12 @@
 
         .buttonOnline {
             border: 0px;
+            background-color: #F8F9FC;
         }
 
         .buttonEfectivo {
             border: 0px;
+            background-color: #F8F9FC;
         }
 
         .buttonEfectivo img {
@@ -326,6 +354,17 @@
 
 
     @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+        .buttonOnline .titleOnline::before {
+            content: "Online";
+          }
+        
+          .buttonEfectivo .titleEfectivo::before {
+            content: "Efectivo";
+          }
+        
+
+
         .containerPagos {
             height: auto;
             width: auto !important;
@@ -340,9 +379,7 @@
         }
         
         .buttonPagos {
-            border: none;
-            background-color:#F8F9FC;
-            padding: 20px;
+            display: none;
         }
         
         .containerPay {
@@ -361,8 +398,8 @@
         
         .buttonDosPay {
             display: flex;
-            width: 250px;
-            height: 180px;
+            width: 226px;
+            height: 129px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -393,10 +430,12 @@
 
         .buttonOnline {
             border: 0px;
+            background-color: #F8F9FC;
         }
 
         .buttonEfectivo {
             border: 0px;
+            background-color: #F8F9FC;
         }
 
         .buttonEfectivo img {
@@ -484,6 +523,23 @@
         height: auto;
         width: auto !important;
     }
+
+    .buttonOnline .titleOnline::before {
+        content: "Online";
+      }
+    
+      .buttonEfectivo .titleEfectivo::before {
+        content: "Efectivo";
+      }
+
+      .boxRow {
+        align-items: flex-start !important;
+        display: flex;
+      }
+
+      .interBtn img {
+        width: 69px;
+      }
     
     .titlePay {
         color: var(--colors-tipography-black, #212121);
@@ -500,11 +556,9 @@
         width: 100%;
         flex-direction: row;
     }
-    
+
     .buttonPagos {
-        border: none;
-        background-color:#F8F9FC;
-        padding: 20px;
+        display: none;
     }
     
     .containerPay {
@@ -516,19 +570,20 @@
     
     .containerBox {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
         gap: 2rem;
     }
     
     .buttonDosPay {
         display: flex;
-        width: 250px;
-        height: 180px;
+        width: 154px;
+        height: 110px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        flex-shrink: 0;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 1px solid #DEE5FF;
         background: #FFF;
@@ -555,10 +610,12 @@
 
     .buttonOnline {
         border: 0px;
+        background-color: #F8F9FC;
     }
 
     .buttonEfectivo {
         border: 0px;
+        background-color: #F8F9FC;
     }
 
     .buttonEfectivo img {
@@ -572,7 +629,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: 20px; /* 142.857% */
+        line-height: 20px; 
         letter-spacing: 0.1px;
     }
     
@@ -584,7 +641,7 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px; /* 142.857% */
+        line-height: 20px; 
         letter-spacing: 0.1px;
     }
     
@@ -592,6 +649,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 20px;
     }
     
     .containerOnlinePay {
