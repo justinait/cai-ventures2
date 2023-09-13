@@ -34,12 +34,18 @@ function Pagos() {
 
 
 
+  // const toggleImagenesOnline = () => {
+  //   setMostrarImagenesOnline(!mostrarImagenesOnline);
+  // };
 
+  // const toggleImagenesEfectivo = () => {
+  //   setMostrarImagenesEfectivo(!mostrarImagenesEfectivo);
+  // };
 
 
 
   const toggleImagenesOnline = () => {
-    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen  && !mostrarInterScreen && !mostrarBcpScreen && !mostrarBbvaScreen) {
+    if (!mostrarBancoNacionScreen && !mostrarPlinScreen && !mostrarTukuyScreen && !mostrarYapeScreen  && !mostrarInterScreen && !mostrarBcpScreen && !mostrarBbvaScreen ) {
       setMostrarImagenesOnline(!mostrarImagenesOnline);
       setMostrarImagenesEfectivo(false);
     }
@@ -152,13 +158,9 @@ function Pagos() {
   return (
     
     <Container className='containerPagos'>
-      
-
-      
-      
       <Row className='containerBox'>
         <Row className='parteUnoPagos'>
-          <Row className='btParte'>
+          <Row className='Pag'>
         <Col className='botonesPagos bUno'>
           <button
             className={`buttonOnline ${mostrarImagenesOnline ? 'active' : ''}`}
@@ -170,7 +172,7 @@ function Pagos() {
               mostrarYapeScreen ||
               mostrarBcpScreen ||
               mostrarBbvaScreen ||
-              mostrarInterScreen
+              mostrarInterScreen 
             } 
           >
             <Image src={code} className={`imageOnline `} />
@@ -190,7 +192,7 @@ function Pagos() {
               mostrarYapeScreen ||
               mostrarInterScreen ||
               mostrarBcpScreen ||
-              mostrarBbvaScreen
+              mostrarBbvaScreen 
             } 
           >
             <Image src={efectivo} className={`imageEfectivo `} />
@@ -211,9 +213,9 @@ function Pagos() {
         <Row className='boxRow' >
           <Col className='containerBtn' >
             
-            {mostrarImagenesOnline && !mostrarPlinScreen && !mostrarYapeScreen && !mostrarTukuyScreen && (
-              <Row className='containerOnlinePay'>
-                <Col>
+            {mostrarImagenesOnline && !mostrarPlinScreen && !mostrarYapeScreen && !mostrarTukuyScreen &&  (
+              <Row className='containerOnlinePayA'>
+                <Col className='botOn'>
                   <button
                     className={`buttonDosPay ${mostrarPlinScreen ? 'active' : ''}`}
                     onClick={() => {
