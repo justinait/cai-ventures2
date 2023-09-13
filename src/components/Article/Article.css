@@ -1,3 +1,44 @@
+.principalCardArticle {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: url("../../assets/Rectangleblog.png");
+    width: 100%;
+    margin-bottom: 100px;
+    height: 468px;
+}
+
+.principalCardArticle img {
+    width: 100%;
+    height: 30%;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(8, 13, 34, 0.80) 0%, rgba(8, 13, 34, 0.80) 100%), url(<path-to-image>), lightgray 0px -679.585px / 100% 331.161% no-repeat;
+
+}
+
+.titleArticle {
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8% 10%;
+    color: var(--colors-light-friendly-blue, #EAEEFF);
+}
+
+.subtitleArticle {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 2%;
+}
 .articleCard {
     text-align: center;
     padding: 0 10%;
@@ -32,7 +73,10 @@
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
+    .principalCardArticle {
+        height: 309px; 
+    }
     .articleContent {
         font-size: 20px;
         line-height: 140.9%;
@@ -44,11 +88,26 @@
     .articleTitle {
         font-size: 48px;
     }
+    .titleArticle {
+        font-size: 42px;
+    }
 }
 
 @media (max-width: 1023px) {
-    .principalcardblog {
-        margin-bottom: 0px;
+    .titleArticle {
+        font-size: 24px !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        color: var(--colors-main-friendly-blue, #3349A1) !important;
+        font-family: 'Montserrat'; 
+        padding-top: 7%;
+    }
+    .principalCardArticle {
+        background-image: none;
+        height: 100px;
+    }
+    .subtitleArticle {
+        display: none
     }
     .articleImage {
         width: 535px;
