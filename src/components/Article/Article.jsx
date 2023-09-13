@@ -47,7 +47,7 @@ function Article() {
         </div>
 
       </div>
-      <MoreArticles allData={data} selectedArticle={thisArticle.id} />
+      {/* <MoreArticles allData={data} selectedArticle={thisArticle.id} /> */}
     </div>
     
   )
