@@ -43,28 +43,36 @@ const Blog = () => {
                     const preview = content.slice(0, maxLengthPreview);
                      
                     return (
-                        <Link to={`/blog/${e.id}`} key={e.id}>
+                        
                             <div className='card2blog'>
-                                <div className='card2blogimg'>
-                                    <img src={image} alt={title} />
-                                </div>
-                                <div className='card2blogtext'>
-
-                                    <div className='text-section'>
-                                        <p className='text-sectionSubtitle'>{subtitle}</p>
-                                        <p className='text-sectionTitle'>{title}</p>
-                                        <p className='text-sectionDescription'>{preview}</p>
+                                 <Link to={`/blog/${e.id}`} key={e.id}>
+                                    <div className='card2blogimg'>
+                                        <img src={image} alt={title} />
                                     </div>
+                                    
+                                 </Link>
+                                <div className='card2blogtext'>
+                                    <Link to={`/blog/${e.id}`} key={e.id}>
+                                        <div className='text-section'>
+                                            <p className='text-sectionSubtitle'>{subtitle}</p>
+                                            <p className='text-sectionTitle'>{title}</p>
+                                            <p className='text-sectionDescription'>{preview}</p>
+                                        </div>
 
+                                    </Link>
                                     <button className='buttonshareblog'>
-                                        <img src={buttonshareblog} alt="" />
+                                        
+                                        <div data-href="https://www.caiventuresconsultoria.com/blog" data-layout="" data-size="">
+                                            <a target="_blank" href= {`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.caiventuresconsultoria.com%2Fblog%2F${e.id}&amp;src=sdkpreparse`} class="fb-xfbml-parse-ignore">    
+                                                <img src={buttonshareblog} alt="Compartir en Facebook" />
+                                            </a>
+                                        </div>
                                     </button>
 
                                 </div>
 
                             </div>
 
-                        </Link>
                         
                     )
                     

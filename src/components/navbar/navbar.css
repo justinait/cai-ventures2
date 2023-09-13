@@ -187,6 +187,7 @@ ul {
     display: inline-block;
     transition: all 1s;
     transform: translateX(8px);
+    color: black !important;
   }
 
   .nav-link::after {
@@ -209,10 +210,6 @@ ul {
     color: black;
   }
 
-  .nav-link.active {
-    color: black !important;
-  }
-
   .NavbarCont {
     width: initial;
   }
@@ -222,10 +219,19 @@ ul {
     max-width: 100vw !important;
   }
   .nav-link_button{
-    padding: 0;
+    padding: 10px 0;
     display: block;
     border-radius: 0;
-    width: 80%;
+    background-color: transparent;
+  }
+  .nav-link_button:hover{
+    background-color: transparent;
+  } 
+  .nav-link_button.active{
+    transition: all 1s;
+    transform: translateX(8px);
+    font-size: 20px;
+    font-weight: 500;
   }
   .me-auto {
     margin-left: 6rem !important;
@@ -233,13 +239,6 @@ ul {
   }
 }
 @media (max-width: 767px) {
-  .nav-link_button{
-    background-color:#EAEEFF;
-    padding: 6px 0;
-  }
-  .nav-link_button:hover{
-    background-color:transparent;
-  }
   .me-auto{
     margin-left: 4rem !important;
   }

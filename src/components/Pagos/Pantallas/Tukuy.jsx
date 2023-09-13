@@ -1,14 +1,21 @@
 import { Container, Image, Col, Row } from 'react-bootstrap';
 import tukuyPago from '../../../assets/tukuyPay.png';
 import './Yape.css';
-import qrYape from '../../../assets/qrYape.png';
 import linkCopiar from '../../../assets/linkCopiar.png';
 import React, { useRef, useState } from 'react';
 
 
-function TukuyScreen () { 
+
+
+
+
+function TukuyScreen ({ reiniciarEstado }) { 
+
+
+
     const textLinkRef = useRef(null);
   const [copied, setCopied] = useState(false);
+
 
   const handleCopyLink = () => {
     if (textLinkRef.current) {
@@ -62,7 +69,8 @@ function TukuyScreen () {
                         <p className='textoComprobante'>Por favor, envía el comprobante de pago a:</p>
                         <p className='comprobanteColor'>955 716 302 <span className='textoComprobante'>o</span>  928 897 150</p>
 
-                       <button onClick={''}  className='cancelarPago'>CANCELAR</button>
+                        <button onClick={reiniciarEstado}  className='cancelarPago'>CANCELAR</button>
+                      
                     </Col>
                 </Row>
             </Row>

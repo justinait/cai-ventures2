@@ -1,8 +1,31 @@
-@media only screen and (min-width: 1400px) and (max-width: 1440px) {
-.containerPagos {
-    height: auto;
-    width: auto !important;
-}
+
+    @media only screen and (min-width: 1441px) and (max-width: 1920px) {
+
+    .buttonOnline .titleOnline::before {
+        content: "Pago online";
+      }
+
+      .parteUnoPagos {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .bUno {
+        padding: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .buttonEfectivo .titleEfectivo::before {
+        content: "Pago en efectivo";
+      }
+
+    .containerPagos {
+        height: auto;
+        width: auto !important;
+        flex-direction: column;
+    }
 
 .titlePay {
     color: #212121;
@@ -17,6 +40,11 @@
     border: none;
     background-color:#F8F9FC;
     padding: 20px;
+    width: auto !important;
+}
+
+.flechaTitle {
+    align-items: center;
 }
 
 .containerPay {
@@ -24,12 +52,13 @@
     align-items: center;
     justify-content: center;
     padding: 50px;
+    width: auto !important;
 }
 
 .containerBox {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
 }
 
@@ -51,7 +80,7 @@
 }
 
 .buttonEfectivo.active {
-    background-color: #3349A1 ;
+    background-color: #3349A1 !important ;
 }
 
 .titleEfectivo.active-text {
@@ -119,7 +148,15 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: column;
+    padding: 0px !important;
+}
+
+
+.containerBtnDos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0px !important;
 }
 
 .containerOnlinePay {
@@ -166,323 +203,242 @@
 
 }
 
-/* @media (max-width: 768px) { */
-    @media only screen and (min-width: 993px) and (max-width: 1399px) {
-        .containerPagos {
-            height: auto;
-            width: auto !important;
-        }
-        
-        .titlePay {
-            font-family: 'Montserrat';
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-        
-        .buttonPagos {
-            border: none;
-            background-color:#F8F9FC;
-            padding: 20px;
-        }
-        
-        .containerPay {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-        }
-        
-        .containerBox {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        
-        .buttonDosPay {
-            display: flex;
-            width: 250px;
-            height: 180px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: var(--border-radius-border-radius-sm, 16px);
-            border: 1px solid #DEE5FF;
-            background: #FFF;
-        }
-        
-        .buttonOnline.active {
-            background-color: #F8F9FC;
-        }
-        
-        .buttonEfectivo.active {
-            background-color: #F8F9FC;
-        }
-        
-        .titleEfectivo.active-text {
-            color: #3349A1;
-        }
-        .titleOnline.active-text {
-            color: #3349A1;
-        }
-        
-        .buttonOnline img {
-            display: none;
-        }
+    @media only screen and (min-width: 1400px) and (max-width: 1440px) {
 
-        .buttonOnline {
-            border: 0px;
-        }
+    .buttonOnline .titleOnline::before {
+        content: "Pago online";
+      }
 
-        .buttonEfectivo {
-            border: 0px;
-        }
+      .parteUnoPagos {
+        display: flex;
+        flex-direction: column-reverse;
+      }
 
-        .buttonEfectivo img {
-            display: none;
-        }
-        
-        .titleOnline {
-            text-align: center;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 20px; /* 100% */
-            letter-spacing: 0.1px;
-            margin-bottom: 0px;
-        }
-        
-        
-        
-        .titleEfectivo {
-            text-align: center;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 20px; /* 100% */
-            letter-spacing: 0.1px;
-            margin-bottom: 0px;
-        }
-        
-        .containerBtn {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        .containerOnlinePay {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .interBtn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        .interBtn p {
-            display: none;
-        }
-        
-        .containerOnlinePay {
-            gap: 1rem;
-            margin-top: 20px !important;
-        }
-        
-        .active .imageOnline {
-            filter: invert(0%); 
-        }
-        .hidden {
-            display: none;
-          }
-          
-        .imageOnline {
-            filter: invert(100%);
-        }
-        
-        .active .imageEfectivo {
-            filter: invert(100%); 
-        }
-          
-        .imageEfectivo {
-            filter: invert(0%);
-        }
-    
-}
+      .bUno {
+        padding: 0px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      
+      .buttonEfectivo .titleEfectivo::before {
+        content: "Pago en efectivo";
+      }
 
-
-
-
-
-
-
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-        .containerPagos {
-            height: auto;
-            width: auto !important;
-        }
-        
-        .titlePay {
-            font-family: 'Montserrat';
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-        
-        .buttonPagos {
-            border: none;
-            background-color:#F8F9FC;
-            padding: 20px;
-        }
-        
-        .containerPay {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-        }
-        
-        .containerBox {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            gap: 2rem;
-        }
-        
-        .buttonDosPay {
-            display: flex;
-            width: 250px;
-            height: 180px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            border-radius: var(--border-radius-border-radius-sm, 16px);
-            border: 1px solid #DEE5FF;
-            background: #FFF;
-        }
-        
-        .buttonOnline.active {
-            background-color: #F8F9FC;
-        }
-        
-        .buttonEfectivo.active {
-            background-color: #F8F9FC;
-        }
-        
-        .titleEfectivo.active-text {
-            color: #3349A1;
-        }
-        .titleOnline.active-text {
-            color: #3349A1;
-        }
-        
-        .buttonOnline img {
-            display: none;
-        }
-
-        .buttonOnline {
-            border: 0px;
-        }
-
-        .buttonEfectivo {
-            border: 0px;
-        }
-
-        .buttonEfectivo img {
-            display: none;
-        }
-        
-        .titleOnline {
-            text-align: center;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 20px; /* 100% */
-            letter-spacing: 0.1px;
-            margin-bottom: 0px;
-        }
-        
-        
-        
-        .titleEfectivo {
-            text-align: center;
-            font-family: 'Montserrat';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 20px; /* 100% */
-            letter-spacing: 0.1px;
-            margin-bottom: 0px;
-        }
-        
-        .containerBtn {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        
-        .containerOnlinePay {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .interBtn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        .interBtn p {
-            display: none;
-        }
-        
-        .containerOnlinePay {
-            gap: 1rem;
-            margin-top: 20px !important;
-        }
-        
-        .active .imageOnline {
-            filter: invert(0%); 
-        }
-        .hidden {
-            display: none;
-          }
-          
-        .imageOnline {
-            filter: invert(100%);
-        }
-        
-        .active .imageEfectivo {
-            filter: invert(100%); 
-        }
-          
-        .imageEfectivo {
-            filter: invert(0%);
-        }
-    
-}
-
-
-
-@media only screen and (min-width: 360px) and (max-width: 767px) {
     .containerPagos {
         height: auto;
         width: auto !important;
+        flex-direction: column;
+    }
+
+.titlePay {
+    color: #212121;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.buttonPagos {
+    border: none;
+    background-color:#F8F9FC;
+    padding: 20px;
+    width: auto !important;
+}
+
+.flechaTitle {
+    align-items: center;
+}
+
+.containerPay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: auto !important;
+}
+
+.containerBox {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.buttonDosPay {
+    display: flex;
+    height: 120px;
+    padding: 0px 80px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background-color: white;
+    border: 1px solid #DEE5FF;
+    border-radius: 16px;
+    width: 600px;
+}
+
+.buttonOnline.active {
+    background-color: #3349A1;
+}
+
+.buttonEfectivo.active {
+    background-color: #3349A1 !important ;
+}
+
+.titleEfectivo.active-text {
+    color: white;
+}
+.titleOnline.active-text {
+    color: white;
+}
+
+.buttonOnline {
+    display: flex;
+    width: 600px;
+    height: 120px;
+    padding: 0px 60px;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.titleOnline {
+    font-family: 'Montserrat';
+    color: #212121;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+}
+
+.buttonEfectivo {
+    display: flex;
+    width: 600px;
+    height: 120px;
+    padding: 0px 60px;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.titleEfectivo {
+    font-family: 'Montserrat';
+    color: #212121;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+}
+
+.containerBtn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px !important;
+}
+
+
+.containerBtnDos {
+    display: flex;
+    align-items: flex-end !important;
+    justify-content: flex-end ;
+    padding: 0px !important;
+}
+
+.containerOnlinePay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.interBtn p {
+    margin: 0px;
+}
+
+.containerOnlinePay {
+    gap: 1rem;
+    margin-top: 20px !important;
+}
+
+.active .imageOnline {
+    filter: invert(0%); 
+}
+.hidden {
+    display: none;
+  }
+  
+.imageOnline {
+    filter: invert(100%);
+}
+
+.active .imageEfectivo {
+    filter: invert(100%); 
+}
+  
+.imageEfectivo {
+    filter: invert(0%);
+}
+
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1399px) {
+    .containerPagos {
+        height: auto;
+        width: auto !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+    }
+
+    .buttonOnline .titleOnline::before {
+        content: "Online";
+    }
+    
+    .buttonEfectivo .titleEfectivo::before {
+        content: "Efectivo";
+    }
+
+    .parteUnoPagos {
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btParte {
+        padding: 0px !important;
+    }
+
+
+    .interBtn img {
+        width: 69px;
     }
     
     .titlePay {
@@ -499,12 +455,11 @@
         align-items: center;
         width: 100%;
         flex-direction: row;
+        padding: 0px;
     }
-    
+
     .buttonPagos {
-        border: none;
-        background-color:#F8F9FC;
-        padding: 20px;
+        display: none;
     }
     
     .containerPay {
@@ -513,22 +468,28 @@
         justify-content: center;
         padding: 50px;
     }
+
     
     .containerBox {
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 2rem;
+        flex-direction: row;
+    }
+
+    .botonesPagos {
+        display: flex;
+        padding: 0px !important;
+        width: auto;
     }
     
     .buttonDosPay {
         display: flex;
-        width: 250px;
-        height: 180px;
+        width: 154px;
+        height: 110px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 10px;
+        flex-shrink: 0;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 1px solid #DEE5FF;
         background: #FFF;
@@ -536,10 +497,14 @@
     
     .buttonOnline.active {
         background-color: #F8F9FC;
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
     }
     
     .buttonEfectivo.active {
         background-color: #F8F9FC;
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
     }
     
     .titleEfectivo.active-text {
@@ -555,10 +520,24 @@
 
     .buttonOnline {
         border: 0px;
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
     }
 
     .buttonEfectivo {
         border: 0px;
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
+    }
+
+    .buttonOnline:hover {
+        background-color: #7b7b7b2a;
+    }
+
+    .buttonEfectivo:hover {
+        background-color: #7b7b7b2a;
     }
 
     .buttonEfectivo img {
@@ -572,26 +551,460 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: 20px; /* 142.857% */
+        line-height: 20px; 
         letter-spacing: 0.1px;
+        margin-bottom: 0px;
     }
-    
-    
-    
+
     .titleEfectivo {
         text-align: center;
         font-family: 'Montserrat';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
-        line-height: 20px; /* 142.857% */
+        line-height: 20px; 
         letter-spacing: 0.1px;
+        margin-bottom: 0px;
     }
     
     .containerBtn {
         display: flex;
         align-items: center;
+        flex-direction: column;;
+        width: 100%;
+        padding: 0px !important;
+    }
+
+    .containerBtnDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .containerOnlinePay {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
+    }
+    
+    .interBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .interBtn p {
+        display: none;
+    }
+    
+    .containerOnlinePay {
+        gap: 1rem;
+        margin-top: 20px !important;
+    }
+    
+    .active .imageOnline {
+        filter: invert(0%); 
+    }
+    .hidden {
+        display: none;
+      }
+      
+    .imageOnline {
+        filter: invert(100%);
+    }
+    
+    .active .imageEfectivo {
+        filter: invert(100%); 
+    }
+      
+    .imageEfectivo {
+        filter: invert(0%);
+    }
+
+}
+
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .containerPagos {
+        height: auto;
+        width: auto !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+    }
+
+    .buttonOnline .titleOnline::before {
+        content: "Online";
+    }
+    
+    .buttonEfectivo .titleEfectivo::before {
+        content: "Efectivo";
+    }
+
+    .parteUnoPagos {
+        padding: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btParte {
+        padding: 0px !important;
+    }
+
+
+    .interBtn img {
+        width: 69px;
+    }
+    
+    .titlePay {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .boxRow {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .buttonPagos {
+        display: none;
+    }
+    
+    .containerPay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    
+    .containerBox {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botonesPagos {
+        display: flex;
+        padding: 0px !important;
+        width: auto;
+    }
+    
+    .buttonDosPay {
+        display: flex;
+        width: 154px;
+        height: 110px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid #DEE5FF;
+        background: #FFF;
+    }
+    
+    .buttonOnline.active {
+        background-color: #F8F9FC;
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
+    }
+    
+    .buttonEfectivo.active {
+        background-color: #F8F9FC;
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
+    }
+    
+    .titleEfectivo.active-text {
+        color: #3349A1;
+    }
+    .titleOnline.active-text {
+        color: #3349A1;
+    }
+    
+    .buttonOnline img {
+        display: none;
+    }
+
+    .buttonOnline {
+        border: 0px;
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
+    }
+
+    .buttonEfectivo {
+        border: 0px;
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
+    }
+
+    .buttonOnline:hover {
+        background-color: #7b7b7b2a;
+    }
+
+    .buttonEfectivo:hover {
+        background-color: #7b7b7b2a;
+    }
+
+    .buttonEfectivo img {
+        display: none;
+    }
+    
+    .titleOnline {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        margin-bottom: 0px;
+    }
+
+    .titleEfectivo {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        margin-bottom: 0px;
+    }
+    
+    .containerBtn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;;
+        width: 100%;
+        padding: 0px !important;
+    }
+    
+    .containerOnlinePay {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .interBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .interBtn p {
+        display: none;
+    }
+    
+    .containerOnlinePay {
+        gap: 1rem;
+        margin-top: 20px !important;
+    }
+    
+    .active .imageOnline {
+        filter: invert(0%); 
+    }
+    .hidden {
+        display: none;
+      }
+      
+    .imageOnline {
+        filter: invert(100%);
+    }
+    
+    .active .imageEfectivo {
+        filter: invert(100%); 
+    }
+      
+    .imageEfectivo {
+        filter: invert(0%);
+    }
+
+}
+
+    @media only screen and (min-width: 360px) and (max-width: 767px) {
+    .containerPagos {
+        height: auto;
+        width: auto !important;
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+    }
+
+    .parteUnoPagos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0px !important;
+    }
+    
+    .btParte {    
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .buttonOnline .titleOnline::before {
+        content: "Online";
+    }
+    
+    .buttonEfectivo .titleEfectivo::before {
+        content: "Efectivo";
+    }
+
+
+    .interBtn img {
+        width: 69px;
+    }
+    
+    .titlePay {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
+    .boxRow {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .buttonPagos {
+        display: none;
+    }
+    
+    .containerPay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+
+    
+    .containerBox {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botonesPagos {
+        display: flex;
+        padding: 0px !important;
+        width: auto;
+    }
+    
+    .buttonDosPay {
+        display: flex;
+        width: 154px;
+        height: 110px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        border: 1px solid #DEE5FF;
+        background: #FFF;
+    }
+    
+    .buttonOnline.active {
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
+    }
+    
+    .buttonEfectivo.active {
+        color: #3349A1;
+        border-bottom: 2px solid  #3349A1;
+    }
+    
+    .titleEfectivo.active-text {
+        color: #3349A1;
+    }
+    .titleOnline.active-text {
+        color: #3349A1;
+    }
+    
+    .buttonOnline img {
+        display: none;
+    }
+
+    .buttonOnline {
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
+        border: none;
+    }
+
+    .buttonEfectivo {
+        background-color: #F8F9FC;
+        height: 43px;
+        width: 100%;
+        border: none;
+    }
+
+    .buttonOnline:hover {
+        background-color: #7b7b7b2a;
+    }
+
+    .buttonEfectivo:hover {
+        background-color: #7b7b7b2a;
+    }
+
+    .buttonEfectivo img {
+        display: none;
+    }
+    
+    .titleOnline {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        margin-bottom: 0px;
+    }
+
+    .titleEfectivo {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        margin-bottom: 0px;
+    }
+    
+    .containerBtn {
+        display: flex;
+        align-items: center;
+        flex-direction: column;;
+        width: 100%;
+        padding: 0px !important;
     }
     
     .containerOnlinePay {
