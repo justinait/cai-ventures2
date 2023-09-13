@@ -1,13 +1,6 @@
 import Swal from "sweetalert2";
 
-//esta alerta aprece cuando alla ocurriudo un error al enviar el mensaje
-const errorAlert =(result)=>{
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: `${result}`,
-    })
-};
+
 //esta alerta aparece cuanod un mensaje  fue enviado correctamente
 const successAlert =()=>{
     Swal.fire({
@@ -44,7 +37,6 @@ const loadingAlert =()=>{
 };
 
 export {
-    errorAlert,
     successAlert,
     loadingAlert
 }

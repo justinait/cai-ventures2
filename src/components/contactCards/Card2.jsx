@@ -2,7 +2,7 @@ import './card2.css';
 import { useState , useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import config from '../../config/config.js';
-import { successAlert,errorAlert,loadingAlert } from '../../utils/alert.js';
+import { successAlert,loadingAlert } from '../../utils/alert.js';
 
 
 const Card2 = () => {
@@ -71,7 +71,7 @@ const Card2 = () => {
                     ...prev,
                     [key]:{
                         ...prev[key],
-                        error:'Complete este campo'
+                        error:'Este campo es obligatorio'
                     }
                 }));
             }
@@ -91,7 +91,9 @@ const Card2 = () => {
             })
             
         }, (error) => {
-            errorAlert(error);
+            if (error) {
+                window.location('/error')
+            }
         });
     }
     
@@ -102,7 +104,7 @@ const Card2 = () => {
                 {input.first_name.error&& <p style={estilos}>{input.first_name.error}</p>}
                 <input type="text" placeholder='Nombre y Apellido' name="first_name" value={input['first_name'].value} onChange={handleInputChange}/>
 
-                {input.email.error&& <p style={estilos}>{input.email.error}</p>}
+                {input.email.error&& <p style={estilos}>{"Ingresa un email válido"}</p>}
                 <input type="email" name="email" placeholder='Email' value={input['email'].value} onChange={handleInputChange}/>
 
                 {input.message.error&& <p style={estilos}>{input.message.error}</p>}

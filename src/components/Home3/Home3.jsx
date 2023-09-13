@@ -14,7 +14,7 @@ const Home3 = () => {
   return (
     <Row className='swiperRow' >
       <Col xxl={12} xl={12} lg={10} md={10} sm={10}>
-        <Swiper className='carouselHome'
+        <Swiper className='carouselHome swiper-container'
           centeredSlides={true}
           autoplay={{
             delay: 2500,
@@ -27,13 +27,13 @@ const Home3 = () => {
           slidesPerView={1}
           modules={[Autoplay, Pagination]}
         >
-          <SwiperSlide>
+          <SwiperSlide className='swiper-carrusel-home'>
             <Image fluid src={home4} alt="imagen personas" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-carrusel-home'>
             <Image fluid src={swipperDos} alt="Slide 2" />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className='swiper-carrusel-home'>
             <Image fluid src={swipperTres} alt="Slide 3" />
           </SwiperSlide>
         </Swiper>
