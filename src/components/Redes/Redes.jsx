@@ -14,10 +14,10 @@ import twitterblog from '../../assets/icons/twitterblog.png'
 
 const RedesFlotantes = () => {
     const location = useLocation();
-    const [blogPage, setBlogPage] = useState(false)
+    const [blogPage, setBlogPage] = useState(false);
       
     useEffect(() => {
-        let isBlogPage = (window.location.pathname == '/blog');
+        let isBlogPage = (window.location.pathname == '/blog') || (window.location.pathname == '/blog/:id');
         setBlogPage(isBlogPage)
     }, [location]);
     
