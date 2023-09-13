@@ -301,6 +301,10 @@
     .contenedorInterno {
         padding: 30px 60px;
     }
+
+    .containerPagosOk {
+        margin-top: 12px
+    }
     
     .contenedorTodoPagoNacion {
         display: flex;

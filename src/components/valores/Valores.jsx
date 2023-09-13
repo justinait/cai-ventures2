@@ -20,19 +20,19 @@ const Valores = () => {
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores2} alt="Etica" />
+                        <img src={imgValores3} alt="Etica" className='imgtwo' />
                     </div>
                     <p>Ética</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores3} alt="Perseverancia" />
+                        <img src={imgValores2} alt="Perseverancia" />
                     </div>
                     <p>Perseverancia</p>
                 </div>
                 <div className='aboutIconsChildren'>
                     <div className='aboutImgContainer'>
-                        <img src={imgValores4} alt="Servicio" />
+                        <img src={imgValores4} alt="Servicio" className='imgfour'/>
                     </div>
                     <p>Servicios</p>
                 </div>

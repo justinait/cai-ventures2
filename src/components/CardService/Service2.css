@@ -11,15 +11,13 @@
     align-items: center;
     justify-content: center !important;
     flex-direction: column;
+    
 }
 
 .ServiceContainerRow {
     padding: 50px;
-  
     display: flex;
- 
     width: 90vw !important;
-  
     flex-direction: column;
     align-items: center;
     background-color: white;
@@ -33,9 +31,12 @@
 }
 
 .containerFirstServ {
-    margin-bottom: 4rem;
+    margin-bottom:70px;
+    margin-top: 59px !important;
+   
     display: flex;
     align-items: flex-end;
+    gap:220px;
 }
 
 .containerTitle {
@@ -51,15 +52,16 @@
     font-weight: 600;
     line-height: normal;
     padding-bottom: 40px;
+    margin-top: 40px;
 }
 
 .subtitleServiceDos {
     font-family: "Montserrat";
-    font-size: 22px !important;
+    font-size: 32px !important;
     font-style: normal;
     font-weight: 600 !important;
     line-height: normal;
-    color: #3349A1;
+    color: black;
     padding: 20px 0px 20px 0px;
 }
 
@@ -82,11 +84,15 @@
     color: #212121;
     text-align: center;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 90%;
+    width: 441px;
+    height: 204px;
+   text-align: center;
+   
+
 }
 
 .serviceContainerButton {
@@ -99,6 +105,8 @@
     background-color: #CD373B !important;
     border: none !important;
     border-radius: 10px !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
     
 }
 

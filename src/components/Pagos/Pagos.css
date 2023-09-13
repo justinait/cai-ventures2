@@ -1,4 +1,4 @@
-
+    
     @media only screen and (min-width: 1441px) and (max-width: 1920px) {
 
     .buttonOnline .titleOnline::before {
@@ -8,6 +8,8 @@
       .parteUnoPagos {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
       }
 
       .bUno {
@@ -22,9 +24,13 @@
       }
 
     .containerPagos {
-        height: auto;
+        height: 123vh;
         width: auto !important;
         flex-direction: column;
+    }
+
+    .botonesPagos {
+        padding: 0px !important;
     }
 
 .titlePay {
@@ -51,15 +57,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 70px;
     width: auto !important;
 }
 
 .containerBox {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonDosPay {
@@ -106,10 +112,26 @@
     align-items: center;
     justify-content: center;
 }
+.botonesPaym {
+    padding: 0px !important;
+}
+.boxRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+.botOn {
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 
 .titleOnline {
+    color: rgba(33, 33, 33, 0.60);
     font-family: 'Montserrat';
-    color: #212121;
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -135,8 +157,8 @@
 }
 
 .titleEfectivo {
+    color: rgba(33, 33, 33, 0.60);
     font-family: 'Montserrat';
-    color: #212121;
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -148,22 +170,38 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0px !important;
+    padding-left: 0px !important;
 }
 
 
+.pag {
+    padding: 0px !important;
+}
+
 .containerBtnDos {
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 0px !important;
+    align-items: flex-end !important;
+    justify-content: flex-end ;
 }
 
 .containerOnlinePay {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-right: 2.3rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px !important;
+}
+
+.containerOnlinePayA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.7rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px !important;
 }
 
 .interBtn {
@@ -177,10 +215,6 @@
     margin: 0px;
 }
 
-.containerOnlinePay {
-    gap: 1rem;
-    margin-top: 20px !important;
-}
 
 .active .imageOnline {
     filter: invert(0%); 
@@ -190,7 +224,7 @@
   }
   
 .imageOnline {
-    filter: invert(100%);
+    filter: invert(50%);
 }
 
 .active .imageEfectivo {
@@ -198,7 +232,7 @@
 }
   
 .imageEfectivo {
-    filter: invert(0%);
+    filter: invert(50%);
 }
 
 }
@@ -212,6 +246,8 @@
       .parteUnoPagos {
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
       }
 
       .bUno {
@@ -226,9 +262,13 @@
       }
 
     .containerPagos {
-        height: auto;
+        height: 178vh;
         width: auto !important;
         flex-direction: column;
+    }
+
+    .botonesPagos {
+        padding: 0px !important;
     }
 
 .titlePay {
@@ -255,15 +295,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 70px;
     width: auto !important;
 }
 
 .containerBox {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttonDosPay {
@@ -310,10 +350,26 @@
     align-items: center;
     justify-content: center;
 }
+.botonesPaym {
+    padding: 0px !important;
+}
+.boxRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3rem;
+}
+
+.botOn {
+    display: flex;
+    padding-left: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 
 .titleOnline {
+    color: rgba(33, 33, 33, 0.60);
     font-family: 'Montserrat';
-    color: #212121;
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -339,8 +395,8 @@
 }
 
 .titleEfectivo {
+    color: rgba(33, 33, 33, 0.60);
     font-family: 'Montserrat';
-    color: #212121;
     font-size: 26px;
     font-style: normal;
     font-weight: 600;
@@ -352,22 +408,38 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 0px !important;
+    padding-left: 0px !important;
 }
 
+
+.pag {
+    padding: 0px !important;
+}
 
 .containerBtnDos {
     display: flex;
     align-items: flex-end !important;
     justify-content: flex-end ;
-    padding: 0px !important;
 }
 
 .containerOnlinePay {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-right: 2.3rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px !important;
+}
+
+.containerOnlinePayA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.7rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 20px !important;
 }
 
 .interBtn {
@@ -381,10 +453,6 @@
     margin: 0px;
 }
 
-.containerOnlinePay {
-    gap: 1rem;
-    margin-top: 20px !important;
-}
 
 .active .imageOnline {
     filter: invert(0%); 
@@ -394,7 +462,7 @@
   }
   
 .imageOnline {
-    filter: invert(100%);
+    filter: invert(50%);
 }
 
 .active .imageEfectivo {
@@ -402,15 +470,14 @@
 }
   
 .imageEfectivo {
-    filter: invert(0%);
+    filter: invert(50%);
 }
 
 }
 
-
-@media only screen and (min-width: 993px) and (max-width: 1399px) {
+    @media only screen and (min-width: 993px) and (max-width: 1399px) {
     .containerPagos {
-        height: auto;
+        height: 180vh;
         width: auto !important;
         display: flex;
         flex-direction: column;
@@ -480,6 +547,10 @@
         padding: 0px !important;
         width: auto;
     }
+
+    .containerPagosOk {
+        margin-top: 0px;
+    }
     
     .buttonDosPay {
         display: flex;
@@ -545,24 +616,25 @@
     }
     
     .titleOnline {
-        color: var(--colors-tipography-black, #212121);
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 600;
-        line-height: 20px; 
+        line-height: 20px;
         letter-spacing: 0.1px;
         margin-bottom: 0px;
     }
 
     .titleEfectivo {
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 20px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 20px; 
+        font-weight: 600;
+        line-height: 20px;
         letter-spacing: 0.1px;
         margin-bottom: 0px;
     }
@@ -586,6 +658,17 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        margin-top: 20px !important;
+    }
+
+    .containerOnlinePayA {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 20px !important;
     }
     
     .interBtn {
@@ -599,10 +682,7 @@
         display: none;
     }
     
-    .containerOnlinePay {
-        gap: 1rem;
-        margin-top: 20px !important;
-    }
+
     
     .active .imageOnline {
         filter: invert(0%); 
@@ -627,12 +707,14 @@
 
     @media only screen and (min-width: 768px) and (max-width: 992px) {
     .containerPagos {
-        height: auto;
+        height: 160vh;
         width: auto !important;
         display: flex;
         flex-direction: column;
         padding: 0px !important;
     }
+
+
 
     .buttonOnline .titleOnline::before {
         content: "Online";
@@ -762,7 +844,7 @@
     }
     
     .titleOnline {
-        color: var(--colors-tipography-black, #212121);
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
         font-size: 14px;
@@ -774,11 +856,12 @@
     }
 
     .titleEfectivo {
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
         font-size: 14px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 20px; 
         letter-spacing: 0.1px;
         margin-bottom: 0px;
@@ -797,6 +880,19 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+        margin-top: 20px !important;
+        margin-bottom: 0px;
+    }
+
+    .containerOnlinePayA {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 20px !important;
+        margin-bottom: 0px;
+        align-items: center;
     }
     
     .interBtn {
@@ -810,10 +906,6 @@
         display: none;
     }
     
-    .containerOnlinePay {
-        gap: 1rem;
-        margin-top: 20px !important;
-    }
     
     .active .imageOnline {
         filter: invert(0%); 
@@ -976,8 +1068,10 @@
         display: none;
     }
     
-    .titleOnline {
-        color: var(--colors-tipography-black, #212121);
+
+
+    .titleEfectivo {
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
         font-size: 14px;
@@ -988,15 +1082,21 @@
         margin-bottom: 0px;
     }
 
-    .titleEfectivo {
+    .titleOnline {
+        color: rgba(33, 33, 33, 0.60);
         text-align: center;
         font-family: 'Montserrat';
         font-size: 14px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 20px; 
         letter-spacing: 0.1px;
         margin-bottom: 0px;
+    }
+
+    .Pag {
+        display: flex;
+        flex-direction: row;
     }
     
     .containerBtn {

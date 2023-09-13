@@ -8,6 +8,7 @@ import cardSerDosB from '../../assets/cardSerDosB.png';
 import Pagos from '../../components/Pagos/Pagos';
 
 
+
 const ServiceDos = () => {
     return (
         <Container className='containerServiceDos'>
