@@ -35,7 +35,109 @@
     width: 35px;
 }
 
-@media (max-width: 768px) {
+/* REDES BLOG */
+
+.blogMediaContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 29px;  
+    position: absolute;
+    right:2rem; 
+    top: 27.5rem;
+}
+
+.instagramblog {
+    width: 41px !important;
+    height: 42px !important;
+    flex-shrink: 0 !important;
+}
+
+
+img.facebookblog {
+    width: 20px !important;
+    height: 40px;
+
+}
+
+.linkedinblog {
+    width: 40px !important;
+    height: 38px;
+
+}
+
+.tiktokblog {
+    width: 35px !important;
+    height: 40px;
+
+}
+
+@media (max-width:1920px) {
+    .blogMediaContainer {
+        top: 26rem;
+    }
+}
+
+@media (max-width:1760px) {
+    .blogMediaContainer {
+        top: 25rem;
+    }
+}
+
+@media (max-width:1600px) {
+    .blogMediaContainer {
+        top: 23.5rem;
+    }
+}
+@media (max-width:1440px) {
+    .blogMediaContainer {
+        top: 22.5rem;
+    }
+    .instagramblog {
+        width: 33px !important;
+        height: 33px !important;
+        flex-shrink: 0;
+    }
+
+
+    img.facebookblog {
+        width: 16px !important;
+        height: 32px;
+    }
+
+    .linkedinblog {
+        width: 32px !important;
+        height: 30px;
+    }
+
+    .tiktokblog {
+        width: 28px !important;
+        height: 32px;
+    }
+
+
+}
+
+@media (max-width:1350px) {
+    .blogMediaContainer {
+        top: 21rem;
+    }
+}
+
+@media (max-width:1150px) {
+    .blogMediaContainer {
+        top: 20rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    
+    .blogMediaContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
     .oculto {
         display: none !important;
     }

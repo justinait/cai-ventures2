@@ -45,11 +45,19 @@ const RedesFlotantes = () => {
                     </Row>
                 </Container>
             : 
-            <div className='redsblog'>
-                <img  className='instagramblog' src={instagramblog} alt="instagram" />
-                <img className='facebookblog' src={facebookblog} alt="facebook" />
-                <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
-                <img className='twitterblog' src={twitterblog} alt="twitter" />
+            <div className='blogMediaContainer'>
+                <NavLink target="_blank" to="https://instagram.com/tesiscaiventures?igshid=MzRlODBiNWFlZA==" className="redesIcon">
+                    <img className='instagramblog' src={instagramblog} alt="instagram" />
+                </NavLink>
+                <NavLink target="_blank" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
+                    <img className='facebookblog' src={facebookblog} alt="facebook" />
+                </NavLink>
+                <NavLink target="_blank" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
+                    <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
+                </NavLink>
+                <NavLink target="_blank" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
+                    <img className='tiktokblog' src={twitterblog} alt="tiktok" />
+                </NavLink>
             </div> 
 
             }
