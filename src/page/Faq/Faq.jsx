@@ -4,7 +4,7 @@ import Questions from '../../components/Questions/Questions'
 function Faq() {
 
   return (
-    <div>
+    <div style={{"backgroundColor":"#fff"}}>
       <Questions/>
     </div>
   )
