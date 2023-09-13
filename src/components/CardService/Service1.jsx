@@ -57,6 +57,8 @@ function Service1() {
                 <h3 className="blueText">Nos enfocamos en asesorías de tesis de las carreras de:</h3>
                   
                 <ul>
+                    <li>Ciencias de la comunicación</li>
+                    <li>Sociología</li>
                     <li>Contabilidad</li>
                     <li>Administración</li>
                     <li>Economia</li>
