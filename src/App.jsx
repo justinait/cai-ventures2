@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Home from './page/Home/Home';
 import Services from './page/Services/Services';
@@ -21,17 +21,13 @@ import Pagos from './components/Pagos/Pagos';
 import CheckScroll from './utils/CheckScroll';
 
 
-
 function App() {
   
-  let isBlogPage = (window.location.pathname == '/blog');
-  console.log(isBlogPage);
-  console.log(window.location.pathname);
+  
   return (
     <BrowserRouter>
       <NavBar/>
       <RedesFlotantes />
-      {isBlogPage ? null : <RedesFlotantes />}
       <CheckScroll/>
       <Routes>
         <Route path='/' element={< Home />} />

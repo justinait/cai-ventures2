@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './blog.css'
-import rectangleblog from '../../assets/Rectangleblog.png'
-// import img1blog from '../../assets/img1blog.png'
-import img2blog from '../../assets/Img2blog.png'
-import img3blog from '../../assets/Img3blog.png'
 import buttonshareblog from '../../assets/buttonshareblog.png'
 import { Link } from 'react-router-dom';
-import instagramblog from '../../assets/icons/instagramblog.png'
-import facebookblog from '../../assets/icons/facebookblog.png'
-import linkedinblog from '../../assets/icons/linkedinblog.png'
-import twitterblog from '../../assets/icons/twitterblog.png'
 const Blog = () => {
 
     const [data, setData] = useState([]);
@@ -25,18 +17,11 @@ const Blog = () => {
         <div className='containerblog'>
             <div className='principalcardblog'>
               
-
                 <div className='titleblog'>
                     Blog de CAI Ventures
                     <p className='subtitleblog'>
                         Donde  compartimos consejos, webinars y demás
                     </p>
-                  <div className='redsblog'>
-                        <img  className='instagramblog' src={instagramblog} alt="instagram" />
-                        <img className='facebookblog' src={facebookblog} alt="facebook" />
-                        <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
-                        <img className='twitterblog' src={twitterblog} alt="twitter" />
-                    </div> 
 
                 </div>
 
@@ -73,7 +58,7 @@ const Blog = () => {
                                     <button className='buttonshareblog'>
                                         
                                         <div data-href="https://www.caiventuresconsultoria.com/blog" data-layout="" data-size="">
-                                            <a target="_blank" href= {`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.caiventuresconsultoria.com%2Fblog%2F${e.id}&amp;src=sdkpreparse`} >    
+                                            <a target="_blank" href= {`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.caiventuresconsultoria.com%2Fblog%2F${e.id}&amp;src=sdkpreparse`} class="fb-xfbml-parse-ignore">    
                                                 <img src={buttonshareblog} alt="Compartir en Facebook" />
                                             </a>
                                         </div>
