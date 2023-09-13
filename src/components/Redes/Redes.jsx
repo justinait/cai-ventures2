@@ -17,7 +17,7 @@ const RedesFlotantes = () => {
     const [blogPage, setBlogPage] = useState(false);
       
     useEffect(() => {
-        let isBlogPage = (window.location.pathname == '/blog') || (window.location.pathname == '/blog/:id');
+        let isBlogPage = (window.location.pathname == '/blog') || (window.location.pathname == '/blog/1');
         setBlogPage(isBlogPage)
     }, [location]);
     
