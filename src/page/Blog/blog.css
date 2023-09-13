@@ -142,15 +142,16 @@
     background: var(--colors-main-friendly-blue, #3349A1);
 }
 
-@media (max-width:1439px) {
+@media (max-width:1441px) {
     .principalcardblog {
-
-    height: 652px;
+        height: 652px;
     }
     .titleblog {
-    padding: 12% 0; 
+        padding: 12% 0; 
     }
-   
+    .containerblog {
+        background-color: #EAEEFF;
+    }
 }
 
 @media  (max-width:1023px) {
@@ -266,21 +267,21 @@
 
 @media  (max-width:1060px) {
     .titleblog {
-        
         font-size: 92px;
     }
 }
 
 @media screen and (max-width:768px) {
    
-
+    .containerblog {
+        background-color: unset;
+    }
     .card2blog {
         width: 90%;
         margin: 1% auto;
     }
 
     .buttonshareblog {
-
         margin-bottom: 370px;
     }
 
