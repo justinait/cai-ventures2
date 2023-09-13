@@ -46,15 +46,6 @@
     height: 297px;
     border-radius: 8px;
 }
-
-/* .imgFaqContainer {
-    display: flex;
-    width: auto !important;
-    align-items: flex-start;
-    justify-content: flex-start;
-} */
-
-
 .accordion-button::after {
     background-color: #18265c !important;
     border-radius: 24px;
@@ -134,7 +125,7 @@
     .contImgFaq {
         display: flex;
         flex: 0 0 auto;
-        width: 100%;
+        width: auto !important;
         align-items: center;
         justify-content: center;
     }
@@ -158,9 +149,12 @@
         font-weight: 600 !important;
         line-height: normal;
     }
-    .col-md-3 {
+    .col-md-11 {
         flex: 0 0 auto;
-        width: 100%;
+        width: 100% !important;
+    }
+    .col{
+        padding: 0 20px;
     }
     .accordion {
         --bs-accordion-btn-icon-width: 30px !important;
@@ -185,7 +179,7 @@
     }
 } */
 
-@media screen and (max-width: 420px)  {
+@media screen and (max-width: 500px)  {
     .containerFaq {
         padding: 24px 60px
     }
@@ -206,6 +200,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        padding-left: 20px;
     }
 
     .accordion-button {
@@ -251,5 +246,11 @@
     }
     .accordion-body{
         height: 13rem !important;
+    }
+    .col{
+        padding: 0 10px;
+    }
+    .divFaqContainer{
+        padding: 0 0;
     }
 }
