@@ -15,16 +15,54 @@ import twitterblog from '../../assets/icons/twitterblog.png'
 const RedesFlotantes = () => {
     const location = useLocation();
     const [blogPage, setBlogPage] = useState(false);
+    const [articlePage, setArticlePage] = useState(false);
       
     useEffect(() => {
-        let isBlogPage = (window.location.pathname == '/blog') || (window.location.pathname == '/blog/1');
-        setBlogPage(isBlogPage)
+
+        let isBlogPage = (window.location.pathname == '/blog');
+        let isArticlePage =  (window.location.pathname == '/blog/1');
+        setBlogPage(isBlogPage);
+        setArticlePage(isArticlePage);
+
     }, [location]);
     
     return (
         <>
-            {!blogPage ?
-                <Container>
+            {blogPage ?
+            <div className='blogMediaContainer'>
+                <NavLink target="_blank" to="https://instagram.com/tesiscaiventures?igshid=MzRlODBiNWFlZA==" className="redesIcon">
+                    <img className='instagramblog' src={instagramblog} alt="instagram" />
+                </NavLink>
+                <NavLink target="_blank" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
+                    <img className='facebookblog' src={facebookblog} alt="facebook" />
+                </NavLink>
+                <NavLink target="_blank" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
+                    <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
+                </NavLink>
+                <NavLink target="_blank" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
+                    <img className='tiktokblog' src={twitterblog} alt="tiktok" />
+                </NavLink>
+            </div> 
+
+            : 
+            
+            articlePage ?
+                <div className='blogArticleContainer'>
+                    <NavLink target="_blank" to="https://instagram.com/tesiscaiventures?igshid=MzRlODBiNWFlZA==" className="redesIcon">
+                        <img className='instagramblog' src={instagramblog} alt="instagram" />
+                    </NavLink>
+                    <NavLink target="_blank" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
+                        <img className='facebookblog' src={facebookblog} alt="facebook" />
+                    </NavLink>
+                    <NavLink target="_blank" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
+                        <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
+                    </NavLink>
+                    <NavLink target="_blank" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
+                        <img className='tiktokblog' src={twitterblog} alt="tiktok" />
+                    </NavLink>
+                </div> 
+            :
+            <Container>
                     <Row>
                         <Col className='d-flex justify-content-end position-fixed bottom-1 end-0 m-4 redesContainer'>
                             <Col className='contRedesRed'>
@@ -44,22 +82,6 @@ const RedesFlotantes = () => {
                         </Col>
                     </Row>
                 </Container>
-            : 
-            <div className='blogMediaContainer'>
-                <NavLink target="_blank" to="https://instagram.com/tesiscaiventures?igshid=MzRlODBiNWFlZA==" className="redesIcon">
-                    <img className='instagramblog' src={instagramblog} alt="instagram" />
-                </NavLink>
-                <NavLink target="_blank" to="https://www.facebook.com/profile.php?id=100091551814355&mibextid=LQQJ4d" className="redesIcon">
-                    <img className='facebookblog' src={facebookblog} alt="facebook" />
-                </NavLink>
-                <NavLink target="_blank" to="https://www.linkedin.com/in/cai-ventures-3033b8271" className="redesIcon">
-                    <img className='linkedinblog' src={linkedinblog} alt="linkedin" />
-                </NavLink>
-                <NavLink target="_blank" className='redesIcon oculto' to="https://www.tiktok.com/@cai.ventures?_t=8fIegwJ6QUP&_r=1" >
-                    <img className='tiktokblog' src={twitterblog} alt="tiktok" />
-                </NavLink>
-            </div> 
-
             }
         </>
     )

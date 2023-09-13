@@ -46,6 +46,15 @@
     right: 2rem;
     top: 29.5rem;
 }
+.blogArticleContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 29px;
+    position: absolute;
+    right: 2rem;
+    top: 23.5rem;
+}
 
 .instagramblog {
     width: 38px;
