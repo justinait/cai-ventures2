@@ -1,3 +1,6 @@
+
+
+
 .principalcardblog {
     display: inline-flex;
     flex-direction: column;
@@ -9,6 +12,46 @@
 
 }
 
+.redsblog {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 3rem;
+    gap: 29px;  
+    position: absolute;
+    right:2rem; 
+    
+}
+
+
+
+.instagramblog {
+    width: 41px !important;
+    height: 42px !important;
+    flex-shrink: 0 !important;
+}
+
+
+img.facebookblog {
+    width: 20px !important;
+    height: 40px;
+
+}
+
+.linkedinblog {
+    width: 40px !important;
+    height: 38px;
+
+}
+
+.twitterblog {
+    width: 35px !important;
+    height: 40px;
+
+}
+
+
+
 .titleblog {
     color: #FFF;
     text-align: center;
@@ -18,8 +61,6 @@
     font-weight: 400;
     line-height: normal;
     padding: 10%;
-
-
 
 }
 
@@ -142,6 +183,41 @@
     background: var(--colors-main-friendly-blue, #3349A1);
 }
 
+@media screen and (max-width:1920px) {
+  
+   
+}
+
+@media screen and (max-width:1440px) {
+ 
+    .instagramblog {
+        width: 33px !important;
+        height: 33px !important;
+        flex-shrink: 0;
+    }
+
+
+    img.facebookblog {
+        width: 16px !important;
+        height: 32px;
+
+    }
+
+    .linkedinblog {
+        width: 32px !important;
+        height: 30px;
+
+    }
+
+    .twitterblog {
+        width: 28px !important;
+        height: 32px;
+
+    }
+
+
+}
+
 
 @media screen and (max-width:1024px) {
     .titleblog {
@@ -154,11 +230,17 @@
         height: 24px;
 
     }
-    .principalcardblog{
+
+    .principalcardblog {
         background-image: none;
     }
-    .subtitleblog{
-        display:none
+
+    .subtitleblog {
+        display: none
+    }
+
+    .redsblog {
+        display: none;
     }
 
     .segondcardblog {
@@ -181,22 +263,22 @@
         gap: 10px;
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 16px 16px);
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-       
- 
+
+
 
     }
 
-    .card2blogimg{
-        width:100%
+    .card2blogimg {
+        width: 100%
     }
 
     .card2blogimg img {
         height: auto;
-        width: 100%; 
+        width: 100%;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 0 0);
     }
-  
+
 
     .text-section {
         display: flex;
@@ -209,7 +291,7 @@
 
     .text-sectionSubtitle {
         color: var(--colors-tipography-black, #212121);
-        font-family:  'Montserrat';
+        font-family: 'Montserrat';
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -247,21 +329,23 @@
 }
 
 
-@media screen and  (max-width:768px){
-    .titleblog{
+@media screen and (max-width:768px) {
+    .titleblog {
         font-size: 24px !important;
         text-align: center !important;
         font-weight: 600 !important;
         color: var(--colors-main-friendly-blue, #3349A1) !important;
 
     }
-    .card2blog{
+
+    .card2blog {
         width: 90%;
     }
-    .buttonshareblog{
-       
+
+    .buttonshareblog {
+
         margin-bottom: 370px;
     }
 
-    
+
 }
