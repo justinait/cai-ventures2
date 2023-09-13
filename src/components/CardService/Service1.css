@@ -595,6 +595,12 @@ li {
     }
     
     /**/
+
+    .ofrecen {
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
     
     .titleOfre {
         color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
@@ -611,7 +617,7 @@ li {
     
     .containerOfrec {
         display: flex;
-        width: 1166px;
+        width: 1166px !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
