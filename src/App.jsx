@@ -11,6 +11,9 @@ import NavBar from './components/navbar/navbar';
 import Footer from './components/Footer/Footer';
 import Article from './components/Article/Article';
 
+import ErrorConection from './components/Error/ErrorConection';
+import NoEncontrada from './components/Error/NoEncontrada';
+
 import RedesFlotantes from './components/Redes/Redes';
 import Privacy from './page/Privacy/Privacy';
 import WhatsApp from './components/WhatsApp/WhatsApp';
@@ -36,6 +39,9 @@ function App() {
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/Pagos' element={<Pagos />} />
         <Route path='/privacy' element={<Privacy/>} />
+
+        <Route path='/error' element={<ErrorConection />} />
+        <Route path='*' element={<NoEncontrada />} />
       </Routes>
       <WhatsApp />
       <Footer/>
