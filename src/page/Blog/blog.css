@@ -143,7 +143,7 @@
 
 @media (max-width:1441px) {
     .principalcardblog {
-        height: 652px;
+        /* height: 652px; */
     }
     .titleblog {
         padding: 12% 0; 

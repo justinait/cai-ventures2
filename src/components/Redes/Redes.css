@@ -41,10 +41,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 29px;  
-    position: absolute;
-    right:2rem; 
-    top: 27.5rem;
+    gap: 29px;
+    position: fixed;
+    right: 2rem;
+    top: 29.5rem;
 }
 
 .instagramblog {
@@ -68,27 +68,8 @@
     height: 35px;
 }
 
-@media (max-width:1920px) {
-    .blogMediaContainer {
-        top: 26rem;
-    }
-}
-
-@media (max-width:1760px) {
-    .blogMediaContainer {
-        top: 25rem;
-    }
-}
-
-@media (max-width:1600px) {
-    .blogMediaContainer {
-        top: 23.5rem;
-    }
-}
 @media (max-width:1440px) {
-    .blogMediaContainer {
-        top: 22.5rem;
-    }
+    
     .instagramblog {
         width: 33px;
         height: 33px;
@@ -112,18 +93,6 @@
     }
 
 
-}
-
-@media (max-width:1350px) {
-    .blogMediaContainer {
-        top: 21rem;
-    }
-}
-
-@media (max-width:1150px) {
-    .blogMediaContainer {
-        top: 19rem;
-    }
 }
 
 @media (max-width: 1023px) {
