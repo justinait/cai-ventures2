@@ -21,9 +21,9 @@ import Pagos from './components/Pagos/Pagos';
 import CheckScroll from './utils/CheckScroll';
 
 
-
 function App() {
-
+  
+  
   return (
     <BrowserRouter>
       <NavBar/>

@@ -25,11 +25,11 @@ function Article() {
 
   return (
     <div>
-      <div className='principalcardblog'>
+      <div className='principalCardArticle'>
 
-        <div className='titleblog'>
+        <div className='titleArticle'>
           Blog de CAI Ventures
-          <p className='subtitleblog'>
+          <p className='subtitleArticle'>
             Donde  compartimos consejos, webinars y demás
           </p>
         </div>
@@ -47,7 +47,7 @@ function Article() {
         </div>
 
       </div>
-      <MoreArticles allData={data} selectedArticle={thisArticle.id} />
+      {/* <MoreArticles allData={data} selectedArticle={thisArticle.id} /> */}
     </div>
     
   )

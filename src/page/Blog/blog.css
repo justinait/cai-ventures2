@@ -9,62 +9,22 @@
     background: url("../../assets/Rectangleblog.png");
     width: 100%;
     margin-bottom: 100px;
-
+    height: 600px;
+    /* height: 730px; segun figma */
 }
-
-.redsblog {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 3rem;
-    gap: 29px;  
-    position: absolute;
-    right:2rem; 
-    
-}
-
-
-
-.instagramblog {
-    width: 41px !important;
-    height: 42px !important;
-    flex-shrink: 0 !important;
-}
-
-
-img.facebookblog {
-    width: 20px !important;
-    height: 40px;
-
-}
-
-.linkedinblog {
-    width: 40px !important;
-    height: 38px;
-
-}
-
-.twitterblog {
-    width: 35px !important;
-    height: 40px;
-
-}
-
-
 
 .titleblog {
-    color: #FFF;
     text-align: center;
     font-family: 'DM Serif Display';
     font-size: 96px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 10%;
-
+    padding: 7% 10%;
+    color: var(--colors-light-friendly-blue, #EAEEFF);
 }
 
-.subtitleblog p {
+.subtitleblog {
     color: #FFF;
     text-align: center;
     font-family: 'Montserrat';
@@ -72,7 +32,7 @@ img.facebookblog {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
+    margin-top: 2%;
 }
 
 .principalcardblog img {
@@ -86,7 +46,7 @@ img.facebookblog {
 .segondcardblog {
     display: flex;
     width: 95%;
-    margin-left: 20px;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -96,6 +56,8 @@ img.facebookblog {
 
 .card2blog {
     display: flex;
+    margin: auto;
+    width: 80vw;
     height: 353px;
     justify-content: center;
     align-items: flex-start;
@@ -103,8 +65,6 @@ img.facebookblog {
     align-self: stretch;
     border-radius: var(--border-radius-border-radius-lg, 48px);
     background: #FFF;
-
-    /* Shadow */
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
 }
 
@@ -115,8 +75,6 @@ img.facebookblog {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     border-radius: var(--border-radius-border-radius-lg, 48px 0 0 48px);
     background: #FFF;
-
-    /* Shadow */
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
 
 }
@@ -183,56 +141,34 @@ img.facebookblog {
     background: var(--colors-main-friendly-blue, #3349A1);
 }
 
-@media screen and (max-width:1920px) {
-  
-   
-}
-
-@media screen and (max-width:1440px) {
- 
-    .instagramblog {
-        width: 33px !important;
-        height: 33px !important;
-        flex-shrink: 0;
-    }
-
-
-    img.facebookblog {
-        width: 16px !important;
-        height: 32px;
-
-    }
-
-    .linkedinblog {
-        width: 32px !important;
-        height: 30px;
-
-    }
-
-    .twitterblog {
-        width: 28px !important;
-        height: 32px;
-
-    }
-
-
-}
-
-
-@media screen and (max-width:1024px) {
+@media (max-width:1441px) {
+    /* .principalcardblog {
+        height: 652px;
+    } */
     .titleblog {
-        color: var(--colors-main-friendly-blue, #3349A1);
-        font-size: 54px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        width: 100%;
-        height: 24px;
+        padding: 12% 0; 
+    }
+    .containerblog {
+        background-color: #EAEEFF;
+    }
+}
 
+@media  (max-width:1023px) {
+    .titleblog {
+        font-size: 24px !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        color: var(--colors-main-friendly-blue, #3349A1) !important;
+        font-family: 'Montserrat'; 
+        padding-top: 7%;
     }
 
+    .card2blog a {
+        width: 100%;
+    }
     .principalcardblog {
         background-image: none;
+        height: 100px;
     }
 
     .subtitleblog {
@@ -248,23 +184,19 @@ img.facebookblog {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-
     }
 
     .card2blog {
         display: flex;
         width: 95%;
+        margin: 2% auto;
         height: auto;
-        margin-bottom: 30px;
         padding-bottom: 10px;
-        margin-left: 10px;
         flex-direction: column;
         align-items: center;
         gap: 10px;
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 16px 16px);
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-
-
 
     }
 
@@ -275,10 +207,13 @@ img.facebookblog {
     .card2blogimg img {
         height: auto;
         width: 100%;
+        
+        object-fit: cover;
+        object-position: center;
+        height: 270px;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
         border-radius: var(--border-radius-border-radius-lg, 16px 16px 0 0);
     }
-
 
     .text-section {
         display: flex;
@@ -329,21 +264,23 @@ img.facebookblog {
 }
 
 
-@media screen and (max-width:768px) {
+@media  (max-width:1060px) {
     .titleblog {
-        font-size: 24px !important;
-        text-align: center !important;
-        font-weight: 600 !important;
-        color: var(--colors-main-friendly-blue, #3349A1) !important;
-
+        font-size: 92px;
     }
+}
 
+@media screen and (max-width:768px) {
+   
+    .containerblog {
+        background-color: unset;
+    }
     .card2blog {
         width: 90%;
+        margin: 1% auto;
     }
 
     .buttonshareblog {
-
         margin-bottom: 370px;
     }
 
