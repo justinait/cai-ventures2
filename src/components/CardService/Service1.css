@@ -221,7 +221,7 @@
         justify-content: flex-start;
     }
     
-    li {
+    .liEnfoque {
         width: 541px;
         color: var(--colors-tipography-black, #212121);
         font-family: 'Montserrat';
@@ -467,7 +467,7 @@
     justify-content: flex-start;
 }
 
-li {
+.liEnfoque {
     width: 541px;
     color: var(--colors-tipography-black, #212121);
     font-family: 'Montserrat';
@@ -712,7 +712,7 @@ li {
         justify-content: flex-start;
     }
     
-    li {
+    .liEnfoque {
         width: 541px;
         color: var(--colors-tipography-black, #212121);
         font-family: 'Montserrat';
@@ -949,7 +949,7 @@ li {
         justify-content: flex-start;
     }
     
-    li {
+    .liEnfoque {
         color: var(--colors-tipography-black, #212121);
         font-family: 'Montserrat';
         font-size: 18px;
@@ -1202,7 +1202,7 @@ li {
         width: 328px !important;
     }
     
-    li {
+    .liEnfoque {
         color: var(--colors-tipography-black, #212121);
         font-family: 'Montserrat';
         font-size: 16px;
