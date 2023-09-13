@@ -31,7 +31,8 @@
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal; 
+    line-height: normal;
+    padding-bottom: 8px;
 }
 .infoPerson p {
     font-size: 24px;
@@ -50,6 +51,9 @@
 
 /* desktop XL*/
 @media (min-width: 1441px){
+    .infoPerson{
+        padding:60px 80px;
+    }
     .infoPerson h5{
         font-size: 32px;
     }
