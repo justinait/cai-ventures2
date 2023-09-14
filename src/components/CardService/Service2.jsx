@@ -1,4 +1,4 @@
-import { Container, Row, Col, Image, Button} from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service2.css';
 import homeCard6 from '../../assets/homeCard6.png';
@@ -13,7 +13,7 @@ const ServiceDos = () => {
     return (
         <Container className='containerServiceDos'>
             <Row className='ServiceContainerRow'>
-                <Col className='containerTitle'>
+                <Col className='containerTitleA'>
                     <h2 className='tituloSecDos'>¿Qué incluyen las asesorías?</h2>
                 </Col>
                 
@@ -61,15 +61,9 @@ const ServiceDos = () => {
                 </Col>
                 </Row>
 
-                <Row>
-                    <Col className='serviceContainerButton'>
-                         <Button  href="https://zcal.co/caiventures" target= "_blank" className='serviceButtons'>Agendar Sesión</Button>{' '}
-                    </Col>            
-                </Row>
-
                 <Row className='buttonextra'>
                     <Link to='/Pagos'>
-                        <Button className='serviceButtons1'>REALIZÁ TUS PAGOS AQUÍ</Button>
+                        <button className='serviceButtons1'>REALIZÁ TUS PAGOS AQUÍ</button>
                     </Link>            
                 </Row> 
             </Row>

@@ -8,10 +8,8 @@ function Contact() {
 
   return (
     <div className='contactPagesContainer'>
-
       <Card1/>
       <Card2/>
-
     </div>
   )
 }

@@ -49,11 +49,10 @@ const Blog = () => {
                                 <div className='card2blogtext'>
                                     <Link to={`/blog/${e.id}`} key={e.id}>
                                         <div className='text-section'>
-                                            <p className='text-sectionSubtitle'>{subtitle}</p>
+                                            <p className='text-sectionSubtitle'>{author}</p>
                                             <p className='text-sectionTitle'>{title}</p>
-                                            <p className='text-sectionDescription'>{preview}</p>
+                                            <p className='text-sectionDescription'>{subtitle}</p>
                                         </div>
-
                                     </Link>
                                     <button className='buttonshareblog'>
                                         
@@ -76,7 +75,8 @@ const Blog = () => {
 
             </div>
 
-
+            <p className='blogSoon'>Pronto tendrás acceso a más contenidos</p>
+            
         </div>
     );
 };

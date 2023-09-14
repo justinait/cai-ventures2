@@ -2,9 +2,11 @@
     padding: 3.5rem 5rem 0rem;
 }
 
-h3 {
-    font-size: 2rem !important;
-    font-weight: 700 !important;
+.title-hero-home{
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
 }
 a {
     text-decoration: none !important;
@@ -21,7 +23,6 @@ a {
     border: none !important;
     transition: all 0.5s;
 }
-
 .homeContainer2{
     display: flex;
     justify-content: space-evenly;
@@ -29,7 +30,7 @@ a {
 }
 
 .homePresentation {
-    width: 25rem;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,14 +42,13 @@ a {
     margin-bottom: 5%;
     font-style: italic;
 }
-
 .homePresentation p {
     margin-top: 3%;
+    text-align: left;
 }
 .homePresentationImage {
-    width: 16.125rem;
+    width:440px;
 }
-
 .homePresentationImage p {
     color: var(--main, var(--colors-main-friendly-blue, #3349A1));
 }
@@ -65,8 +65,10 @@ a {
     display: none;
 }
 .specialTextHome {
-    font-size: larger;
-    font-weight: 500;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     text-align: center;
     margin-top: 6%;
 }
@@ -75,21 +77,36 @@ a {
     .homeContainer2 {
         justify-content: space-around;
     }
+    .homePresentation {
+        width: 26.5rem;
+    }
+    .title-hero-home{
+        font-size: 48px;
+    }
 }
 
 @media (max-width: 1023px) {
     .homeContainer{
-        padding: 2rem 1.5rem;        
+        padding: 2rem 0;        
     }
     .homeButtons {
         width: 80%;
         margin: auto;
     }
     .homePresentation {
-        width: 90vw;
+        width: 84vw;
     }
-    .homePresentation h3{
+    .homePresentation .title-hero-home{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
         color: #3349A1;
+    }
+    .homePresentation p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400; 
     }
     .homePresentationImage p{
         display: none;
@@ -120,9 +137,6 @@ a {
 
 }
 @media screen and (max-width: 767px) {
-    .homeContainer{
-        padding: 2rem 1.5rem;        
-    }
     .homePresentation p {
         margin-top: 3%;
         font-weight: 500;
