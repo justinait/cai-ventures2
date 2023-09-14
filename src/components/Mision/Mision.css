@@ -5,25 +5,25 @@
     justify-content: center;
     flex-direction: column;
     gap: 4rem;
+    margin: 8rem 0;
 }
 
 .misionContainer {
-    padding: 24px;
+    padding: 35px 24px;
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 48px;
-
     display: flex;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
     justify-content: center;
 }
 
 .textMision {
     color: #212121;
     font-family: 'Montserrat';
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400; 
     line-height: normal;
     width: auto !important;
 }
@@ -35,12 +35,17 @@
     font-weight: 600;
     line-height: normal;
     color: #CD373B;
+    padding-bottom: 10px;
 }
 
-    .contImg {
-        padding: 0px 0px 0px 40px !important;
+.contImg {
+    padding: 0px 0px 0px 40px !important;
+}
+@media screen and (min-width:1441px) {
+    .misionContainer {
+        width: 76vw;
     }
-
+}
 
 @media screen and (max-width:1024px) {
     .misionContainer {

@@ -48,41 +48,31 @@ function Service1() {
             </Row>
             </Row>
 
-
-
             <Row className='contSerUnAse'>
-                <Col className='containerTitle'>
-                <Col className='imgSerAseso'>
-                        <Image className='imgSerAse' src={cai} />
+                <Col className='containerTitleAse'>
+                    <Col className='imgSerAseso'>
+                            <Image className='imgSerAse' src={cai} />
                     </Col>
+                    
                     <Col className='contUnoAse'>
                         <h1 className='enfoqueTitle'>Nos enfocamos en asesorías de tesis de las carreras de:</h1>
-                        <Col>
-                        <li>Contabilidad </li>
-                        <li>Administración</li>
-                        <li>Economía</li>
-                        <li>Turismo</li>
-                        <li>Educación</li>
-                        <li>Antropología</li>
-                        <li>Psicología</li>
-                        <li>Ingeniería de industrial</li>
-                        <li>Sociología</li>
-                        <li>Ciencias de la comunicación</li>
-                        </Col>
-                    </Col>
-                    
-
-
-
-
-
- 
-
-
-                    
+                        
+                        <li className='liEnfoque'>Administración</li>
+                        <li className='liEnfoque'>Contabilidad </li>
+                        <li className='liEnfoque'>Economía</li>
+                        <li className='liEnfoque'>Turismo</li>
+                        <li className='liEnfoque'>Educación</li>
+                        <li className='liEnfoque'>Antropología</li>
+                        <li className='liEnfoque'>Psicología</li>
+                        <li className='liEnfoque'>Ingeniería de industrial</li>
+                        <li className='liEnfoque'>Sociología</li>
+                        <li className='liEnfoque'>Ciencias de la comunicación</li>
+                        
+                    </Col>              
                 </Col>
+                
             </Row>
-
+  
 
         </Container>
 

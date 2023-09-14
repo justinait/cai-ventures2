@@ -7,7 +7,7 @@ function Article() {
 
   const [data, setData] = useState([]);
   const [thisArticle, setThisArticle] = useState({})
-
+  
   const {id} = useParams();
 
   useEffect(() => {
@@ -21,7 +21,10 @@ function Article() {
       });
   }, [id]);
 
-  const {title, subtitle, image, content, author} = thisArticle;
+  const {title, subtitle, image, content, author, references} = thisArticle;
+  
+  const paragraphs = thisArticle.content ? thisArticle.content.split('\n') : [];
+  const paragraphsReferences = thisArticle.references ? thisArticle.references.split('\n') : [];
 
   return (
     <div>
@@ -42,12 +45,30 @@ function Article() {
         
         <div className='articleTextContainer'>
           <h4>Autora: {author}</h4>
-          <p className='articleContent'>{content}</p>
-          
+          <p className='articleContent'>
+            {paragraphs.map((e, index) => (
+              <React.Fragment key={index}>
+                {e}
+                <br />
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
+        
+        <p className='articleContent'> <strong> REFERENCIAS:</strong></p>  
+        <p className='articleContent'>
+            {paragraphsReferences.map((e, index) => (
+              <React.Fragment key={index}>
+                {e}
+                <br />
+              </React.Fragment>
+            ))}
+          </p>
         </div>
+        
 
       </div>
-      <MoreArticles allData={data} selectedArticle={thisArticle.id} />
+      {/* <MoreArticles allData={data} selectedArticle={thisArticle.id} /> */}
     </div>
     
   )

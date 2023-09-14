@@ -33,11 +33,13 @@ const Mision = () => {
                 </Col>
                 <Col className='containerText' xl={7} md={8} sm={7}>
                     <h2 className='titleMision'>Objetivos</h2>
-                    <p className='textMision'>. Asesoramiento individualizado</p>
-                    <p className='textMision'>. Facilitar el proceso de investigación </p>
-                    <p className='textMision'>. Fomentar el crecimiento académico </p>
-                    <p className='textMision'>.  Ofrecer servicios especializados </p>
-                    <p className='textMision'>.  Promover la investigación de alta calidad </p>
+                    <ul>
+                        <li className='textMision'>Asesoramiento individualizado</li>
+                        <li className='textMision'>Facilitar el proceso de investigación</li>
+                        <li className='textMision'>Fomentar el crecimiento académico</li>
+                        <li className='textMision'>Ofrecer servicios especializados</li>
+                        <li className='textMision'>Promover la investigación de alta calidad</li>
+                    </ul>
                 </Col>
             </Row>
         </Container>

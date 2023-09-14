@@ -1,14 +1,15 @@
 
-@media only screen and (min-width: 1441px) and (max-width: 1920px) {
-
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+@media only screen and (min-width: 1441px)  {
 
     .contenedorErrorUno {
         width: 718px;
         height: 100vh;
         display: flex;
+    }
+
+    .conectionErrorImg {
+        width: 582px;
+        height: 523px;
     }
 
     .tituloError {
@@ -20,6 +21,7 @@
         font-weight: 600;
         line-height: normal;
         margin-bottom: 0px;
+        padding-bottom: 20px;
     }
 
     .contieneError {
@@ -27,16 +29,81 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 537px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        /* padding: 210px 380px 521px 379px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
     }
     
     .textoError {
-        color:  #090D22;
+        color: var(--colors-tipography-black, #212121);
         text-align: center;
-        font-family: 'Montserrat';
-        font-size: 25px;
+        font-family: Montserrat;
+        font-size: 20px;
         font-style: normal;
         font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .conectionErrorImg {
+        width: 462px;
+        height: 421px;
+    }
+
+    .tituloError {
+        color: #DE5252;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
         line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneError {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 537px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        /* padding: 210px 380px 521px 379px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoError {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
     }
 }
 
@@ -77,26 +144,28 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
     .contenedorErrorUno {
-        width: 331px;
-        height: auto;
+        width: 718px;
+        height: 100vh;
         display: flex;
     }
 
-    .contieneError img {
-        width: 223px;
-        height: 177px;
+    .conectionErrorImg {
+        width: 348px;
+        height: 337px;
     }
 
     .tituloError {
         color: #DE5252;
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 24px;
+        font-size: 42px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
         margin-bottom: 0px;
+        padding-bottom: 20px;
     }
 
     .contieneError {
@@ -104,29 +173,41 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 485px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        /* padding: 210px 380px 521px 379px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
     }
     
     .textoError {
-        color:  #090D22;
+        color: var(--colors-tipography-black, #212121);
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 12px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
-        line-height: normal;
+        line-height: 140%; 
+        margin-bottom: 0px;
     }
 }
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
+
     .contenedorErrorUno {
-        width: 331px;
-        height: auto;
+        width: 718px;
+        height: 100vh;
         display: flex;
     }
 
-    .contieneError img {
-        width: 223px;
-        height: 177px;
+    .conectionErrorImg {
+        width: 183px !important;
+        height: 183px !important;
     }
 
     .tituloError {
@@ -138,6 +219,7 @@
         font-weight: 600;
         line-height: normal;
         margin-bottom: 0px;
+        padding-bottom: 20px;
     }
 
     .contieneError {
@@ -145,15 +227,28 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 273px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        /* padding: 210px 380px 521px 379px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
     }
     
     .textoError {
-        color:  #090D22;
+        color: var(--colors-tipography-black, #212121);
         text-align: center;
         font-family: 'Montserrat';
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        margin-bottom: 0px;
     }
 }
+
+

@@ -1,5 +1,236 @@
-.servicesThreeContainer {
-    display: flex;
+
+@media only screen and (min-width: 1441px)  {
+    .servicesThreeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        
+        background-color: #fff;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+       
+        margin: 3rem auto;
+        width: 90vw;
+    }
+
+    .title-services {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+    }
+
+    .textSerTres {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+
+    .cardServicesChildren {
+        display: flex;
+        flex-direction: row;
+        padding: 80px 90px 0px 90px;
+        gap: 72px;
+        align-items: center;
+    }
+
+    .infoServiceBox {
+        width: 763px;
+    }
+} /*ok*/
+
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+    .servicesThreeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        
+        background-color: #fff;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+       
+        margin: 3rem auto;
+        width: 90vw;
+    }
+
+    .title-services {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+    }
+
+    .textSerTres {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+
+    .cardServicesChildren {
+        display: flex;
+        flex-direction: row;
+        padding: 80px 90px 0px 90px;
+        gap: 72px;
+        align-items: center;
+    }
+
+    .infoServiceBox {
+        width: 763px;
+    }
+} /*ok*/
+
+@media only screen and (min-width: 993px) and (max-width: 1399px) {
+    .servicesThreeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
+}
+
+    .servicesThreeContainer h2 {
+        color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 39px;
+    }
+
+    .textSerTres {
+        width: 541px;
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .title-services {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+    }
+    
+    .cardServicesChildren {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoServiceBox {
+        align-items: center;
+        width: 541px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .servicesThreeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
+}
+
+    .servicesThreeContainer h2 {
+        color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 39px;
+    }
+
+    .textSerTres {
+        width: 541px;
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .title-services {
+        color: var(--colors-tipography-black, #212121);
+        font-family: 'Montserrat';
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+    }
+    
+    .cardServicesChildren {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .infoServiceBox {
+        align-items: center;
+        width: 541px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .containerIconService img {
+        width: auto;
+    }
+
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .servicesThreeContainer {
+        display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,109 +242,42 @@
    
     margin: 3rem auto;
     width: 90vw;
-   
-}
-
-.cardServicesChildren {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding: 20px 0;
-}
-
-.cardServicesChildren img {
-    width: 108px;
-    height: 108px;
-}
-
-.containerIconsServices {
-    text-align: center;
-}
-.infoServiceBox p{
-    font-size: 24px;
-}
-
-.servicesThreeContainer h2 {
-    color: #3349A1;
-    text-align: center;
-    font-weight: 700;
-    font-family: Montserrat;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 80px;
-}
-
-.title-services {
-    color: #212121;
-    font-size: 24px !important;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.infoServiceBox {
-    width: 60%;
-}
-
-@media screen and (max-width: 767px) {
-    .servicesThreeContainer {
-        width: 90vw;
-        padding: 25px;
-      
     }
+
     .servicesThreeContainer h2 {
-        font-size: 24px;      
+        color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 20px;
     }
 
     .title-services {
+        color: var(--Tipografa, var(--colors-tipography-black, #212121));
         text-align: center;
-
+        font-family: 'Montserrat';
+        font-size: 24px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
     }
 
     .cardServicesChildren {
+        display: flex;
         flex-direction: column;
-        gap: 40px;
-    }
-
-    .cardServicesChildren img {
-        width: 68px;
-        height: 68px;
-    }
-
-    .infoServiceBox {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1024px) {
-
-    .title-services {
+        align-items: center;
         text-align: center;
-    }
-
-    .servicesThreeContainer {
-        padding: 40px;
-        position: relative;
-    }
-
-    .cardServicesChildren {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .cardServicesChildren img {
-        width: 68px;
-        height: 68px;
-
-    }
-
-    .infoServiceBox {
-        width: 100%;
         justify-content: center;
+        gap: 20px;
     }
+    
 
+    .imgSerTr {
+        width: 70px !important;
+    }
 }
 
 

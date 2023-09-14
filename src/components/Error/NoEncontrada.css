@@ -1,0 +1,267 @@
+
+@media only screen and (min-width: 1441px) {
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgCuatroError {
+        width: 784px;
+        height: 521px;
+        padding-bottom: 20px;
+    }
+
+    .tituloErrorCuatro {
+        color: var(--colors-main-coral-red, #CD373B);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneErrorCuatro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 520px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoErrorCuatro {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1440px) {
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgCuatroError {
+        width: 510px;
+        height: 340px;
+        padding-bottom: 20px;
+    }
+
+    .tituloErrorCuatro {
+        color: var(--colors-main-coral-red, #CD373B);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneErrorCuatro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 520px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoErrorCuatro {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1399px) {
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgCuatroError {
+        width: 510px;
+        height: 340px;
+        padding-bottom: 20px;
+    }
+
+    .tituloErrorCuatro {
+        color: var(--colors-main-coral-red, #CD373B);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneErrorCuatro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 520px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoErrorCuatro {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgCuatroError {
+        width: 510px;
+        height: 340px;
+        padding-bottom: 20px;
+    }
+
+    .tituloErrorCuatro {
+        color: var(--colors-main-coral-red, #CD373B);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneErrorCuatro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 520px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoErrorCuatro {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+
+    .contenedorErrorUno {
+        width: 718px;
+        height: 100vh;
+        display: flex;
+    }
+
+    .imgCuatroError {
+        width: 248px !important;
+        height: 173px !important;
+        padding-bottom: 20px;
+    }
+
+    .tituloErrorCuatro {
+        color: var(--colors-main-coral-red, #CD373B);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    .contieneErrorCuatro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .contErrorRow {
+        display: flex;
+        width: 1440px;
+        flex-direction: column;
+        align-items: center;
+        gap: 83px;
+    }
+    
+    .textoErrorCuatro {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+}

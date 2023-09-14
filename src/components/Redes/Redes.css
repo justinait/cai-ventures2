@@ -42,7 +42,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     gap: 29px;
-    position: fixed;
+    position: absolute;
     right: 2rem;
     top: 29.5rem;
 }
@@ -111,7 +111,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .oculto {
         display: none !important;
     }

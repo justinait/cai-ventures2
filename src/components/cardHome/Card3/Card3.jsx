@@ -10,7 +10,7 @@ const Card3 = () => {
                 <img src={cardImage3} alt="chicos tirando su sombrero en la graduación" />
             </div>
             <div className='homeContactInfo'>
-                <div>¿Estás listo/a para iniciar tu camino hacia la titulación?</div>
+                <div className='title-card-three'>¿Estás listo/a para iniciar tu camino hacia la titulación?</div>
                 <p>Si estás interesado/a en nuestros servicios, no dudes en contactar a nuestro equipo de ventas para reservar tu lugar</p>
                 <img src={cardImage3} className='cardImageThree' alt="chicos tirando su sombrero en la graduación" />
                 <span><Link className='linkContactHome' to='/contact'>contacto</Link></span>
