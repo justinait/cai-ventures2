@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Button from 'react-bootstrap/Button';
 import home1 from '../../assets/home1.jpg';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ function Hero() {
 
       <div className='homePresentation'>
         <h6>"Asesoría de tesis para apoyarte en tu proceso de titulación"</h6>
-        <h3>CAI Ventures</h3>
+        <div className='title-hero-home'>CAI Ventures</div>
         <p>Nuestro equipo de profesionales experimentados en diversas 
           áreas de investigación está para guiarte y resolver 
           todas tus dudas durante tu proceso de titulación.
