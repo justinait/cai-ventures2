@@ -10,7 +10,7 @@ const Service3 = () => {
             <h2>Nuestras etapas de asesorías</h2>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <img src={planTesisImage} alt="icono calendario con un check" />
+                    <img className='imgSerTr' src={planTesisImage} alt="icono calendario con un check" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Plan de tesis</h3>
@@ -19,7 +19,7 @@ const Service3 = () => {
             </div>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <img src={borrarTesisImage} alt="icono de un lapiz y una hoja" />
+                    <img className='imgSerTr' src={borrarTesisImage} alt="icono de un lapiz y una hoja" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Borrador de Tesis</h3>
@@ -28,7 +28,7 @@ const Service3 = () => {
             </div>
             <div className='cardServicesChildren'>
                 <div className='containerIconsServices'>
-                    <img src={sustenTesisImage} alt="icono de teach-poll" />
+                    <img className='imgSerTr' src={sustenTesisImage} alt="icono de teach-poll" />
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Sustentación</h3>

@@ -48,16 +48,15 @@ function Service1() {
             </Row>
             </Row>
 
-
-
             <Row className='contSerUnAse'>
                 <Col className='containerTitle'>
-                <Col className='imgSerAseso'>
-                        <Image className='imgSerAse' src={cai} />
+                    <Col className='imgSerAseso'>
+                            <Image className='imgSerAse' src={cai} />
                     </Col>
+                    
                     <Col className='contUnoAse'>
                         <h1 className='enfoqueTitle'>Nos enfocamos en asesorías de tesis de las carreras de:</h1>
-                        <Col>
+                        
                         <li className='liEnfoque'>Administración</li>
                         <li className='liEnfoque'>Contabilidad </li>
                         <li className='liEnfoque'>Economía</li>
@@ -68,19 +67,10 @@ function Service1() {
                         <li className='liEnfoque'>Ingeniería de industrial</li>
                         <li className='liEnfoque'>Sociología</li>
                         <li className='liEnfoque'>Ciencias de la comunicación</li>
-                        </Col>
-                    </Col>
-                    
-
-
-
-
-
- 
-
-
-                    
+                        
+                    </Col>              
                 </Col>
+                
             </Row>
 
 
