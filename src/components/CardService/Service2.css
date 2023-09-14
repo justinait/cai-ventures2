@@ -1,9 +1,192 @@
+    @media only screen and (min-width: 1441px) and (max-width: 2800px) {
+    .containerServiceDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: unset !important;
+        width: 100vw !important;
+    }
+    
+    .conTodoSerDos {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column;
+        
+    }
+
+
+    
+    .ServiceContainerRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: #fff;
+        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
+    }
+
+    .buttonextra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+    }
+
+    .serviceButtons1 {
+        display: flex;
+        padding: 16px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        background: #CD373B;
+
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        margin-bottom: 0px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    
+    .containerFirstServ {
+        margin-bottom: 70px;
+        margin-top: 59px !important;
+        display: flex;
+        align-items: flex-end;
+        gap: 85px;
+        width: 1063px !important;
+        flex-direction: row;
+    }
+    
+    .containerTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
+    }
+    
+    .tituloSecDos {
+        font-family: "Montserrat";
+        color: #3349A1;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    
+    
+    .subtitleServiceDos {
+        font-family: "Montserrat";
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+        color: black;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .imgServiceDos {
+        width: 100px;
+    }
+    
+    .imgServiceDosA {
+        width: 80px;
+    }
+    
+    .containerTextService {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .textServiceDos {
+        color: #212121;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 441px;
+        height: 204px;
+       text-align: center;
+       
+    
+    }
+    
+    .serviceContainerButton {
+        margin-top: 3rem !important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .serviceButtons {
+        background-color: #CD373B !important;
+        border: none !important;
+        border-radius: 10px !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        
+    }
+    
+    .serviceButtons:hover {
+        background-color: #FF5963 !important;
+        border: none !important;
+    }
+    
+    }  
+    
+    @media only screen and (min-width: 1400px) and (max-width: 1440px) {
 .containerServiceDos {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: unset !important;
     width: 100vw !important;
+}
+
+.serviceButtons1 {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: var(--border-radius-border-radius-sm, 16px);
+    background: #CD373B;
+    border: none;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.buttonextra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
 }
 
 .conTodoSerDos {
@@ -26,12 +209,10 @@
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     border-radius: 20px;
 }
-.buttonextra{
-    opacity: 0;
-}
+
 
 .containerFirstServ {
-    margin-bottom:70px;
+    margin-bottom:0px;
     margin-top: 59px !important;
    
     display: flex;
@@ -115,50 +296,28 @@
     border: none !important;
 }
 
-
-@media screen and (max-width: 768px) {
-    .subtitleServiceDos {
-        text-align: center;
-        font-size: 24px !important
-        
     }
-
-    .tituloSecDos {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .containerTextService {
-        width: 95vw;
-    }
-
-    .serviceButtons {
-        width: 100%;
-    }
-    .ServiceContainerRow{
-        width: 85%;
-    }
-    img.imgServiceDosA.img-fluid{
-        width: 68px !important;
-        height: 68px;
-    }
-    .img.imgServiceDos.img-fluid{
-        width: 68px !important;
-        height: 68px;
+    @media only screen and (min-width: 993px) and (max-width: 1399px) {
+    .containerServiceDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: unset !important;
+        width: 100vw !important;
     }
     
-
-   
-}
-
-@media screen and (max-width: 1024px) {
- 
-     .ServiceContainerRow {
-        padding: 30px;
-        margin-top: 0px !important;
+    .conTodoSerDos {
         display: flex;
-        height: auto;
-        width: 100%;
+        align-items: center;
+        justify-content: center !important;
+        flex-direction: column;
+        
+    }
+    
+    .ServiceContainerRow {
+        padding: 50px;
+        display: flex;
+        width: 90vw !important;
         flex-direction: column;
         align-items: center;
         background-color: white;
@@ -166,35 +325,309 @@
     
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
         border-radius: 20px;
-    } 
-
-    .subtitleServiceDos {
-        text-align: center;
-        font-size:32px !important
-        
     }
-
-  
-    .textServiceDos{
-        font-size: 18px !important;
-        text-align: center;
-        margin: 0 7rem;
-        
+    .buttonextra{
+        opacity: 0;
     }
-
-
+    
+    .containerFirstServ {
+        margin-bottom:70px;
+        margin-top: 59px !important;
+       
+        display: flex;
+        align-items: flex-end;
+        gap:220px;
+    }
+    
+    .containerTitle {
+        justify-content: center;
+        display: flex;
+    }
+    
     .tituloSecDos {
-        font-size: 36px;
+        font-family: "Montserrat";
+        color: #3349A1;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-bottom: 40px;
+        margin-top: 40px;
     }
-    .containerFirstServ{
-        gap: 20px;
+    
+    .subtitleServiceDos {
+        font-family: "Montserrat";
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600 !important;
+        line-height: normal;
+        color: black;
+        padding: 20px 0px 20px 0px;
+    }
+    
+    .imgServiceDos {
+        width: 100px;
+    }
+    
+    .imgServiceDosA {
+        width: 80px;
+    }
+    
+    .containerTextService {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .textServiceDos {
+        color: #212121;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 441px;
+        height: 204px;
+       text-align: center;
+       
+    
+    }
+    
+    .serviceContainerButton {
+        margin-top: 3rem !important;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .serviceButtons {
+        background-color: #CD373B !important;
+        border: none !important;
+        border-radius: 10px !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        
+    }
+    
+    .serviceButtons:hover {
+        background-color: #FF5963 !important;
+        border: none !important;
+    }
+    
+    }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .tituloSecDos {
+        color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
     }
 
     .containerTextService {
-        width: 95vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .serviceButtons {
-        width: 100%;
+    .conTodoSerDos {
+        padding-top: 20px !important;
     }
-}
+
+
+    .serviceButtons1 {
+        display: flex;
+        width: 349px;
+        height: 50px;
+        padding: 0px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        background: var(--Coral-Red, #CD373B);
+        border: none;
+
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+
+    .buttonextra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+    }
+
+    .imgServiceDos {
+        width: 66px;
+        height: 68px;
+    }
+
+    .imgServiceDosA {
+        width: 72px;
+height: 68px;
+    }
+
+    .containerServiceDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 34px !important;
+    }
+
+    .ServiceContainerRow {
+        display: flex;
+        padding: 20px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        background: #FFF;
+        box-shadow: 0.49395px 15.39208px 40.7875px 0px rgba(51, 73, 161, 0.06), 2.46974px 76.96038px 251px 0px rgba(51, 73, 161, 0.12);
+        width: auto;
+    }
+
+    .subtitleServiceDos {
+        color: var(--Tipografa, var(--colors-tipography-black, #212121));
+        text-align: center;
+        font-family: 'Montserrat';
+        margin-bottom: 0px;
+        font-size: 32px !important;
+        font-style: normal;
+        font-weight: 600;
+        padding: 20px 0px 20px 0px;
+        line-height: normal;
+    }
+
+    .containerFirstServ {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textServiceDos {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138.4%; 
+        margin-bottom: 0px;
+    }
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 767px) {
+    .tituloSecDos {
+        color: var(--Main-Color, var(--colors-main-friendly-blue, #3349A1));
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .containerTextService {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conTodoSerDos {
+        padding-top: 20px !important;
+    }
+
+
+    .serviceButtons1 {
+        display: flex;
+        height: 40px;
+        padding: 0px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: var(--border-radius-border-radius-tablet, 8px);
+        background: var(--Coral-Red, #CD373B);
+        border: none;
+
+        color: #FFF;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .buttonextra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+    }
+
+    .imgServiceDos {
+        width: 66px;
+        height: 68px;
+    }
+
+    .imgServiceDosA {
+        width: 72px;
+height: 68px;
+    }
+
+    .containerServiceDos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ServiceContainerRow {
+        display: flex;
+        width: 328px;
+        padding: 20px 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: var(--border-radius-border-radius-sm, 16px);
+        background: #FFF;
+        box-shadow: 0.49395px 15.39208px 40.7875px 0px rgba(51, 73, 161, 0.06), 2.46974px 76.96038px 251px 0px rgba(51, 73, 161, 0.12);
+    }
+
+    .subtitleServiceDos {
+        color: var(--Tipografa, var(--colors-tipography-black, #212121));
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 20px !important;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding: 20px 0px 20px 0px;
+        margin-bottom: 0px;
+    }
+
+    .textServiceDos {
+        color: var(--colors-tipography-black, #212121);
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0px;
+    }
+    }
+

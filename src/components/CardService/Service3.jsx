@@ -14,7 +14,7 @@ const Service3 = () => {
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Plan de tesis</h3>
-                    <p>Comenzaremos por definir el tema de tu tesis y el problema que investigaremos, utilizando las herramientas de investigación adecuadas. Luego, estableceremos el marco teórico de tu plan.</p>
+                    <p className='textSerTres'>Comenzaremos por definir el tema de tu tesis y el problema que investigaremos, utilizando las herramientas de investigación adecuadas. Luego, estableceremos el marco teórico de tu plan.</p>
                 </div>
             </div>
             <div className='cardServicesChildren'>
@@ -23,7 +23,7 @@ const Service3 = () => {
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Borrador de Tesis</h3>
-                    <p>Nos enfocamos en estructurar tu información y evaluamos los datos recopilados, así como las observaciones que pueda tener la persona asesora de la universidad. Concluimos con un diagnóstico y sugerencias para optimizar tu propuesta.</p>
+                    <p className='textSerTres'>Nos enfocamos en estructurar tu información y evaluamos los datos recopilados, así como las observaciones que pueda tener la persona asesora de la universidad. Concluimos con un diagnóstico y sugerencias para optimizar tu propuesta.</p>
                 </div>
             </div>
             <div className='cardServicesChildren'>
@@ -32,7 +32,7 @@ const Service3 = () => {
                 </div>
                 <div className='infoServiceBox'>
                     <h3 className='title-services'>Sustentación</h3>
-                    <p>Te preparamos para la etapa final en la que corregiremos los detalles finales de tu sustentación junto a nuestro equipo especializado. Además, te brindamos apoyo en la creación de los dispositivos necesarios.</p>
+                    <p className='textSerTres'>Te preparamos para la etapa final en la que corregiremos los detalles finales de tu sustentación junto a nuestro equipo especializado. Además, te brindamos apoyo en la creación de los dispositivos necesarios.</p>
                 </div>
             </div>
         </section>
