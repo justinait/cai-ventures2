@@ -13,7 +13,7 @@ const ServiceDos = () => {
     return (
         <Container className='containerServiceDos'>
             <Row className='ServiceContainerRow'>
-                <Col className='containerTitle'>
+                <Col className='containerTitleA'>
                     <h2 className='tituloSecDos'>¿Qué incluyen las asesorías?</h2>
                 </Col>
                 
