@@ -49,7 +49,7 @@ function Service1() {
             </Row>
 
             <Row className='contSerUnAse'>
-                <Col className='containerTitle'>
+                <Col className='containerTitleAse'>
                     <Col className='imgSerAseso'>
                             <Image className='imgSerAse' src={cai} />
                     </Col>

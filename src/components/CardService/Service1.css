@@ -44,6 +44,15 @@
         height: 63vh;
     
     }
+
+    .containerTitleAse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 0px 90px 0px;
+        border-radius: 20px;
+        gap: 200px;
+    }
     
     
     .textSerUn {
@@ -148,6 +157,16 @@
         margin: 3rem auto;
         width: 90vw;
     }
+    .imgSerAseso {
+        display: flex !important;
+        overflow: hidden;
+        width: 376px;
+        flex-direction: initial;
+        flex: initial;
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+    }
     
     .containerOfrec {
         display: flex;
@@ -220,15 +239,10 @@
         align-items: center;
         background-color: #F8F9FC;
         justify-content: center;
-        height: 68vh ;
     }
 
     
-    .imgSerAseso {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
     
     .liEnfoque {
         width: 541px;
@@ -276,6 +290,15 @@
     justify-content: center;
     padding: 100px 0px 90px 0px;
     border-radius: 20px;
+}
+
+.containerTitleAse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 90px 0px;
+    border-radius: 20px;
+    gap: 200px;
 }
 
 .contSerUn {
@@ -382,6 +405,17 @@
     margin-bottom: 0px;
 }
 
+.imgSerAseso {
+    display: flex !important;
+    overflow: hidden;
+    width: 376px;
+    flex-direction: initial;
+    flex: initial;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
     .containerOfrec {
         display: flex;
         width: 1166px !important;
@@ -462,11 +496,7 @@
 }
 
 
-.imgSerAseso {
-    display: flex;
-    overflow: hidden;
-    width: 300px;
-}
+
 
 .liEnfoque {
     width: 541px;
@@ -702,16 +732,7 @@
         height: 100vh;
     }
     
-    .imgSerAse {
-        width: 376px;
-        height: 376px;
-    }
-    
-    .imgSerAseso {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
+
     
     .liEnfoque {
         width: 541px;
@@ -903,7 +924,9 @@
         font-weight: 400;
         line-height: 138.4%;
     }
-    
+    .imgSerAse {
+        width: 533px;
+    }
     .textGradoDos {
         color: var(--colors-tipography-black, #212121);
         text-align: justify;
@@ -932,23 +955,19 @@
     
     .contSerUnAse {
         padding: 104px 0px 80px 0px;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
+        justify-content: center;
+        align-items: center;
+        /* gap: 20px; */
+        /* align-self: stretch; */
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: none;
         background: #FFF;
     }
     
 
-    
-    .imgSerAseso {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
+
     
     .liEnfoque {
         color: var(--colors-tipography-black, #212121);
@@ -1110,6 +1129,22 @@
         padding-top: 50px;
         padding-bottom: 30px;
     }
+
+    .imgSerAseso {
+        height: 220px;
+        display: flex !important;
+        overflow: hidden;
+        width: 301px;
+        flex-direction: initial;
+        flex: initial;
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgSerAse {
+        width: 328px;
+    }
     
     .containerOfrec {
         display: flex;
@@ -1175,11 +1210,12 @@
     
     .contSerUnAse {
         padding: 104px 0px 80px 0px;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        align-self: stretch;
+        justify-content: center;
+        align-items: center;
+        /* gap: 20px; */
+        /* align-self: stretch; */
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: none;
         background: #FFF;
@@ -1193,15 +1229,7 @@
     }
 
     
-    .imgSerAseso {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .imgSerAseso img {
-        width: 328px !important;
-    }
     
     .liEnfoque {
         color: var(--colors-tipography-black, #212121);
