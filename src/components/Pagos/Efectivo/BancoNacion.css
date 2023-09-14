@@ -396,7 +396,9 @@
         background: #FFF;
         /* Shadow */
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        width: 90vw !important;
     }
+
 
     .nameTitular {
         font-family: 'Montserrat';

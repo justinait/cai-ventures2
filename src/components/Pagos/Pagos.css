@@ -5,6 +5,10 @@
         content: "Pago online";
       }
 
+      .tuk {
+        filter: grayscale(1);
+      }
+
       .parteUnoPagos {
         display: flex;
         flex-direction: column-reverse;
@@ -239,6 +243,9 @@
 
     @media only screen and (min-width: 1400px) and (max-width: 1440px) {
 
+        .tuk {
+            filter: grayscale(1);
+          }
     .buttonOnline .titleOnline::before {
         content: "Pago online";
       }
@@ -483,6 +490,9 @@
         flex-direction: column;
         padding: 0px !important;
     }
+    .tuk {
+        filter: grayscale(1);
+      }
 
     .buttonOnline .titleOnline::before {
         content: "Online";
@@ -713,6 +723,9 @@
         flex-direction: column;
         padding: 0px !important;
     }
+    .tuk {
+        filter: grayscale(1);
+      }
 
 
 
@@ -765,7 +778,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
+        padding: 50px !important;
     }
 
     
@@ -936,6 +949,9 @@
         flex-direction: column;
         padding: 0px !important;
     }
+    .tuk {
+        filter: grayscale(1);
+      }
 
     .parteUnoPagos {
         display: flex;
@@ -990,7 +1006,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 50px;
+        padding: 50px !important;
     }
 
     
@@ -1130,6 +1146,9 @@
         margin-top: 20px !important;
     }
     
+    .containerOnlinePayA {
+        gap: 1rem;
+    }
     .active .imageOnline {
         filter: invert(0%); 
     }
