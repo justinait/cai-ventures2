@@ -7,7 +7,7 @@ function Article() {
 
   const [data, setData] = useState([]);
   const [thisArticle, setThisArticle] = useState({})
-
+  
   const {id} = useParams();
 
   useEffect(() => {
@@ -22,6 +22,8 @@ function Article() {
   }, [id]);
 
   const {title, subtitle, image, content, author} = thisArticle;
+  
+  const paragraphs = thisArticle.content ? thisArticle.content.split('\n') : [];
 
   return (
     <div>
@@ -42,7 +44,16 @@ function Article() {
         
         <div className='articleTextContainer'>
           <h4>Autora: {author}</h4>
-          <p className='articleContent'>{content}</p>
+          <p className='articleContent'>
+            {paragraphs.map((paragraph, index) => (
+              <React.Fragment key={index}>
+                {paragraph}
+                <br />
+                <br />
+              </React.Fragment>
+            ))}
+            {/* {content} */}
+            </p>
           
         </div>
 
