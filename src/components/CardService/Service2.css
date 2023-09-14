@@ -88,6 +88,7 @@
         padding-bottom: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
+        text-align: center;
     }
 
     
@@ -235,6 +236,7 @@
     line-height: normal;
     padding-bottom: 40px;
     margin-top: 40px;
+    text-align: center;
 }
 
 .subtitleServiceDos {
@@ -354,6 +356,7 @@
         line-height: normal;
         padding-bottom: 40px;
         margin-top: 40px;
+        text-align: center;
     }
     
     .subtitleServiceDos {
@@ -426,6 +429,7 @@
         font-weight: 600;
         line-height: normal;
         margin-bottom: 0px;
+        text-align: center;
     }
 
     .containerTextService {
@@ -538,6 +542,7 @@ height: 68px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        text-align: center;
     }
 
     .containerTextService {

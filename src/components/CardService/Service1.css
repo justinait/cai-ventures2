@@ -165,7 +165,7 @@
         
             .containerOfrec {
                 display: flex;
-                width: 1166px !important;
+                width: 90vw !important;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -659,8 +659,8 @@
         align-self: stretch;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 2px solid var(--colors-main-friendly-blue, #3349A1);
-        background: #FFF;
-        width: auto;
+
+        width:90vw !important;
     }
     
     .ofreGradoTitle {
@@ -677,7 +677,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 649px;
+        width: 90vw;
     }
     
     .textGrado {
@@ -718,18 +718,24 @@
         padding-bottom: 32px;
         padding-top: 20px;
     }
+
+    .containerTitleAse {
+        padding: 50px;
+        display: flex;
+        width: 90vw !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
     
     .contSerUnAse {
-        padding: 104px 0px 80px 0px;
-        display: flex !important;
+        padding: 50px;
+        display: flex;
+        width: 90vw !important;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        /* gap: 20px; */
-        /* align-self: stretch; */
-        border-radius: var(--border-radius-border-radius-sm, 16px);
-        border: none;
-        background: #FFF;
+        justify-content: center;
     }
     
 
@@ -893,7 +899,6 @@
         align-self: stretch;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 2px solid var(--colors-main-friendly-blue, #3349A1);
-        background: #FFF;
         width: auto;
     }
     
@@ -911,7 +916,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 649px;
+        width: 90vw !important;
     }
     
     .textGrado {
@@ -954,18 +959,23 @@
     }
     
     .contSerUnAse {
-        padding: 104px 0px 80px 0px;
-        display: flex !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 34px !important;
+    }
+    
+
+    .containerTitleAse {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* gap: 20px; */
-        /* align-self: stretch; */
-        border-radius: var(--border-radius-border-radius-sm, 16px);
-        border: none;
-        background: #FFF;
+        padding: 50px;
+        margin: 3rem auto;
+        width: 90vw;
     }
-    
 
 
     
@@ -1155,7 +1165,6 @@
         align-self: center;
         border-radius: var(--border-radius-border-radius-sm, 16px);
         border: 2px solid var(--colors-main-friendly-blue, #3349A1);
-        background: #FFF;
         width: auto;
     }
     
@@ -1173,7 +1182,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 324px;
+        width: 90vw !important;
     }
     
     .textGrado {
