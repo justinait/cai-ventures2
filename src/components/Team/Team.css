@@ -3,7 +3,7 @@
     color: white;
     justify-content: space-evenly;
     text-align: center;
-    margin: 5% 0;
+    margin: 5% 1%;
 }
 .titleTeam{
     color: var(--Tipografa, var(--colors-tipography-black, #212121));
@@ -88,6 +88,10 @@
         width: 250px;
         height: 250px; 
     }
+    
+    .titleTeam{
+        padding-bottom: 3%;
+    }
 }
 
 /* mobile */
@@ -109,5 +113,8 @@
     .infoPerson p {
         font-size: 14px;
         font-weight: 400; 
+    }
+    .titleTeam{
+        font-size: 24px;
     }
 }
