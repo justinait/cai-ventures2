@@ -14,18 +14,20 @@
         flex-direction: column;
         
     }
+
+
     
     .ServiceContainerRow {
         display: flex;
-        width: 1627px;
-        padding: 40px 0px 60px 0px;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 59px;
-        border-radius: var(--border-radius-border-radius-lg, 48px);
-        background: #FFF;
-        /* Sombrita */
+        padding: 50px;
+        background-color: #fff;
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
     }
 
     .buttonextra {
@@ -66,8 +68,14 @@
     }
     
     .containerTitle {
-        justify-content: center;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
     }
     
     .tituloSecDos {
@@ -496,7 +504,7 @@ height: 68px;
         text-align: center;
         font-family: 'Montserrat';
         margin-bottom: 0px;
-        font-size: 32px;
+        font-size: 32px !important;
         font-style: normal;
         font-weight: 600;
         padding: 20px 0px 20px 0px;

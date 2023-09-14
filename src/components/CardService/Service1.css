@@ -140,8 +140,13 @@
 
     .ofrecen {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        padding: 50px;
+        border-radius: 20px;
+        margin: 3rem auto;
+        width: 90vw;
     }
     
     .containerOfrec {
@@ -217,16 +222,12 @@
         justify-content: center;
         height: 68vh ;
     }
-    
-    .imgSerAse {
-        width: 376px;
-        height: 376px;
-    }
+
     
     .imgSerAseso {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
     }
     
     .liEnfoque {
@@ -267,13 +268,14 @@
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    height: 100vh;
 }
 
 .containerTitle {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 90px 0px 0px 0px;
+    border-radius: 20px;
 }
 
 .contSerUn {
@@ -287,10 +289,6 @@
 
 }
 
-/* .imgSerUn {
-    width: 364px;
-    height: 443px;
-} */
 
 .textSerUn {
     color: #000;
@@ -461,7 +459,7 @@
     align-items: center;
     background-color: #F8F9FC;
     justify-content: center;
-    height: 100vh;
+    height: auto;
 }
 
 .imgSerAse {
