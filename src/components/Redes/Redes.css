@@ -109,6 +109,10 @@
     .blogMediaContainer {
         display: none;
     }
+    .blogArticleContainer {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 991px) {
