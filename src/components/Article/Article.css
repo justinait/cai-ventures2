@@ -89,6 +89,7 @@
     .articleContent {
         font-size: 20px;
         line-height: 140.9%;
+        word-wrap: break-word;
     }
     .articleImage {
         width: 687px;
