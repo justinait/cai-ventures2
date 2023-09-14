@@ -149,15 +149,18 @@
             margin-bottom: 0px;
         }
         
-        .imgSerAseso {
+        .imgSerAse {
             display: flex !important;
             overflow: hidden;
             width: 376px;
+            height: 376px;
+            object-fit: cover;
             flex-direction: initial;
             flex: initial;
             border-radius: 16px;
             align-items: center;
             justify-content: center;
+            margin: auto;
         }
         
             .containerOfrec {
@@ -227,6 +230,7 @@
             line-height: normal;
             margin-bottom: 0px;
             padding-bottom: 32px;
+            width: 45vw;
         }
         
         .contSerUnAse {
