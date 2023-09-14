@@ -18,7 +18,7 @@
     align-items: start;
     gap: 30px;
 }
-.homeContactInfo div{
+.homeContactInfo .title-card-three{
     text-align: left;
     color: #212121;
     font-size: 42px;
@@ -83,6 +83,16 @@
         margin: 20px;
         border-radius: 18px; 
     }
+    .homeContactInfo .title-card-three{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+        padding: 0 40px 0 0;
+    }
+    .homeContactInfo p{
+        padding: 0 30px 0 0;
+    }
 }
 @media screen and (max-width: 767px) {
     .homeContactInfo{
@@ -105,5 +115,17 @@
     }
     .homeContactContainer {
         padding: 70px 20px 0;
+    }
+    .homeContactInfo .title-card-three{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+    }
+    .homeContactInfo .title-card-three{
+        padding: 0 20px 0 0;
+    }
+    .homeContactInfo p{
+        padding: 0 40px 0 0;
     }
 }
