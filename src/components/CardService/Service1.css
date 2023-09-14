@@ -110,13 +110,16 @@
             gap: 47px;
         }
         
-        .imgSerUno {
+        .imgSerUno img {
             width: 364px;
+            height: 443px;
+            object-fit: cover;
             overflow: hidden;
             align-items: center;
             justify-content: center;
             display: flex;
             border-radius: 18px !important;
+            margin: auto;
         }
         
         .serviceButtonsUn:hover {
