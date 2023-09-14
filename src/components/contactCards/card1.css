@@ -11,7 +11,6 @@
     flex-shrink: 0;
     border-radius: var(--border-radius-border-radius-md, 24px);
     background: #FFF;
-
     /* Sombrita */
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
 }
@@ -210,14 +209,10 @@
         justify-content: center;
         align-items: flex-start;
         gap: 93px;
-
         border-radius: var(--border-radius-border-radius-md, 24px);
         background: #FFF;
-
         /* Sombrita */
         box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-
-
     }
 
     .cardTitle {
@@ -228,7 +223,6 @@
         font-weight: 600;
         line-height: normal;
         align-self: stretch;
-
     }
 
     .cardsubtitle1 {
@@ -237,7 +231,6 @@
         justify-content: center;
         align-items: center;
         gap: 40px;
-
     }
 
     .cardsubtitle2 {
@@ -286,18 +279,22 @@
     
 
 }
-@media  (min-width: 1024px) {
-   .cardsubtitletext1{
-    font-size: 20px;
-   }
-   .cardsubtitletext2{
-    font-size: 20px;
-   }
-   .cardsubtitletext3{
-    font-size: 20px;
-   }
-   .containerCard{
-    width: 42vw;
-   }
-
+@media  (min-width: 1025px) {
+    .cardsubtitletext1{
+        font-size: 20px;
+    }
+    .cardsubtitletext2{
+        font-size: 20px;
+    }
+    .cardsubtitletext3{
+        font-size: 20px;
+    }
+    .containerCard{
+        width: 42vw;
+    }
+}
+@media  (min-width: 1920px) {
+    .containerCard{
+        width: 35vw;
+    }
 }

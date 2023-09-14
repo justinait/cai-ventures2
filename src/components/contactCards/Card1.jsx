@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import message from '../../assets/icons/message.png'
 import cel from '../../assets/icons/cel.png'
 import direction from '../../assets/icons/direction.png'
@@ -10,9 +10,7 @@ const Card1 = () => {
             <div className='cardTitle'>
                 Información de Contacto
             </div>
-
             <div className='cardSubtitle'>
-
                 <div className='cardsubtitle1'>
                     <div className='message'>
                         <img src={message} alt="" />
@@ -21,33 +19,23 @@ const Card1 = () => {
                         caiventures.2023@gmail.com
                     </div>
                 </div>
-
                 <div className='cardsubtitle2'>
                     <div className='cel'>
                         <img src={cel} alt="" />
                     </div>
                     <div className='cardsubtitletext2'>
-                    928 897 150 / 955716302
+                        928 897 150 / 955716302
                     </div>
                 </div>
-
-                
-
                 <div className='cardsubtitle3'>
-
                     <div className='direction'>
                         <img src={direction} alt="" />
                     </div>
-
-
                     <div className='cardsubtitletext3'>
-                    Cusco, Perú
+                        Cusco, Perú
                     </div>
                 </div>
-
-
             </div>
-
         </div>
     );
 };
