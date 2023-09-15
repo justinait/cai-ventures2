@@ -242,17 +242,17 @@ function Pagos() {
                   </button>
                 </Col>
                 <Col>
-                  <button
+                  <div
                     className={`buttonDosPay ${mostrarTukuyScreen ? 'active' : ''}`}
-                    onClick={() => {
-                      mostrarTukuy();
-                    }}
+                    // onClick={() => {
+                    //   mostrarTukuy();
+                    // }}
                   >
                     <Col className='interBtn'>
-                      <Image src={tukuy} />
+                      <Image className='tuk' src={tukuy} />
                       <p>tukuy.club</p>
                     </Col>
-                  </button>
+                  </div>
                 </Col>
               </Row>
             )}
@@ -273,7 +273,7 @@ function Pagos() {
                   
                     >
                       <Col className='interBtn'>
-                        <Image src={bancoNacion} />
+                        <Image  src={bancoNacion} />
                         <p>www.bn.com.pe</p>
                       </Col>
                     </button>
