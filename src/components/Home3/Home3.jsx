@@ -12,8 +12,8 @@ import { Row, Col, Image } from 'react-bootstrap';
 
 const Home3 = () => {
   return (
-    <Row className='swiperRow' >
-      <Col xxl={12} xl={12} lg={10} md={10} sm={10}>
+    // <Row className='swiperRow' >
+    //   <Col xxl={12} xl={12} lg={10} md={10} sm={10}>
         <Swiper className='carouselHome swiper-container'
           centeredSlides={true}
           autoplay={{
@@ -37,8 +37,8 @@ const Home3 = () => {
             <Image fluid src={swipperTres} alt="Slide 3" />
           </SwiperSlide>
         </Swiper>
-      </Col>
-    </Row>
+    //   </Col>
+    // </Row>
   )
 }
 
