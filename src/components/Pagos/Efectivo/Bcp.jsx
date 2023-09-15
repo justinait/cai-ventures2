@@ -43,7 +43,7 @@ function BcpScreen ({ reiniciarEstado }) {
                 </Col>
                 <Row className='contenedorMontoNacion'>
                     <Col className='contenedorInterno'>
-                    <p className='montoBanco'>Monto a pagar $100</p>
+
                     <Row className='imgQrContNacion'>
                         <Col>
                             <p className='titular'>Titular de la cuenta</p>
