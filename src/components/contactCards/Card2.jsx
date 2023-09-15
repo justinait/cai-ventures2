@@ -10,13 +10,6 @@ const Card2 = () => {
     const formulario = useRef();
     const {service_id,template_id,public_id} = config.EMAIL;
     const [btnsubmit, setBtnsubmit] = useState(false);//cambio el estado de boton al hacer click en submit
-
-    const estilos ={
-        color:"red",
-        paddingLeft:"25px",
-        margin:"0px",
-    }
-
     //defino los valores de cada unput para acceder a su valor despues.
     const [input, setInput] = useState({
         first_name:{
@@ -32,6 +25,13 @@ const Card2 = () => {
             error:''
         }
     });
+
+    const estilos ={
+        color:"red",
+        paddingLeft:"25px",
+        margin:"0px",
+    }
+
     //por cada vez que detectes un cambio agregalo a lo que ya tenia y guarda esos cambios en value.
     const handleInputChange = (e) =>{
         setInput(prev=>({
@@ -71,7 +71,7 @@ const Card2 = () => {
                     ...prev,
                     [key]:{
                         ...prev[key],
-                        error:'Este campo es obligatorio'
+                        error:'*Este campo es obligatorio'
                     }
                 }));
             }
@@ -96,19 +96,19 @@ const Card2 = () => {
             }
         });
     }
-    
+
     return (
         <div className="divContactContainer">
             <h2>¡Contactanos!</h2>
             <form className="formContactContainer" onSubmit={handleSubmitForm} ref={formulario}>
                 {input.first_name.error&& <p style={estilos}>{input.first_name.error}</p>}
-                <input type="text" placeholder='Nombre y Apellido' name="first_name" value={input['first_name'].value} onChange={handleInputChange}/>
+                <input type="text" placeholder='*Nombre y Apellido' name="first_name" value={input['first_name'].value} onChange={handleInputChange}/>
 
-                {input.email.error&& <p style={estilos}>{"Ingresa un email válido"}</p>}
-                <input type="email" name="email" placeholder='Email' value={input['email'].value} onChange={handleInputChange}/>
+                {input.email.error&& <p style={estilos}>{"*Ingresa un mail válido"}</p>}
+                <input type="email" name="email" placeholder='*Email' value={input['email'].value} onChange={handleInputChange}/>
 
                 {input.message.error&& <p style={estilos}>{input.message.error}</p>}
-                <textarea name="message" placeholder='Mensaje' cols="30" rows="10" value={input['message'].value} onChange={handleInputChange}></textarea>
+                <textarea name="message" placeholder='*Mensaje' cols="30" rows="10" value={input['message'].value} onChange={handleInputChange}></textarea>
                 
                 <div className='btnFormContainer'>
                     <button className='btnFormContact' disabled={btnsubmit}>enviar</button>
