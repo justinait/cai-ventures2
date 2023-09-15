@@ -40,7 +40,6 @@ function YapeScreen ({ reiniciarEstado }) {
                 </Col>
                 <Row className='contenedorMonto'>
                     <Col className='montoImgText'>
-                    <p className='monto'>Monto a pagar $100</p>
                     <Row className='imgQrCont'>
                         <Col className='contieneImgQr'>
                         <Image src={qrYape} />
@@ -56,22 +55,7 @@ function YapeScreen ({ reiniciarEstado }) {
                     <Col className='contComprobante'>
                         <p className='textoComprobante'>Por favor, envía el comprobante de pago a:</p>
                         <p className='comprobanteColor'>955 716 302 <span className='textoComprobante'>o</span>  928 897 150</p>
-
-                       <p className='linkPago'>O puedes utilizar este link de pago</p>
-
-                       {copied ? (
-                        <Col className='linkCopiarOk'>
-                            <p className='textLinkCopiarOk'>¡Link copiado!</p>
-                        </Col>
-                        
-                        ) : (
-                       <button className='linkCopiar' onClick={handleCopyLink}>
-                        <p className='textLinkCopiar' ref={textLinkRef}>link.pago.pe/12321</p>
-                        <Image src={linkCopiar} />
-                       </button>
-                       )}
-
-                       <button onClick={reiniciarEstado}  className='cancelarPago'>CANCELAR</button>
+                      <button onClick={reiniciarEstado}  className='cancelarPago'>CANCELAR</button>
                     </Col>
                 </Row>
             </Row>

@@ -49,8 +49,8 @@ function Questions() {
             </Accordion.Item>
             <Accordion.Item eventKey="4">
               <Accordion.Header className='accordionHeader'>¿Cómo contratar el servicio?</Accordion.Header>
-              <Accordion.Body className='textoAcordion'>
-                Ingresa a la seccion servicios, una vez alli, puedes informarte sobre nuestros servicios y abonar el mismo interactuando con el boton contratar servicios, o puedes optar por agendar una reunion de prueba.
+              <Accordion.Body className='textoAcordion last-acordion'>
+                Ingresa a la sección servicios, una vez alli, puedes informarte sobre nuestros servicios y abonar el mismo interactuando con el boton "contratar servicios", o puedes optar por agendar una reunion de prueba. Luego, si estás conforme, puedes comunicarte a caiventures.2023@gmail.com para contratar el servicio. Una vez enviado el comprobante de pago, se te enviará un link para agendar tus sesiones.
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
