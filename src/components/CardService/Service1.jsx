@@ -1,7 +1,7 @@
 import React from 'react';
 import caiCero from "../../assets/imgTabletServices.png";
 import cai from '../../assets/imgDosSer.png';
-import { Container, Row, Col, Image, Button} from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import './Service1.css';
 import { Link } from 'react-router-dom';
 import {  NavLink } from 'react-router-dom';
@@ -21,7 +21,7 @@ function Service1() {
                                 <NavLink to='https://zcal.co/caiventures' target= "_blank">
                                 <button  className='serviceButtonsUn'>AGENDAR SESIÓN</button>{' '}
                                 </NavLink>
-                                <Link to='/Pagos'>
+                                <Link to='/pay'>
                                 <button className='serviceButtonsUnA'>CONTRATAR SERVICIO</button>{' '}
                                 </Link>
                                 </Col>
@@ -58,7 +58,7 @@ function Service1() {
                         <h1 className='enfoqueTitle'>Nos enfocamos en asesorías de tesis de las carreras de:</h1>
                         
                         <li className='liEnfoque'>Administración</li>
-                        <li className='liEnfoque'>Contabilidad </li>
+                        <li className='liEnfoque'>Contabilidad</li>
                         <li className='liEnfoque'>Economía</li>
                         <li className='liEnfoque'>Turismo</li>
                         <li className='liEnfoque'>Educación</li>
