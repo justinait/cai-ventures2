@@ -100,7 +100,9 @@
         width: 28px;
         height: 32px;
     }
-
+    .blogArticleContainer { 
+        top: 16.5rem;
+    }
 
 }
 
