@@ -13,7 +13,7 @@ const Card1 = () => {
             <div className='cardSubtitle'>
                 <div className='cardsubtitle1'>
                     <div className='message'>
-                        <img src={message} alt="" />
+                        <img src={message} alt="icono de una correo" />
                     </div>
                     <div className='cardsubtitletext1'>
                         caiventures.2023@gmail.com
@@ -21,7 +21,7 @@ const Card1 = () => {
                 </div>
                 <div className='cardsubtitle2'>
                     <div className='cel'>
-                        <img src={cel} alt="" />
+                        <img src={cel} alt="icono de whatsapp" />
                     </div>
                     <div className='cardsubtitletext2'>
                         928 897 150 / 955716302
@@ -29,7 +29,7 @@ const Card1 = () => {
                 </div>
                 <div className='cardsubtitle3'>
                     <div className='direction'>
-                        <img src={direction} alt="" />
+                        <img src={direction} alt="icono de ubicación" />
                     </div>
                     <div className='cardsubtitletext3'>
                         Cusco, Perú

@@ -78,18 +78,14 @@ const Card2 = () => {
         });
         if(stop) return;
         setBtnsubmit(true);//una vez que presionado cambie su valor hasta quew obtenga una respuesta
-
+        loadingAlert();//alerta que aprece mientras espera el resultado de la respuesta
         emailjs.sendForm(service_id, template_id, formulario.current,public_id)
         .then((result) => {
-            loadingAlert()
-            .then(() => {
-                if (result.status === 200) {
-                    successAlert();//es una funcion que contiene la alerta de mensaje enviado
-                    clearInputValue();//esta funcion limpia el fomrulario desde cero.
-                    setBtnsubmit(false);
-                }
-            })
-            
+            if (result.status === 200) {
+                successAlert();//es una funcion que contiene la alerta de mensaje enviado
+                clearInputValue();//esta funcion limpia el fomrulario desde cero.
+                setBtnsubmit(false);
+            }
         }, (error) => {
             if (error) {
                 window.location('/error')

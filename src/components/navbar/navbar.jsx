@@ -11,12 +11,12 @@ import './navbar.css';
 
 const NavBar = () => {
   const [collapsed, setCollapsed] = useState(true);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 991);
   const logoToShow = isDesktop ? logoBajada : Logo;
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 1024);
+      setIsDesktop(window.innerWidth > 991);
     };
 
     window.addEventListener("resize", handleResize);
@@ -65,7 +65,7 @@ const NavBar = () => {
             <NavLink className='nav-link' to='/about' onClick={handleMenuClick}>Nosotros</NavLink>
             <NavLink className='nav-link' to='/blog' onClick={handleMenuClick}>Blog</NavLink>
             <NavLink className='nav-link' to='/contact' onClick={handleMenuClick}>Contacto</NavLink>
-            <NavLink className='nav-link_button' to='/Pagos' onClick={handleMenuClick}>Contratar</NavLink>
+            <NavLink className='nav-link_button' to='/pay' onClick={handleMenuClick}>Contratar</NavLink>
             <NavLink className='nav-link nav-link_hidden' to='/faq' onClick={handleMenuClick}>FAQ</NavLink>
           </ul>
         </div>

@@ -12,6 +12,8 @@
 @media screen and (min-width: 768px){
     .contactPagesContainer{
         padding: 50px;
+        align-items: center;
+        gap: 20px 0;
     }
 }
 @media screen and (min-width: 1024px){
