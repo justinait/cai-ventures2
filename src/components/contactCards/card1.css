@@ -15,31 +15,25 @@
     box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
 }
 
-.cardTitle {
-    color: #212121;
-    font-family: 'Montserrat';
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
 .cardSubtitle {
     display: flex;
-    /* width: 445px; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 34px;
 }
 
-.cardsubtitle1 {
+.cardsubtitle1,.cardsubtitle2,.cardsubtitle3 {
     display: flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
 
+.cardsubtitletext1,.cardsubtitletext2,.cardsubtitletext3 {
+    color: #212121;
+    font-family: 'Montserrat';
 }
 
 .message {
@@ -47,42 +41,9 @@
     height: 36px;
 }
 
-.cardsubtitletext1 {
-    color: #212121;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.cardsubtitle2 {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
 .cel {
     width: 36px;
     height: 36px;
-}
-
-.cardsubtitletext2 {
-    color: #212121;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.cardsubtitle3 {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
 }
 
 .direction {
@@ -90,22 +51,11 @@
     height: 36px;
 }
 
-.cardsubtitletext3 {
-    color: #212121;
-    font-family: 'Montserrat';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
 /* Mobile */
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .containerCard {
         display: flex;
-        width: 95%;
+        width: 90%;
         height: 300px;
         padding: 40px 4px;
         margin: 15px;
@@ -114,9 +64,6 @@
         align-items: flex-start;
         gap: 40px;
         border-radius: var(--border-radius-border-radius-md, 24px);
-        /* Sombrita */
-        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
-
     }
 
     .cardTitle {
@@ -138,70 +85,35 @@
         align-items: flex-start;
         gap: 16px;
         align-self: stretch;
-
     }
 
-    .cardsubtitle1 .cardsubtitle2 .cardsubtitle3 {
+    .cardsubtitle1, .cardsubtitle2 ,.cardsubtitle3 {
         display: flex;
         padding: 10px;
         align-items: center;
         gap: 20px;
-        align-self: stretch;
     }
 
-    .cardsubtitletext1 {
+    .cardsubtitletext1,.cardsubtitletext2,.cardsubtitletext3 {
         color: #212121;
         font-family: 'Montserrat';
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-    
     }
 
-    .cardsubtitletext2 {
-        color: #212121;
-        font-family: 'Montserrat';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
+    .cel img,.direction img,.message img  {
+        width: 36px;
+        height: 36px;
     }
-
-    .cardsubtitletext3 {
-        color: #212121;
-        font-family: 'Montserrat';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-    }
-
-    .cel img,
-    .direction img {
-        width: 26px;
-        height: 26px;
-    }
-
-    .message img {
-        width: 26px;
-        height: 26px;
-    }
-
 }
 
-
-
-
-
 /* Tablet */
-
 @media (min-width:768px) and (max-width:1024px) {
     .containerCard {
         display: flex;
-        width: 95%;
+        width: 85%;
         margin: 10px;
         height: 456px;
         padding: 40px;
@@ -210,9 +122,6 @@
         align-items: flex-start;
         gap: 93px;
         border-radius: var(--border-radius-border-radius-md, 24px);
-        background: #FFF;
-        /* Sombrita */
-        box-shadow: 8px 8px 40px 3px rgba(104, 142, 182, 0.40);
     }
 
     .cardTitle {
@@ -225,7 +134,7 @@
         align-self: stretch;
     }
 
-    .cardsubtitle1 {
+    .cardsubtitle1, .cardsubtitle2, .cardsubtitle3{
         display: flex;
         padding: 10px;
         justify-content: center;
@@ -233,52 +142,15 @@
         gap: 40px;
     }
 
-    .cardsubtitle2 {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .cardsubtitle3 {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-    }
-
-    .cardsubtitletext1 {
-        color: #212121;
-        font-family:'Montserrat';
+    .cardsubtitletext1, .cardsubtitletext2, .cardsubtitletext3{
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
-
-    .cardsubtitletext2 {
-        color: #212121;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
-    }
-
-    .cardsubtitletext3 {
-        color: #212121;
-        font-family: Montserrat;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-    
-
 }
+
+/* desktop md */
 @media  (min-width: 1025px) {
     .cardsubtitletext1{
         font-size: 20px;
@@ -292,9 +164,29 @@
     .containerCard{
         width: 42vw;
     }
+    .cardTitle{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #212121;
+    }
+    .cardsubtitletext1,.cardsubtitletext2,.cardsubtitletext3 {
+        color: #212121;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
 }
+
+/* desktop xl */
 @media  (min-width: 1920px) {
     .containerCard{
         width: 35vw;
+    }
+    .cardTitle {
+        font-size: 42px;
+        
     }
 }
