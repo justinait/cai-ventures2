@@ -96,25 +96,29 @@
         height: 444px;
     }
     .articleTitle {
-        font-size: 48px;
+        font-size: 36px;
+        padding: 5%;
     }
     .titleArticle {
         font-size: 42px;
     }
+    .articleTextContainer h4 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1023px) {
-    .titleArticle {
-        font-size: 24px !important;
-        text-align: center !important;
-        font-weight: 600 !important;
-        color: var(--colors-main-friendly-blue, #3349A1) !important;
+    /* .titleArticle {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--colors-main-friendly-blue, #3349A1);
         font-family: 'Montserrat'; 
         padding-top: 7%;
-    }
+    } */
     .principalCardArticle {
         background-image: none;
-        height: 100px;
+        height: 0px;
     }
     .subtitleArticle {
         display: none
@@ -127,14 +131,14 @@
     .articleContent {
         font-size: 18px;
     }
-    .titleblog{
+    
+    .titleArticle {
+        font-size: 20px;
         color: rgba(51, 73, 161, 0.39);
         font-family: Montserrat;
-        font-size: 20px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;    
-        text-align: left;
+        line-height: normal;
     }
 }
 
@@ -149,12 +153,18 @@
     }
     
     .articleTitle {
-        font-size: 24px;
+        font-size: 18px;
     }
     
     .articleTextContainer h4 {
         padding: 0 3% 5%;
         font-size: 14px;
     }
+    .principalCardArticle {
+        height: 0px;
+    }
     
+    .titleArticle {
+        font-size: 20px;
+    }
 }

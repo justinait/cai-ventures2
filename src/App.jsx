@@ -37,9 +37,8 @@ function App() {
         <Route path='/blog/:id' element= {<Article />} />
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/faq' element={<Faq/>}/>
-        <Route path='/Pagos' element={<Pagos />} />
+        <Route path='/pay' element={<Pagos />} />
         <Route path='/privacy' element={<Privacy/>} />
-
         <Route path='/error' element={<ErrorConection />} />
         <Route path='*' element={<NoEncontrada />} />
       </Routes>
