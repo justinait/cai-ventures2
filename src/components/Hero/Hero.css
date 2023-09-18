@@ -96,6 +96,9 @@ a {
     .homePresentation {
         width: 84vw;
     }
+    .homePresentation h6 {
+        font-size: 24px;
+    }
     .homePresentation .title-hero-home{
         font-size: 36px;
         font-style: normal;
@@ -159,6 +162,7 @@ a {
     }
     .homePresentation h6 {
         font-weight: 400;
+        font-size: 14px;
     }
     .homeContainer2 {
         flex-direction: column;
@@ -171,5 +175,16 @@ a {
     .homePresentationImage .homeButtons {
         display: block;
         border-radius: 8px !important;
+    }
+    
+    .homePresentation .title-hero-home {
+        color: var(--colors-tipography-black, #212121);
+
+        /* Mobile-Tittle-XL */
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 }
