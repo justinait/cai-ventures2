@@ -36,17 +36,16 @@
 
 #### 🧑‍💻 Developers:
 
-| <img src="https://avatars.githubusercontent.com/u/102929742?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/105551748?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/73416791?v=4" width=50>|
+| <img src="https://avatars.githubusercontent.com/u/81998551?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/114489104?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/107260136?v=4" width=50>|
 |:-:|:-:|:-:|
 | **Justina Iturraspe**| **Belen Caporale**| **Eduardo Tolaba**|
-| <a href="https://github.com/justinait"><img src="https://avatars.githubusercontent.com/u/81998551?v=4"/></a> <a href="https://www.linkedin.com/in/justinaiturraspe/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | 
-<a href="https://github.com/MariaBelenCaporale"><img src="https://avatars.githubusercontent.com/u/114489104?v=4"/></a> <a href="https://www.linkedin.com/in/francobuceta"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
- <a href="https://github.com/TolabaE"><img src="https://avatars.githubusercontent.com/u/107260136?v=4"/></a> <a href="https://www.linkedin.com/in/tolaba-eduardo-esequiel/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+| <a href="https://github.com/justinait"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/justinaiturraspe/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | 
+<a href="https://github.com/MariaBelenCaporale"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/francobuceta"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+ <a href="https://github.com/TolabaE"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/tolaba-eduardo-esequiel/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 
-| <img src="https://avatars.githubusercontent.com/u/96598305?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/93547064?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/97997981?v=4" width=50>|
-|:-:|:-:|:-:|
+| <img src="https://avatars.githubusercontent.com/u/119474401?s=400&u=254c2c52237019291fc3b767374d2bbf683b431b&v=4" width=50>|
 | **Layenx Laventure**|
-| <a href="https://github.com/llayenx/llayenx"><img src="https://avatars.githubusercontent.com/u/119474401?s=400&u=254c2c52237019291fc3b767374d2bbf683b431b&v=4"/></a> <a href="https://www.linkedin.com/in/layenx-laventure/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+| <a href="https://github.com/llayenx/llayenx"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/layenx-laventure/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 <hr/>
 
 ### 🎨 UX/UI:
