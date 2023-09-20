@@ -1,4 +1,4 @@
-<img align="center" src="https://res.cloudinary.com/dzm5lgpyv/image/upload/v1685399475/mercadolibre%20readme/Sin_t%C3%ADtulo_zky0wb.png">
+<img align="center" src="/src/assets/caiventures.jpeg">
 
 <h3>👉🏻 CAI Ventures.</h3>
 
@@ -36,21 +36,9 @@
 
 #### 🧑‍💻 Developers:
 
-| <img src="https://avatars.githubusercontent.com/u/81998551?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/114489104?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/107260136?v=4" width=50>|
-|:-:|:-:|:-:|
-| **Justina Iturraspe**| **Belen Caporale**| **Eduardo Tolaba**|
-| <a href="https://github.com/justinait"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/justinaiturraspe/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | 
-<a href="https://github.com/MariaBelenCaporale"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/francobuceta"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
- <a href="https://github.com/TolabaE"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/tolaba-eduardo-esequiel/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+| <img src="https://avatars.githubusercontent.com/u/81998551?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/114489104?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/107260136?v=4" width=50>| <img src="https://avatars.githubusercontent.com/u/119474401?s=400&u=254c2c52237019291fc3b767374d2bbf683b431b&v=4" width=50>|
 
-| <img src="https://avatars.githubusercontent.com/u/119474401?s=400&u=254c2c52237019291fc3b767374d2bbf683b431b&v=4" width=50>|
-| **Layenx Laventure**|
-| <a href="https://github.com/llayenx/llayenx"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/layenx-laventure/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
+|:-:|:-:|:-:|:-:|
+| **Justina Iturraspe**| **Belen Caporale**| **Eduardo Tolaba**| **Layenx Laventure**|
+| <a href="https://github.com/justinait"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/justinaiturraspe/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/MariaBelenCaporale"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/francobuceta"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/TolabaE"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/tolaba-eduardo-esequiel/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a>| <a href="https://github.com/llayenx/llayenx"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/layenx-laventure/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
 <hr/>
-
-### 🎨 UX/UI:
-
-| <img src="https://res.cloudinary.com/dzm5lgpyv/image/upload/v1685479286/mercadolibre%20readme/Imagen_de_WhatsApp_2023-05-30_a_las_17.39.51_nvjodz.jpg" width=50>| <img src="https://res.cloudinary.com/dzm5lgpyv/image/upload/v1685458596/mercadolibre%20readme/ux-ui_bjhf7v.jpg" width=50>|
-|:-:|:-:|
-| **Eugenia Olmedo**| **Vanina Restelli**|
-|<a href="https://www.behance.net/eugeniaolmedo"><img src="https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/eugeniaolmedo/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://www.behance.net/vaninarestelli"><img src="https://img.shields.io/badge/Behance-1769ff?style=for-the-badge&logo=behance&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/vaninarestelli/"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> |
